@@ -1,0 +1,4 @@
+# Codeigniter Gitignore
+# Ref: https://github.com/github/gitignore/blob/master/CodeIgniter.gitignore
+
+bin/inc_setting.php
