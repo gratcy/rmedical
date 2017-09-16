@@ -1,0 +1,5 @@
+<style> td { font-family: "Arial", "新細明體", "細明體";	font-size : 12px;  color : #555555} </style>
+<table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-04-17 13:13:42</b></td><td><b>/login_login.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>1.120567</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.030539</td><td>Script ended ...</td></tr>
+</table>

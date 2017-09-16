@@ -1,0 +1,928 @@
+產品編號,品牌,種類,產品名稱,產品系列,簡稱
+PD000000001,Listra,Fullinsole,"Listra Full insole ""XS""",Listra Full insole,"Listra 全墊 ""XS"""
+PD000000002,Listra,Fullinsole,"Listra Full insole ""S""",Listra Full insole,"Listra 全墊 ""S"""
+PD000000003,Listra,Fullinsole,"Listra Full insole ""M""",Listra Full insole,"Listra 全墊 ""M"""
+PD000000004,Listra,Fullinsole,"Listra Full insole ""L""",Listra Full insole,"Listra 全墊 ""L"""
+PD000000005,Listra,Fullinsole,"Listra Full insole ""XL""",Listra Full insole,"Listra 全墊 ""XL"""
+PD000000006,Listra,Fullinsole,"Listra Full insole ""XXL""",Listra Full insole,"Listra 全墊 ""XXL"""
+PD000000007,Listra,Heel Cup,"Listra Heel Cup ""M""",Listra Heel Cup,"Listra 半墊 ""M"""
+PD000000008,Listra,Heel Cup,"Listra Heel Cup ""L""",Listra Heel Cup,"Listra 半墊 ""L"""
+PD000000009,Listra,3/4 Insole,"Listra 3/4 Insole ""S""",Listra 3/4 Insole,"Listra 3/4墊 ""S"""
+PD000000010,Listra,3/4 Insole,"Listra 3/4 Insole ""M""",Listra 3/4 Insole,"Listra 3/4墊 ""M"""
+PD000000011,Listra,3/4 Insole,"Listra 3/4 Insole ""L""",Listra 3/4 Insole,"Listra 3/4墊 ""L"""
+PD000000012,Listra,3/4 Insole,"Listra 3/4 Insole ""XL""",Listra 3/4 Insole,"Listra 3/4墊 ""XL"""
+PD000000013,Listra,3/4 Insole,"Listra 3/4 Insole ""XXL""",Listra 3/4 Insole,"Listra 3/4墊 ""XXL"""
+PD000000014,Listra,Heel Cup,"Listra Heel Cup ""S""",Listra Heel Cup,"Listra 半墊 ""S"""
+PD000000015,Listra,Children Insole,"Listra Two-Layer Children Insole ""23""",Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole ""23"""
+PD000000016,Listra,Children Insole,"Listra Two-Layer Children Insole ""24""",Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole ""24"""
+PD000000017,Bort,Active Support,Bort #124500 Active Cool-KUHLGEL,Bort #124500 Active Cool-KUHLGEL,Bort #124500 蘆薈膏
+PD000000018,Bort,Active Support,Bort #124520 Active Cool-KUHLGEL (試用裝),Bort #124500 Active Cool-KUHLGEL,Bort #124520 蘆薈膏 (試用裝)
+PD000000019,Bort,Active Support,Bort #107410 Foot Balm,Bort #107410 Foot Balm,Bort #107410 腳油膏
+PD000000020,Boso,Blood Pressure Meter,Boso Medicus Control,Boso Medicus Control,Boso Medicus Control
+PD000000021,Comefree,Massage machine,Comefree CF-341 指壓按摩球,Comefree CF-341 指壓按摩球,CF-341 指壓按摩球
+PD000000022,Comefree,Massage machine,Comefree CF-344 元氣小滾輪按摩器,Comefree CF-344 元氣小滾輪,CF-344 元氣小滾輪按摩器
+PD000000023,Comefree,Massage machine,Comefree 親蜜舒壓按摩組,Comefree 親蜜舒壓按摩組,Comefree 親蜜舒壓按摩組
+PD000000024,Comefree,Massage machine,Comefree Massage (Single)-Orange,Comefree Massage (Single),Comefree Massage (Single)-Orange
+PD000000025,Comefree,Massage machine,Comefree Massage (Single)-Green,Comefree Massage (Single),Comefree Massage (Single)-Green
+PD000000026,MIA,Cushion,MIA Metatarsal Cushion (White) - Soft,MIA Metatarsal Cushion,MIA 前掌墊 (白色)
+PD000000027,MIA,Cushion,MIA Metatarsal Cushion (Blue) - Extra Soft,MIA Metatarsal Cushion,MIA 前掌墊 (藍色)
+PD000000028,MIA,Gel Pad,MIA Loving Heat Pack,MIA Loving Heat Pack,MIA Loving Heat Pack
+PD000000029,Everyway,Optional Part,MIA 3D Pad (T.E.N.S.),MIA 3D Pad (T.E.N.S.),MIA 3D Pad (T.E.N.S.)
+PD000000030,MIA,soft in touch,MIA #1010 Toe Spreader,MIA #1010 Toe Spreader,MIA #1010 Toe Spreader
+PD000000031,MIA,soft in touch,MIA #1020 Toe Separator,MIA #1020 Toe Separator,MIA #1020 Toe Separator
+PD000000032,MIA,soft in touch,MIA #1030 Bunion Shield,MIA #1030 Bunion Shield,MIA #1030 Bunion Shield
+PD000000033,MIA,soft in touch,MIA #1040 Toe Cushion,MIA #1040 Toe Cushion,MIA #1040 Toe Cushion
+PD000000034,MIA,soft in touch,MIA #1050 Forefoot Cushion,MIA #1050 Forefoot Cushion,MIA #1050 Forefoot Cushion
+PD000000035,Comefree,Thigh,Comefree CF-533 遠紅外線塑身組 (大腿),Comefree CF-531遠紅外線塑身組,CF-533 遠紅外線塑身組 (大腿)
+PD000000036,Comefree,Arm,Comefree CF-531 遠紅外線塑身組 (肩膀),Comefree CF-531 塑身組(肩膀),CF-531 遠紅外線塑身組 (肩膀)
+PD000000037,Comefree,Body,Comefree CF-532 遠紅外線塑身組 (腰部),Comefree CF-531遠紅外線塑身組,CF-532 遠紅外線塑身組 (腰部)
+PD000000038,Comefree,Ankle,Comefree CF-534 遠紅外線塑身組 (小腿),Comefree CF-531遠紅外線塑身組,CF-534 遠紅外線塑身組 (小腿)
+PD000000039,Comefree,Wrist,Comefree 護具系統 (護腕),Comefree 護具系統,CF-841 護具系統 (護腕)
+PD000000040,Comefree,Elbow,"Comefree CF-842 護具系統 (護肘) ""S""",Comefree CF-842 護具系統 (護肘),"CF-842 護具系統 (護肘) ""S"""
+PD000000041,Comefree,Elbow,"Comefree CF-842 護具系統 (護肘) ""M""",Comefree CF-842 護具系統 (護肘),"CF-842 護具系統 (護肘) ""M"""
+PD000000042,Comefree,Elbow,"Comefree CF-842 護具系統 (護肘) ""L""",Comefree CF-842 護具系統 (護肘),"CF-842 護具系統 (護肘) ""L"""
+PD000000043,Comefree,Elbow,"Comefree CF-842 護具系統 (護肘) ""XL""",Comefree CF-842 護具系統 (護肘),"CF-842 護具系統 (護肘) ""XL"""
+PD000000044,Comefree,Knee,"Comefree CF-843 護具系統 (護膝) ""S""",Comefree CF-843 護具系統 (護膝),"CF-843 護具系統 (護膝) ""S"""
+PD000000045,Comefree,Knee,"Comefree CF-843 護具系統 (護膝) ""M""",Comefree CF-843 護具系統 (護膝),"CF-843 護具系統 (護膝) ""M"""
+PD000000046,Comefree,Knee,"Comefree CF-843 護具系統 (護膝) ""L""",Comefree CF-843 護具系統 (護膝),"CF-843 護具系統 (護膝) ""L"""
+PD000000047,Comefree,Knee,"Comefree CF-843 護具系統 (護膝) ""XL""",Comefree CF-843 護具系統 (護膝),"CF-843 護具系統 (護膝) ""XL"""
+PD000000048,Comefree,Ankle,"Comefree CF-844 護具系統 (護踝) ""S""",Comefree CF-844 護具系統 (護踝),"CF-844 護具系統 (護踝) ""S"""
+PD000000049,Comefree,Ankle,"Comefree CF-844 護具系統 (護踝) ""M""",Comefree CF-844 護具系統 (護踝),"CF-844 護具系統 (護踝) ""M"""
+PD000000050,Comefree,Ankle,"Comefree CF-844 護具系統 (護踝) ""L""",Comefree CF-844 護具系統 (護踝),"CF-844 護具系統 (護踝) ""L"""
+PD000000051,Comefree,Ankle,"Comefree CF-844 護具系統 (護踝) ""XL""",Comefree CF-844 護具系統 (護踝),"CF-844 護具系統 (護踝) ""XL"""
+PD000000052,Comefree,Body,"Comefree CF-845 遠紅外線背姿矯正帶""S""",Comefree CF-845 遠紅外線背姿矯正帶,"CF-845 遠紅外線背姿矯正帶""S"""
+PD000000053,Comefree,Body,"Comefree CF-845 遠紅外線背姿矯正帶""M""",Comefree CF-845 遠紅外線背姿矯正帶,"CF-845 遠紅外線背姿矯正帶""M"""
+PD000000054,Comefree,Body,"Comefree CF-845 遠紅外線背姿矯正帶""L""",Comefree CF-845 遠紅外線背姿矯正帶,"CF-845 遠紅外線背姿矯正帶""L"""
+PD000000055,Comefree,Body,"Comefree CF-845 遠紅外線背姿矯正帶""XL""",Comefree CF-845 遠紅外線背姿矯正帶,"CF-845 遠紅外線背姿矯正帶""XL"""
+PD000000056,Comefree,Blood Pressure Meter,Comefree #8P108A 手腕式血壓計,Comefree #8P108A 手腕式血壓計,Comefree #8P108A 手腕式血壓計
+PD000000057,Comefree,Blood Pressure Meter,Comefree #888HA 手臂式血壓計,Comefree #888HA 手臂式血壓計,Comefree #888HA 手臂式血壓計
+PD000000058,Comefree,Body,"Comefree CF-714 多功能磁波健美帶 ""S""",Comefree CF-714 多功能磁波健美帶,"CF-714 多功能磁波健美帶 ""S"""
+PD000000059,Comefree,Body,"Comefree CF-714 多功能磁波健美帶 ""M""",Comefree CF-714 多功能磁波健美帶,"CF-714 多功能磁波健美帶 ""M"""
+PD000000060,Comefree,Body,"Comefree CF-714 多功能磁波健美帶 ""L""",Comefree CF-714 磁波健美帶,"CF-714 多功能磁波健美帶 ""L"""
+PD000000061,Comefree,Body,"Comefree CF-714 多功能磁波健美帶 ""XL""",Comefree CF-714 磁波健美帶,"CF-714 多功能磁波健美帶 ""XL"""
+PD000000062,Comefree,Body,"Comefree CF-542 熱力SPA塑身(七分袖上衣) ""M""",Comefree CF-542 (七分袖上衣),"CF-542 熱力SPA塑身(七分袖上衣) ""M"""
+PD000000063,Comefree,Body,"Comefree CF-542 熱力SPA塑身(七分袖上衣) ""L""",Comefree CF-542 (七分袖上衣),"CF-542 熱力SPA塑身(七分袖上衣) ""L"""
+PD000000064,Comefree,Body,"Comefree CF-543 熱力SPA塑身(五分褲) ""M""",Comefree CF-543 熱力(五分褲),"CF-543 熱力SPA塑身(五分褲) ""M"""
+PD000000065,Comefree,Body,"Comefree CF-543 熱力SPA塑身(五分褲) ""L""",Comefree CF-543 熱力(五分褲),"CF-543 熱力SPA塑身(五分褲) ""L"""
+PD000000066,Comefree,Body,"Comefree CF-543 熱力SPA塑身(五分褲) ""XL""",Comefree CF-543 熱力(五分褲),"CF-543 熱力SPA塑身(五分褲) ""XL"""
+PD000000067,Comefree,Optional Part,Comefree CF-817Soft Earplug軟耳塞,Comefree Soft Earplug,CF-817 Soft Earplug軟耳塞
+PD000000068,Comefree,Optional Part,Comefree CF-821 三合一旅遊包,Comefree 旅遊包,CF-821 三合一旅遊包
+PD000000069,Comefree,Body,Comefree CF-311 活力按摩手套,Comefree CF-311,CF-311 活力按摩手套
+PD000000070,Comefree,Body,"Comefree 康芙麗塑身按摩球 26""","Comefree 康芙麗塑身按摩球 26""","Comefree 康芙麗塑身按摩球 26"""
+PD000000071,Comefree,溫泉,Comefree 溫泉湯包,Comefree 溫泉湯包,Comefree 溫泉湯包
+PD000000072,Comefree,Massage machine,Comefree CF-351 Dolphin Massage海豚灣按摩棒,Comefree CF-351 海豚灣按摩棒,CF-351 Dolphin Massage海豚灣按摩棒
+PD000000073,Comefree,Yoga,Comefree CF-866 Yoga Physio ball (anti-burst),Comefree CF-866 Yoga,CF-866 Yoga Physio ball (anti-burst)
+PD000000074,Comefree,Yoga,Comefree CF-864 Yoga kegel ball (2只),Comefree CF-864 Yoga,CF-864 Yoga kegel ball (2只)
+PD000000075,Comefree,Yoga,Comefree CF-865 Yoga Exercise aerobic (3 in 1),Comefree CF-865 Yoga,CF-865 Yoga Exercise aerobic (3 in 1)
+PD000000076,Comefree,Yoga,Comefree CF-863 Yoga pilates & fitness props(Air ball),Comefree CF-863 Yoga,CF-863 Yoga pilates & fitness props(Air ball)
+PD000000077,Comefree,Yoga,Comefree CF-862 Yoga Exercise aerobic BAND (3 pcs),Comefree CF-862 Yoga,CF-862 Yoga Exercise aerobic BAND (3 pcs)
+PD000000078,Comefree,Yoga,Comefree CF-8614 Yoga premium yoga mat,Comefree CF-8614 Yoga,CF-8614 Yoga premium yoga mat
+PD000000079,Bauerfeind,Fullinsole,Bauerfeind Visco Ped No.1,Bauerfeind Visco Ped,Bauerfeind 全墊 No.1
+PD000000080,Bauerfeind,Fullinsole,Bauerfeind Visco Ped No.2,Bauerfeind Visco Ped,Bauerfeind 全墊 No.2
+PD000000081,Bauerfeind,Fullinsole,Bauerfeind Visco Ped No.3,Bauerfeind Visco Ped,Bauerfeind 全墊 No.3
+PD000000082,Bauerfeind,Fullinsole,Bauerfeind Visco Ped No.4,Bauerfeind Visco Ped,Bauerfeind 全墊 No.4
+PD000000083,Bauerfeind,Fullinsole,Bauerfeind Visco Ped No.5,Bauerfeind Visco Ped,Bauerfeind 全墊 No.5
+PD000000084,Bauerfeind,Heel Cup,Bauerfeind Visco Heel No.1,Bauerfeind Visco Heel,Bauerfeind Visco Heel No.1
+PD000000085,Bauerfeind,Heel Cup,Bauerfeind Visco Heel No.2,Bauerfeind Visco Heel,Bauerfeind Visco Heel No.2
+PD000000086,Bauerfeind,Heel Cup,Bauerfeind Visco Heel No.3,Bauerfeind Visco Heel,Bauerfeind Visco Heel No.3
+PD000000087,Bauerfeind,Heel Cup,Bauerfeind Visco Spot No.1,Bauerfeind Visco Spot,Bauerfeind 半墊 No.1
+PD000000088,Bauerfeind,Heel Cup,Bauerfeind Visco Spot No.2,Bauerfeind Visco Spot,Bauerfeind 半墊 No.2
+PD000000089,Bauerfeind,support,Bauerfeind ValguLoc R No.1,Bauerfeind ValguLoc R,Bauerfeind ValguLoc R No.1
+PD000000090,Bauerfeind,support,Bauerfeind ValguLoc R No.2,Bauerfeind ValguLoc R,Bauerfeind ValguLoc R No.2
+PD000000091,Bauerfeind,support,Bauerfeind ValguLoc R No.3,Bauerfeind ValguLoc R,Bauerfeind ValguLoc R No.3
+PD000000092,Everyway,Tens,Everyway N-602 TENS,Everyway N-602 TENS,Everyway N-602 TENS
+PD000000093,Everyway,Tens,Everyway E704 TENS,Everyway E704 TENS,Everyway E704 TENS
+PD000000094,Everyway,Tens,Everyway EV503 Digital SD TENS,Everyway EV503 Digital,Everyway EV503 Digital SD TENS
+PD000000095,Everyway,Tens,Everyway EV-???0 Digital EMS,Everyway EV-???0 Digital EMS,Everyway EV-???0 Digital EMS
+PD000000096,Everyway,Tens,Everyway EV807P Digital NMES,Everyway EV807P,Everyway EV807P Digital NMES
+PD000000097,Everyway,Tens,Everyway EV503D SD TENS,Everyway EV503D,Everyway EV503D SD TENS
+PD000000098,Boso,Blood Pressure Meter,Boso Medistar S,Boso Medistar S,Boso Medistar S
+PD000000099,R&R,Hot & Cold Pad,R&R #SP-7001 Frosty Bear,冷熱敷,R&R #SP-7001 Frosty Bear
+PD000000100,R&R,Hot & Cold Pad,R&R #SP-7200 軟冰墊,冷熱敷,R&R #SP-7200 軟冰墊
+PD000000101,R&R,Hot & Cold Pad,R&R #SP-7201 Cold/Hot Pack (28 x 11 cm),冷熱敷,R&R #SP-7201 Cold/Hot Pack (28 x 11 cm)
+PD000000102,R&R,Hot & Cold Pad,R&R #SP-7203 Cold/Hot Pack (32.5 x 18 cm),冷熱敷,R&R #SP-7203 Cold/Hot Pack (32.5 x 18 cm)
+PD000000103,R&R,Hot & Cold Pad,R&R #SP-7206L Soft ColdHot Soothing Mask,冷熱敷,R&R #SP-7206L Soft ColdHot Soothing Mask
+PD000000104,Verta,Cushion,Verta-Fit Air Back Cushion,Verta-Fit Air Back Cushion,Verta-Fit Air Back Cushion
+PD000000105,Bort,Elbow,"Bort #1420 Elbow Support Lido ""S""",Bort #1420 Elbow Support Lido,"Bort #1420 Elbow Support Lido ""S"""
+PD000000106,Bort,Elbow,"Bort #1420 Elbow Support Lido ""M""",Bort #1420 Elbow Support Lido,"Bort #1420 Elbow Support Lido ""M"""
+PD000000107,Bort,Elbow,"Bort #1420 Elbow Support Lido ""L""",Bort #1420 Elbow Support Lido,"Bort #1420 Elbow Support Lido ""L"""
+PD000000108,Bort,Knee,"Bort #1440 Knee Support Lido ""S""",Bort #1440 Knee Support Lido,"Bort #1440 Knee Support Lido ""S"""
+PD000000109,Bort,Knee,"Bort #1440 Knee Support Lido ""M""",Bort #1440 Knee Support Lido,"Bort #1440 Knee Support Lido ""M"""
+PD000000110,Bort,Knee,"Bort #1440 Knee Support Lido ""L""",Bort #1440 Knee Support Lido,"Bort #1440 Knee Support Lido ""L"""
+PD000000111,Bort,Knee,"Bort #1440 Knee Support Lido ""XL""",Bort #1440 Knee Support Lido,"Bort #1440 Knee Support Lido ""XL"""
+PD000000112,Bort,Ankle,"Bort #1450 Ankle Support Lido ""S""",Bort #1450 Ankle Support Lido,"Bort #1450 Ankle Support Lido ""S"""
+PD000000113,Bort,Ankle,"Bort #1450 Ankle Support Lido ""M""",Bort #1450 Ankle Support Lido,"Bort #1450 Ankle Support Lido ""M"""
+PD000000114,Bort,Ankle,"Bort #1450 Ankle Support Lido ""L""",Bort #1450 Ankle Support Lido,"Bort #1450 Ankle Support Lido ""L"""
+PD000000115,Bort,Ankle,"Bort #1450 Ankle Support Lido ""XL""",Bort #1450 Ankle Support Lido,"Bort #1450 Ankle Support Lido ""XL"""
+PD000000116,Bort,Tennis Elbow,"Bort #1480 Tennis Elbow Support ""M""",Bort #1480 Tennis Elbow Support,"Bort #1480 Tennis Elbow Support ""M"""
+PD000000117,Bort,Tennis Elbow,"Bort #1480 Tennis Elbow Support ""L""",Bort #1480 Tennis Elbow Support,"Bort #1480 Tennis Elbow Support ""L"""
+PD000000118,Bort,Pedi-soft,Bort #107010 Toe Spreader,Bort #107010 Toe Spreader,Bort #107010 Toe Spreader
+PD000000119,Bort,Pedi-soft,Bort #107020 Toe Separator,Bort #107020 Toe Separator,Bort #107020 Toe Separator
+PD000000120,Bort,Pedi-soft,Bort #107030 Bunion Shield,Bort #107030 Bunion Shield,Bort #107030 Bunion Shield
+PD000000121,Bort,Pedi-soft,Bort #107040 Silicone Plaster,Bort #107040 Silicone Plaster,Bort #107040 Silicone Plaster
+PD000000122,Bort,Pedi-soft,Bort #107050 Circular Plaster,Bort #107050 Circular Plaster,Bort #107050 Circular Plaster
+PD000000123,Bort,Pedi-soft,Bort #107080 Forefoot Cushion,Bort #107080 Forefoot Cushion,Bort #107080 Forefoot Cushion
+PD000000124,Bort,Wrist,"Bort #112010 Stabilo Wrist Bandage Lido "" 1 """,Bort #112010 Stabilo Wrist Bandage Lido,"Bort #112010 Stabilo Wrist Bandage Lido "" 1 """
+PD000000125,Bort,Wrist,"Bort #112010 Stabilo Wrist Bandage Lido "" 2 """,Bort #112010 Stabilo Wrist Bandage Lido,"Bort #112010 Stabilo Wrist Bandage Lido "" 2 """
+PD000000126,Bort,Wrist,"Bort #112010 Stabilo Wrist Bandage Lido "" 3 """,Bort #112010 Stabilo Wrist Bandage Lido,"Bort #112010 Stabilo Wrist Bandage Lido "" 3 """
+PD000000127,Bort,Wrist,"Bort #112010 Stabilo Wrist Bandage Blue "" 1 """,Bort #112010 Stabilo Wrist Bandage Blue,"Bort #112010 Stabilo Wrist Bandage Blue "" 1 """
+PD000000128,Bort,Wrist,"Bort #112010 Stabilo Wrist Bandage Blue "" 2 """,Bort #112010 Stabilo Wrist Bandage Blue,"Bort #112010 Stabilo Wrist Bandage Blue "" 2 """
+PD000000129,Bort,Wrist,"Bort #112010 Stabilo Wrist Bandage Blue "" 3 """,Bort #112010 Stabilo Wrist Bandage Blue,"Bort #112010 Stabilo Wrist Bandage Blue "" 3 """
+PD000000130,Bort,Wrist,"Bort #112010 Stabilo Wrist Bandage Red "" 1 """,Bort #112010 Stabilo Wrist Bandage Red,"Bort #112010 Stabilo Wrist Bandage Red "" 1 """
+PD000000131,Bort,Wrist,"Bort #112010 Stabilo Wrist Bandage Red "" 2 """,Bort #112010 Stabilo Wrist Bandage Red,"Bort #112010 Stabilo Wrist Bandage Red "" 2 """
+PD000000132,Bort,Wrist,"Bort #112010 Stabilo Wrist Bandage Red "" 3 """,Bort #112010 Stabilo Wrist Bandage Red,"Bort #112010 Stabilo Wrist Bandage Red "" 3 """
+PD000000133,Bort,Wrist,"Bort #112120 Wrist Support w/ Thumb opening(L)""XS""",Bort #112120 Wrist Support w/ Thumb opening(L),"Bort #112120 Wrist Support w/ Thumb opening(L)""XS"""
+PD000000134,Bort,Wrist,"Bort #112120 Wrist Support w/ Thumb opening(L)""S""",Bort #112120 Wrist Support w/ Thumb opening(L),"Bort #112120 Wrist Support w/ Thumb opening(L)""S"""
+PD000000135,Bort,Wrist,"Bort #112120 Wrist Support w/ Thumb opening(L)""M""",Bort #112120 Wrist Support w/ Thumb opening(L),"Bort #112120 Wrist Support w/ Thumb opening(L)""M"""
+PD000000136,Bort,Wrist,"Bort #112120 Wrist Support w/ Thumb opening(L)""L""",Bort #112120 Wrist Support w/ Thumb opening(L),"Bort #112120 Wrist Support w/ Thumb opening(L)""L"""
+PD000000137,Bort,Wrist,"Bort #112120 Wrist Support w/ Thumb opening(L)""XL""",Bort #112120 Wrist Support w/ Thumb opening(L),"Bort #112120 Wrist Support w/ Thumb opening(L)""XL"""
+PD000000138,Bort,Wrist,"Bort #112120 Wrist Support w/ Thumb opening(R)""XS""",Bort #112120 Wrist Support,"Bort #112120 Wrist Support w/ Thumb opening(R)""XS"""
+PD000000139,Bort,Wrist,"Bort #112120 Wrist Support w/ Thumb opening(R)""S""",Bort #112120 Wrist Support,"Bort #112120 Wrist Support w/ Thumb opening(R)""S"""
+PD000000140,Bort,Wrist,"Bort #112120 Wrist Support w/ Thumb opening(R)""M""",Bort #112120 Wrist Support,"Bort #112120 Wrist Support w/ Thumb opening(R)""M"""
+PD000000141,Bort,Wrist,"Bort #112120 Wrist Support w/ Thumb opening(R)""L""",Bort #112120 Wrist Support,"Bort #112120 Wrist Support w/ Thumb opening(R)""L"""
+PD000000142,Bort,Wrist,"Bort #112120 Wrist Support w/ Thumb opening(R)""XL""",Bort #112120 Wrist Support,"Bort #112120 Wrist Support w/ Thumb opening(R)""XL"""
+PD000000143,Bort,Wrist,"Bort #112220 ManuZip Volar (L) ""M""",Bort #112220 ManuZip Volar (L),"Bort #112220 ManuZip Volar (L) ""M"""
+PD000000144,Bort,Wrist,"Bort #112320 ManuZip Dorsal ""M""",Bort #112320 ManuZip Dorsal,"Bort #112320 ManuZip Dorsal ""M"""
+PD000000145,Bort,Wrist,"Bort #133330 Finger Joint Support ""M""",Bort #133330 Finger Joint Support ,"Bort #133330 Finger Joint Support ""M"""
+PD000000146,Bort,Wrist,"Bort #103200 ManuCarpal-Orthosis ""M""",Bort #103200 ManuCarpal-Orthosis,"Bort #103200 ManuCarpal-Orthosis ""M"""
+PD000000147,Bort,Body,Bort #104600 Support for Upright Position,Bort #104600 Support for Upright Position,Bort #104600 Support for Upright Position
+PD000000148,Bort,Body,"Bort #112650 Vario Back Support ""S""",Bort #112650 Vario Back Support,"Bort #112650 Vario Back Support ""S"""
+PD000000149,Bort,Body,"Bort #112650 Vario Back Support ""M""",Bort #112650 Vario Back Support,"Bort #112650 Vario Back Support ""M"""
+PD000000150,Bort,Body,"Bort #112650 Vario Back Support ""L""",Bort #112650 Vario Back Support,"Bort #112650 Vario Back Support ""L"""
+PD000000151,Bort,Body,"Bort #112650 Vario Back Support ""XL""",Bort #112650 Vario Back Support,"Bort #112650 Vario Back Support ""XL"""
+PD000000152,Bort,Knee,"Bort #114410 Stabilo Knee Brace without Stays ""S""",Bort #114410 Stabilo Knee Brace without Stays,"Bort #114410 Stabilo Knee Brace without Stays ""S"""
+PD000000153,Bort,Knee,"Bort #114410 Stabilo Knee Brace without Stays ""M""",Bort #114410 Stabilo Knee Brace without Stays,"Bort #114410 Stabilo Knee Brace without Stays ""M"""
+PD000000154,Bort,Knee,"Bort #114410 Stabilo Knee Brace without Stays ""L""",Bort #114410 Stabilo Knee Brace without Stays,"Bort #114410 Stabilo Knee Brace without Stays ""L"""
+PD000000155,Bort,Knee,"Bort #114420 StabiloGen ""S""",Bort #114420 StabiloGen,"Bort #114420 StabiloGen ""S"""
+PD000000156,Bort,Knee,"Bort #114420 StabiloGen ""M""",Bort #114420 StabiloGen,"Bort #114420 StabiloGen ""M"""
+PD000000157,Bort,Knee,"Bort #114420 StabiloGen ""L""",Bort #114420 StabiloGen,"Bort #114420 StabiloGen ""L"""
+PD000000158,Bort,Knee,"Bort #114420 StabiloGen ""XL""",Bort #114420 StabiloGen,"Bort #114420 StabiloGen ""XL"""
+PD000000159,Bort,Knee,"Bort #114150 Knee Bandage w/Recess for Patella ""S""",Bort #114150 Knee Bandage w/Recess for Patella,"Bort #114150 Knee Bandage w/Recess for Patella ""S"""
+PD000000160,Bort,Knee,"Bort #114150 Knee Bandage w/Recess for Patella ""M""",Bort #114150 Knee Bandage w/Recess for Patella,"Bort #114150 Knee Bandage w/Recess for Patella ""M"""
+PD000000161,Bort,Knee,"Bort #114150 Knee Bandage w/Recess for Patella ""L""",Bort #114150 Knee Bandage w/Recess for Patella,"Bort #114150 Knee Bandage w/Recess for Patella ""L"""
+PD000000162,Bort,Knee,"Bort #114150 Knee Bandage w/Recess for Patella ""XL",Bort #114150 Knee Bandage w/Recess for Patella,"Bort #114150 Knee Bandage w/Recess for Patella ""XL"
+PD000000163,Bort,Knee,"Bort #114700 Asymmetric (Left) ""S""",Bort #114700 Asymmetric (Left),"Bort #114700 Asymmetric (Left) ""S"""
+PD000000164,Bort,Knee,"Bort #114700 Asymmetric (Left) ""M""",Bort #114700 Asymmetric (Left),"Bort #114700 Asymmetric (Left) ""M"""
+PD000000165,Bort,Knee,"Bort #114700 Asymmetric (Left) ""L""",Bort #114700 Asymmetric (Left),"Bort #114700 Asymmetric (Left) ""L"""
+PD000000166,Bort,Knee,"Bort #114700 Asymmetric (Right) ""S""",Bort #114700 Asymmetric (Right),"Bort #114700 Asymmetric (Right) ""S"""
+PD000000167,Bort,Knee,"Bort #114700 Asymmetric (Right) ""M""",Bort #114700 Asymmetric (Right),"Bort #114700 Asymmetric (Right) ""M"""
+PD000000168,Bort,Knee,"Bort #114700 Asymmetric (Right) ""L""",Bort #114700 Asymmetric (Right),"Bort #114700 Asymmetric (Right) ""L"""
+PD000000169,Bort,Knee,"Bort #114480 Stabilo Knee Brace Open Style ""M""",Bort #114480 Stabilo Knee Brace Open Style,"Bort #114480 Stabilo Knee Brace Open Style ""M"""
+PD000000170,Bort,Knee,"Bort #114480 Stabilo Knee Brace Open Style ""L""",Bort #114480 Stabilo Knee Brace Open Style,"Bort #114480 Stabilo Knee Brace Open Style ""L"""
+PD000000171,Bort,Knee,"Bort #114010 Patella Tendon Strap "" 1 """,Bort #114010 Patella Tendon Strap,"Bort #114010 Patella Tendon Strap "" 1 """
+PD000000172,Bort,Knee,"Bort #114010 Patella Tendon Strap "" 2 """,Bort #114010 Patella Tendon Strap,"Bort #114010 Patella Tendon Strap "" 2 """
+PD000000173,Bort,Knee,"Bort #114010 Patella Tendon Strap "" 3 """,Bort #114010 Patella Tendon Strap,"Bort #114010 Patella Tendon Strap "" 3 """
+PD000000174,Bort,Ankle,"Bort #054700 Ankle Support w/Silicone Pads (L)""S""",Bort #054700 Ankle Support w/Silicone Pads (L),"Bort #054700 Ankle Support w/Silicone Pads (L)""S"""
+PD000000175,Bort,Ankle,"Bort #054700 Ankle Support w/Silicone Pads (L)""M""",Bort #054700 Ankle Support w/Silicone Pads (L),"Bort #054700 Ankle Support w/Silicone Pads (L)""M"""
+PD000000176,Bort,Ankle,"Bort #054700 Ankle Support w/Silicone Pads (L)""L""",Bort #054700 Ankle Support w/Silicone Pads (L),"Bort #054700 Ankle Support w/Silicone Pads (L)""L"""
+PD000000177,Bort,Ankle,"Bort #054700 Ankle Support w/Silicone Pads (R)""S""",Bort #054700 Ankle Support w/Silicone Pads,"Bort #054700 Ankle Support w/Silicone Pads (R)""S"""
+PD000000178,Bort,Ankle,"Bort #054700 Ankle Support w/Silicone Pads (R)""M""",Bort #054700 Ankle Support w/Silicone Pads,"Bort #054700 Ankle Support w/Silicone Pads (R)""M"""
+PD000000179,Bort,Ankle,"Bort #054700 Ankle Support w/Silicone Pads (R)""L""",Bort #054700 Ankle Support w/Silicone Pads,"Bort #054700 Ankle Support w/Silicone Pads (R)""L"""
+PD000000180,Bort,Foot,"Bort #930010 Valco Hallux Valgus Bandage (L) ""S""",Bort #930010 Valco Hallux Valgus Bandage,"Bort #930010 Valco Hallux Valgus Bandage (L) ""S"""
+PD000000181,Bort,Foot,"Bort #930010 Valco Hallux Valgus Bandage (L) ""M""",Bort #930010 Valco Hallux Valgus Bandage,"Bort #930010 Valco Hallux Valgus Bandage (L) ""M"""
+PD000000182,Bort,Foot,"Bort #930010 Valco Hallux Valgus Bandage (L) ""L""",Bort #930010 Valco Hallux Valgus Bandage,"Bort #930010 Valco Hallux Valgus Bandage (L) ""L"""
+PD000000183,Bort,Foot,"Bort #930010 Valco Hallux Valgus Bandage (R) ""S""",Bort #930010 Valco Hallux Valgus Bandage,"Bort #930010 Valco Hallux Valgus Bandage (R) ""S"""
+PD000000184,Bort,Foot,"Bort #930010 Valco Hallux Valgus Bandage (R) ""M""",Bort #930010 Valco Hallux Valgus Bandage,"Bort #930010 Valco Hallux Valgus Bandage (R) ""M"""
+PD000000185,Bort,Foot,"Bort #930010 Valco Hallux Valgus Bandage (R) ""L""",Bort #930010 Valco Hallux Valgus Bandage,"Bort #930010 Valco Hallux Valgus Bandage (R) ""L"""
+PD000000186,Bort,Foot,"Bort #112070 Metatarsal Bandage "" 16 """,Bort #112070 Metatarsal Bandage,"Bort #112070 Metatarsal Bandage "" 16 """
+PD000000187,Bort,Foot,"Bort #112070 Metatarsal Bandage "" 17 """,Bort #112070 Metatarsal Bandage,"Bort #112070 Metatarsal Bandage "" 17 """
+PD000000188,Bort,Foot,"Bort #112070 Metatarsal Bandage "" 18 """,Bort #112070 Metatarsal Bandage,"Bort #112070 Metatarsal Bandage "" 18 """
+PD000000189,Bort,Foot,"Bort #112070 Metatarsal Bandage "" 19 """,Bort #112070 Metatarsal Bandage,"Bort #112070 Metatarsal Bandage "" 19 """
+PD000000190,Bort,Foot,"Bort #112070 Metatarsal Bandage "" 20 """,Bort #112070 Metatarsal Bandage,"Bort #112070 Metatarsal Bandage "" 20 """
+PD000000191,Bort,Foot,"Bort #112070 Metatarsal Bandage "" 21 """,Bort #112070 Metatarsal Bandage,"Bort #112070 Metatarsal Bandage "" 21 """
+PD000000192,Bort,Foot,"Bort #112070 Metatarsal Bandage "" 22 """,Bort #112070 Metatarsal Bandage,"Bort #112070 Metatarsal Bandage "" 22 """
+PD000000193,Bort,Foot,"Bort #112070 Metatarsal Bandage "" 23 """,Bort #112070 Metatarsal Bandage,"Bort #112070 Metatarsal Bandage "" 23 """
+PD000000194,Bort,Foot,"Bort #112070 Metatarsal Bandage "" 24 """,Bort #112070 Metatarsal Bandage,"Bort #112070 Metatarsal Bandage "" 24 """
+PD000000195,Bort,Cushion,Bort #190500 MultiCure Anti-Decubitus Gel Cushion,Bort #190500 MultiCure Anti-Decubitus,Bort #190500 MultiCure Anti-Decubitus Gel Cushion
+PD000000196,Bort,Cushion,Bort #190530 Codyn Seat Cushion,Bort #190530 Codyn,Bort #190530 Codyn Seat Cushion
+PD000000197,Bort,Pedi-soft,Bort #107100 Toe Cushion,Bort #107100 Toe Cushion,Bort #107100 Toe Cushion
+PD000000198,Bort,EasyLife,Bort #108040 Pill Splitter,Bort #108040 Pill Splitter,Bort #108040 Pill Splitter
+PD000000199,Bort,EasyLife,Bort #108070 Medicine Spoon,Bort #108070 Medicine Spoon,Bort #108070 Medicine Spoon
+PD000000200,Bort,Back Cushion,Bort #112150 VITAL Back Cushion,Bort #112150 VITAL Back Cushion,Bort #112150 VITAL Back Cushion
+PD000000201,Bort,Neck,"Bort #127260 Cervical Support (10 x 7.5 cm) ""S""",Bort #127260 Cervical Support,"Bort #127260 Cervical Support (10 x 7.5 cm) ""S"""
+PD000000202,Bort,Neck,"Bort #127261 Cervical Support (10 x 7.5 cm) ""M""",Bort #127261 Cervical Support,"Bort #127261 Cervical Support (10 x 7.5 cm) ""M"""
+PD000000203,Bort,Neck,"Bort #127268 Cervical Support (10 x 7.5 cm) ""L""",Bort #127268 Cervical Support,"Bort #127268 Cervical Support (10 x 7.5 cm) ""L"""
+PD000000204,Bort,Neck,"Bort #127262 Cervical Support (12 x 9 cm) ""S""",Bort #127262 Cervical Support,"Bort #127262 Cervical Support (12 x 9 cm) ""S"""
+PD000000205,Bort,Neck,"Bort #127263 Cervical Support (12 x 9 cm) ""M""",Bort #127263 Cervical Support,"Bort #127263 Cervical Support (12 x 9 cm) ""M"""
+PD000000206,Bort,Neck,"Bort #127265 Cervical Support (12 x 9 cm) ""L""",Bort #127265 Cervical Support,"Bort #127265 Cervical Support (12 x 9 cm) ""L"""
+PD000000207,Bort,Arm,"Bort #122500 EpiContur w/ 2 pads ""O""",Bort #122500 EpiContur w/ 2 pads,"Bort #122500 EpiContur w/ 2 pads ""O"""
+PD000000208,Bort,Arm,"Bort #122500 EpiContur w/ 2 pads ""K""",Bort #122500 EpiContur w/ 2 pads,"Bort #122500 EpiContur w/ 2 pads ""K"""
+PD000000209,Bort,Thumb,"Bort #105400 SellaDur (Left) Blue ""S""",Bort #105400 SellaDur (Left) Blue,"Bort #105400 SellaDur (Left) Blue ""S"""
+PD000000210,Bort,Thumb,"Bort #105400 SellaDur (Left) Blue ""M""",Bort #105400 SellaDur (Left) Blue,"Bort #105400 SellaDur (Left) Blue ""M"""
+PD000000211,Bort,Thumb,"Bort #105400 SellaDur (Left) Blue ""L""",Bort #105400 SellaDur (Left) Blue,"Bort #105400 SellaDur (Left) Blue ""L"""
+PD000000212,Bort,Thumb,"Bort #105400 SellaDur (Right) Blue ""S""",Bort #105400 SellaDur (Right) Blue,"Bort #105400 SellaDur (Right) Blue ""S"""
+PD000000213,Bort,Thumb,"Bort #105400 SellaDur (Right) Blue ""M""",Bort #105400 SellaDur (Right) Blue,"Bort #105400 SellaDur (Right) Blue ""M"""
+PD000000214,Bort,Thumb,"Bort #105400 SellaDur (Right) Blue ""L""",Bort #105400 SellaDur (Right) Blue,"Bort #105400 SellaDur (Right) Blue ""L"""
+PD000000215,Bort,Thumb,"Bort #105600 SellaDur FLOC (Left) Gray ""S""",Bort #105600 SellaDur FLOC (Left) Gray,"Bort #105600 SellaDur FLOC (Left) Gray ""S"""
+PD000000216,Bort,Thumb,"Bort #105600 SellaDur FLOC (Left) Gray ""M""",Bort #105600 SellaDur FLOC (Left) Gray,"Bort #105600 SellaDur FLOC (Left) Gray ""M"""
+PD000000217,Bort,Thumb,"Bort #105600 SellaDur FLOC (Left) Gray ""L""",Bort #105600 SellaDur FLOC (Left) Gray,"Bort #105600 SellaDur FLOC (Left) Gray ""L"""
+PD000000218,Bort,Thumb,"Bort #105600 SellaDur FLOC (Right) Gray ""S""",Bort #105600 SellaDur FLOC (Right) Gray ,"Bort #105600 SellaDur FLOC (Right) Gray ""S"""
+PD000000219,Bort,Thumb,"Bort #105600 SellaDur FLOC (Right) Gray ""M""",Bort #105600 SellaDur FLOC (Right) Gray ,"Bort #105600 SellaDur FLOC (Right) Gray ""M"""
+PD000000220,Bort,Thumb,"Bort #105600 SellaDur FLOC (Right) Gray ""L""",Bort #105600 SellaDur FLOC (Right) Gray ,"Bort #105600 SellaDur FLOC (Right) Gray ""L"""
+PD000000221,Bort,Foot,Bort #112800 Druckschutz (one set),Bort #112800 Druckschutz,Bort #112800 Druckschutz (one set)
+PD000000222,Bort,Foot,"Bort #112800 Druckschutz ""S""",Bort #112800 Druckschutz,"Bort #112800 Druckschutz ""S"""
+PD000000223,Bort,Foot,"Bort #112800 Druckschutz ""M""",Bort #112800 Druckschutz,"Bort #112800 Druckschutz ""M"""
+PD000000224,Bort,Foot,"Bort #112800 Druckschutz ""L""",Bort #112800 Druckschutz,"Bort #112800 Druckschutz ""L"""
+PD000000225,Bort,Active Support,"Bort #1440 Active Support Black ""S""",Bort #1440 Active Support Black,"Bort #1440 Active Support Black ""S"""
+PD000000226,Bort,Active Support,"Bort #1440 Active Support Black ""M""",Bort #1440 Active Support Black,"Bort #1440 Active Support Black ""M"""
+PD000000227,Bort,Active Support,"Bort #1440 Active Support Black ""L""",Bort #1440 Active Support Black,"Bort #1440 Active Support Black ""L"""
+PD000000228,Bort,Active Support,"Bort #1440 Active Support Black ""XL""",Bort #1440 Active Support Black,"Bort #1440 Active Support Black ""XL"""
+PD000000229,Bort,Active Support,"Bort #054700 Ankle Support w/Silicone Pads (L)""XL""",Bort #054700 Ankle Support w/Silicone Pads (L),"Bort #054700 Ankle Support w/Silicone Pads (L)""XL"""
+PD000000230,Bort,Ankle,"Bort #054700 Ankle Support w/Silicone Pads (R)""XL""",Bort #054700 Ankle Support w/Silicone Pads,"Bort #054700 Ankle Support w/Silicone Pads (R)""XL"""
+PD000000231,Bort,Neck,"Bort #127360 Cervical Support (10 x 7.5 cm)Lido""S""",Bort #127360 Cervical Support,"Bort #127360 Cervical Support (10 x 7.5 cm)Lido""S"""
+PD000000232,Bort,Knee,"Bort #114700 Asymmetric (Left) ""XL""",Bort #114700 Asymmetric (Left),"Bort #114700 Asymmetric (Left) ""XL"""
+PD000000233,Bort,Knee,"Bort #114700 Asymmetric (Right) ""XL""",Bort #114700 Asymmetric (Right),"Bort #114700 Asymmetric (Right) ""XL"""
+PD000000234,Bort,Knee,"Bort #114460 Knee Bandage w/Articulated Joint ""S""",Bort #114460 Knee Bandage w/Articulated Joint,"Bort #114460 Knee Bandage w/Articulated Joint ""S"""
+PD000000235,Bort,Knee,"Bort #114460 Knee Bandage w/Articulated Joint ""M""",Bort #114460 Knee Bandage w/Articulated Joint,"Bort #114460 Knee Bandage w/Articulated Joint ""M"""
+PD000000236,Bort,Knee,"Bort #114460 Knee Bandage w/Articulated Joint ""L""",Bort #114460 Knee Bandage w/Articulated Joint,"Bort #114460 Knee Bandage w/Articulated Joint ""L"""
+PD000000237,Bort,Knee,"Bort #114460 Knee Bandage w/Articulated Joint ""XL""",Bort #114460 Knee Bandage w/Articulated Joint,"Bort #114460 Knee Bandage w/Articulated Joint ""XL"""
+PD000000238,Bort,Finger,"Bort #112520 Capener Splint Extension ""S""",Bort #112520 Capener Splint Extension,"Bort #112520 Capener Splint Extension ""S"""
+PD000000239,Bort,Finger,"Bort #112520 Capener Splint Extension ""M""",Bort #112520 Capener Splint Extension,"Bort #112520 Capener Splint Extension ""M"""
+PD000000240,Bort,Finger,"Bort #112520 Capener Splint Extension ""L""",Bort #112520 Capener Splint Extension,"Bort #112520 Capener Splint Extension ""L"""
+PD000000241,Bort,Wrist,"Bort #103580 Arm and Wrist Splint (L) ""XS""",Bort #103580 Arm and Wrist Splint (L),"Bort #103580 Arm and Wrist Splint (L) ""XS"""
+PD000000242,Bort,Wrist,"Bort #103580 Arm and Wrist Splint (L) ""S""",Bort #103580 Arm and Wrist Splint (L),"Bort #103580 Arm and Wrist Splint (L) ""S"""
+PD000000243,Bort,Wrist,"Bort #103580 Arm and Wrist Splint (L) ""M""",Bort #103580 Arm and Wrist Splint (L),"Bort #103580 Arm and Wrist Splint (L) ""M"""
+PD000000244,Bort,Wrist,"Bort #103580 Arm and Wrist Splint (L) ""L""",Bort #103580 Arm and Wrist Splint (L),"Bort #103580 Arm and Wrist Splint (L) ""L"""
+PD000000245,Bort,Wrist,"Bort #103580 Arm and Wrist Splint (L) ""XL""",Bort #103580 Arm and Wrist Splint (L),"Bort #103580 Arm and Wrist Splint (L) ""XL"""
+PD000000246,Bort,Wrist,"Bort #103580 Arm and Wrist Splint (R) ""XS""",Bort #103580 Arm and Wrist Splint (R),"Bort #103580 Arm and Wrist Splint (R) ""XS"""
+PD000000247,Bort,Wrist,"Bort #103580 Arm and Wrist Splint (R) ""S""",Bort #103580 Arm and Wrist Splint (R),"Bort #103580 Arm and Wrist Splint (R) ""S"""
+PD000000248,Bort,Wrist,"Bort #103580 Arm and Wrist Splint (R) ""M""",Bort #103580 Arm and Wrist Splint (R),"Bort #103580 Arm and Wrist Splint (R) ""M"""
+PD000000249,Bort,Wrist,"Bort #103580 Arm and Wrist Splint (R) ""L""",Bort #103580 Arm and Wrist Splint (R),"Bort #103580 Arm and Wrist Splint (R) ""L"""
+PD000000250,Bort,Wrist,"Bort #103580 Arm and Wrist Splint (R) ""XL""",Bort #103580 Arm and Wrist Splint (R),"Bort #103580 Arm and Wrist Splint (R) ""XL"""
+PD000000251,Bort,Pedi-soft,Bort #107070 Heel Cushion,Bort #107070 Heel Cushion,Bort #107070 Heel Cushion
+PD000000252,Bort,Ankle,"Bort #114100 Stabilo Ankle Support ""XS""",Bort #114100 Stabilo Ankle Support,"Bort #114100 Stabilo Ankle Support ""XS"""
+PD000000253,Bort,Ankle,"Bort #114100 Stabilo Ankle Support ""S""",Bort #114100 Stabilo Ankle Support,"Bort #114100 Stabilo Ankle Support ""S"""
+PD000000254,Bort,Ankle,"Bort #114100 Stabilo Ankle Support ""M""",Bort #114100 Stabilo Ankle Support,"Bort #114100 Stabilo Ankle Support ""M"""
+PD000000255,Bort,Ankle,"Bort #114100 Stabilo Ankle Support ""L""",Bort #114100 Stabilo Ankle Support,"Bort #114100 Stabilo Ankle Support ""L"""
+PD000000256,Bort,Ankle,"Bort #114100 Stabilo Ankle Support ""XL""",Bort #114100 Stabilo Ankle Support,"Bort #114100 Stabilo Ankle Support ""XL"""
+PD000000257,Bort,Wrist,"Bort #112220 ManuZip Volar (L) ""S""",Bort #112220 ManuZip Volar (L),"Bort #112220 ManuZip Volar (L) ""S"""
+PD000000258,Bort,Wrist,"Bort #112220 ManuZip Volar (L) ""L""",Bort #112220 ManuZip Volar (L),"Bort #112220 ManuZip Volar (L) ""L"""
+PD000000259,Bort,Wrist,"Bort #112220 ManuZip Volar (R) ""S""",Bort #112220 ManuZip Volar (R),"Bort #112220 ManuZip Volar (R) ""S"""
+PD000000260,Bort,Wrist,"Bort #112220 ManuZip Volar (R) ""M""",Bort #112220 ManuZip Volar (R),"Bort #112220 ManuZip Volar (R) ""M"""
+PD000000261,Bort,Wrist,"Bort #112220 ManuZip Volar (R) ""L""",Bort #112220 ManuZip Volar (R),"Bort #112220 ManuZip Volar (R) ""L"""
+PD000000262,Bort,Wrist,"Bort #112130 Wrist Strap (L) ""XS""",Bort #112130 Wrist Strap (L),"Bort #112130 Wrist Strap (L) ""XS"""
+PD000000263,Bort,Wrist,"Bort #112130 Wrist Strap (L) ""S""",Bort #112130 Wrist Strap (L),"Bort #112130 Wrist Strap (L) ""S"""
+PD000000264,Bort,Wrist,"Bort #112130 Wrist Strap (L) ""M""",Bort #112130 Wrist Strap (L),"Bort #112130 Wrist Strap (L) ""M"""
+PD000000265,Bort,Wrist,"Bort #112130 Wrist Strap (L) ""L""",Bort #112130 Wrist Strap (L),"Bort #112130 Wrist Strap (L) ""L"""
+PD000000266,Bort,Wrist,"Bort #112130 Wrist Strap (L) ""XL""",Bort #112130 Wrist Strap (L),"Bort #112130 Wrist Strap (L) ""XL"""
+PD000000267,Bort,Wrist,"Bort #112130 Wrist Strap (R) ""XS""",Bort #112130 Wrist Strap (R),"Bort #112130 Wrist Strap (R) ""XS"""
+PD000000268,Bort,Wrist,"Bort #112130 Wrist Strap (R) ""S""",Bort #112130 Wrist Strap (R),"Bort #112130 Wrist Strap (R) ""S"""
+PD000000269,Bort,Wrist,"Bort #112130 Wrist Strap (R) ""M""",Bort #112130 Wrist Strap (R),"Bort #112130 Wrist Strap (R) ""M"""
+PD000000270,Bort,Wrist,"Bort #112130 Wrist Strap (R) ""L""",Bort #112130 Wrist Strap (R),"Bort #112130 Wrist Strap (R) ""L"""
+PD000000271,Bort,Wrist,"Bort #112130 Wrist Strap (R) ""XL""",Bort #112130 Wrist Strap (R),"Bort #112130 Wrist Strap (R) ""XL"""
+PD000000272,Bort,Hernia,"Bort #104800 Hernia Aid ""S""",Bort #104800 Hernia Aid,"Bort #104800 Hernia Aid ""S"""
+PD000000273,Bort,Hernia,"Bort #104800 Hernia Aid ""M""",Bort #104800 Hernia Aid,"Bort #104800 Hernia Aid ""M"""
+PD000000274,Bort,Hernia,"Bort #104800 Hernia Aid ""L""",Bort #104800 Hernia Aid,"Bort #104800 Hernia Aid ""L"""
+PD000000275,Bort,Pedi-soft,Bort #107620 Blasenpflaster,Bort #107620 Blasenpflaster,Bort #107620 Blasenpflaster
+PD000000276,Bort,Hernia,"Bort #105200 Hernia Panty for Men ""M""",Bort #105200 Hernia Panty for Men,"Bort #105200 Hernia Panty for Men ""M"""
+PD000000277,Bort,Foot,Bort #112090 Hammer Toe Correction Bandage,Bort #112090 Hammer Toe,Bort #112090 Hammer Toe Correction Bandage
+PD000000278,Bort,Thumb,"Bort #112040 SellaFix N (Left) ""S""",Bort #112040 SellaFix N (Left),"Bort #112040 SellaFix N (Left) ""S"""
+PD000000279,Bort,Thumb,"Bort #112040 SellaFix N (Left) ""M""",Bort #112040 SellaFix N (Left),"Bort #112040 SellaFix N (Left) ""M"""
+PD000000280,Bort,Thumb,"Bort #112040 SellaFix N (Left) ""L""",Bort #112040 SellaFix N (Left),"Bort #112040 SellaFix N (Left) ""L"""
+PD000000281,Bort,Thumb,"Bort #112040 SellaFix N (Right) ""S""",Bort #112040 SellaFix N (Right) ,"Bort #112040 SellaFix N (Right) ""S"""
+PD000000282,Bort,Thumb,"Bort #112040 SellaFix N (Right) ""M""",Bort #112040 SellaFix N (Right) ,"Bort #112040 SellaFix N (Right) ""M"""
+PD000000283,Bort,Thumb,"Bort #112040 SellaFix N (Right) ""L""",Bort #112040 SellaFix N (Right) ,"Bort #112040 SellaFix N (Right) ""L"""
+PD000000284,Bort,Body,"Bort #104100 Abdominal Support Skin ""S""",Bort #104100 Abdominal Support Skin ,"Bort #104100 Abdominal Support Skin ""S"""
+PD000000285,Bort,Body,"Bort #104100 Abdominal Support Skin ""M""",Bort #104100 Abdominal Support Skin ,"Bort #104100 Abdominal Support Skin ""M"""
+PD000000286,Bort,Body,"Bort #104100 Abdominal Support Skin ""L""",Bort #104100 Abdominal Support Skin ,"Bort #104100 Abdominal Support Skin ""L"""
+PD000000287,Bort,Body,"Bort #104100 Abdominal Support Skin ""XL""",Bort #104100 Abdominal Support Skin ,"Bort #104100 Abdominal Support Skin ""XL"""
+PD000000288,Bort,Ankle,"Bort #104500 Ankle Support ""S""",Bort #104500 Ankle Support,"Bort #104500 Ankle Support ""S"""
+PD000000289,Bort,Ankle,"Bort #104500 Ankle Support ""M""",Bort #104500 Ankle Support,"Bort #104500 Ankle Support ""M"""
+PD000000290,Bort,Ankle,"Bort #104500 Ankle Support ""L""",Bort #104500 Ankle Support,"Bort #104500 Ankle Support ""L"""
+PD000000291,Bort,Medical Machine,"Bort #118100 EasyLife Reacher, foldable","Bort #118100 EasyLife Reacher, foldable","Bort #118100 EasyLife Reacher, foldable"
+PD000000292,Bort,Clima-Care,"Bort #106700 Clima-Care Joint Warmer ""S""",Bort #106700 Clima-Care Joint Warmer,"Bort #106700 Clima-Care Joint Warmer ""S"""
+PD000000293,Bort,Clima-Care,"Bort #106700 Clima-Care Joint Warmer ""M""",Bort #106700 Clima-Care Joint Warmer,"Bort #106700 Clima-Care Joint Warmer ""M"""
+PD000000294,Bort,Clima-Care,"Bort #106700 Clima-Care Joint Warmer ""L""",Bort #106700 Clima-Care Joint Warmer,"Bort #106700 Clima-Care Joint Warmer ""L"""
+PD000000295,Bort,Clima-Care,"Bort #106700 Clima-Care Joint Warmer ""XL""",Bort #106700 Clima-Care Joint Warmer,"Bort #106700 Clima-Care Joint Warmer ""XL"""
+PD000000296,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (L) ""XS""",Bort #103200 ManuCarpal - Orthosis (L),"Bort #103200 ManuCarpal - Orthosis (L) ""XS"""
+PD000000297,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (L) ""S""",Bort #103200 ManuCarpal - Orthosis (L),"Bort #103200 ManuCarpal - Orthosis (L) ""S"""
+PD000000298,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (L) ""M""",Bort #103200 ManuCarpal - Orthosis (L),"Bort #103200 ManuCarpal - Orthosis (L) ""M"""
+PD000000299,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (L) ""L""",Bort #103200 ManuCarpal - Orthosis (L),"Bort #103200 ManuCarpal - Orthosis (L) ""L"""
+PD000000300,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (L) ""XL""",Bort #103200 ManuCarpal - Orthosis (L),"Bort #103200 ManuCarpal - Orthosis (L) ""XL"""
+PD000000301,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (L) ""XXL""",Bort #103200 ManuCarpal - Orthosis (L),"Bort #103200 ManuCarpal - Orthosis (L) ""XXL"""
+PD000000302,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (R) ""XS""",Bort #103200 ManuCarpal - Orthosis (R),"Bort #103200 ManuCarpal - Orthosis (R) ""XS"""
+PD000000303,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (R) ""S""",Bort #103200 ManuCarpal - Orthosis (R),"Bort #103200 ManuCarpal - Orthosis (R) ""S"""
+PD000000304,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (R) ""M""",Bort #103200 ManuCarpal - Orthosis (R),"Bort #103200 ManuCarpal - Orthosis (R) ""M"""
+PD000000305,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (R) ""L""",Bort #103200 ManuCarpal - Orthosis (R),"Bort #103200 ManuCarpal - Orthosis (R) ""L"""
+PD000000306,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (R) ""XL""",Bort #103200 ManuCarpal - Orthosis (R),"Bort #103200 ManuCarpal - Orthosis (R) ""XL"""
+PD000000307,Bort,Wrist,"Bort #103200 ManuCarpal - Orthosis (R) ""XXL""",Bort #103200 ManuCarpal - Orthosis (R),"Bort #103200 ManuCarpal - Orthosis (R) ""XXL"""
+PD000000308,Bort,Medical Machine,Bort #951500 Putty,Bort #951500 Putty,Bort #951500 Putty
+PD000000309,Bort,Wrist,Bort #182520 Stabilo Pren Wrist Bandage,Bort #182520 Stabilo Pren,Bort #182520 Stabilo Pren Wrist Bandage
+PD000000310,Bort,Body,"Bort #104710 Stabilo Back Bandage w/ Pelotte ""S""",Bort #104710 Stabilo Back Bandage w/ Pelotte ,"Bort #104710 Stabilo Back Bandage w/ Pelotte ""S"""
+PD000000311,Bort,Body,"Bort #104710 Stabilo Back Bandage w/ Pelotte ""M""",Bort #104710 Stabilo Back Bandage w/ Pelotte ,"Bort #104710 Stabilo Back Bandage w/ Pelotte ""M"""
+PD000000312,Bort,Body,"Bort #104710 Stabilo Back Bandage w/ Pelotte ""L""",Bort #104710 Stabilo Back Bandage w/ Pelotte ,"Bort #104710 Stabilo Back Bandage w/ Pelotte ""L"""
+PD000000313,Bort,Body,"Bort #104710 Stabilo Back Bandage w/ Pelotte ""XL""",Bort #104710 Stabilo Back Bandage w/ Pelotte ,"Bort #104710 Stabilo Back Bandage w/ Pelotte ""XL"""
+PD000000314,Bort,Wrist,"Bort #133300 Finger Joint Support (L) ""XS""",Bort #133300 Finger Joint Support (L),"Bort #133300 Finger Joint Support (L) ""XS"""
+PD000000315,Bort,Wrist,"Bort #133300 Finger Joint Support (L) ""S""",Bort #133300 Finger Joint Support (L),"Bort #133300 Finger Joint Support (L) ""S"""
+PD000000316,Bort,Wrist,"Bort #133300 Finger Joint Support (L) ""M""",Bort #133300 Finger Joint Support (L),"Bort #133300 Finger Joint Support (L) ""M"""
+PD000000317,Bort,Wrist,"Bort #133300 Finger Joint Support (L) ""L""",Bort #133300 Finger Joint Support (L),"Bort #133300 Finger Joint Support (L) ""L"""
+PD000000318,Bort,Wrist,"Bort #133300 Finger Joint Support (L)""XL""",Bort #133300 Finger Joint Support (L),"Bort #133300 Finger Joint Support (L)""XL"""
+PD000000319,Bort,Wrist,"Bort #133300 Finger Joint Support (R) ""XS""",Bort #133300 Finger Joint Support (R),"Bort #133300 Finger Joint Support (R) ""XS"""
+PD000000320,Bort,Wrist,"Bort #133300 Finger Joint Support (R) ""S""",Bort #133300 Finger Joint Support (R),"Bort #133300 Finger Joint Support (R) ""S"""
+PD000000321,Bort,Wrist,"Bort #133300 Finger Joint Support (R) ""M""",Bort #133300 Finger Joint Support (R),"Bort #133300 Finger Joint Support (R) ""M"""
+PD000000322,Bort,Wrist,"Bort #133300 Finger Joint Support (R) ""L""",Bort #133300 Finger Joint Support (R),"Bort #133300 Finger Joint Support (R) ""L"""
+PD000000323,Bort,Wrist,"Bort #133300 Finger Joint Support (R) ""XL""",Bort #133300 Finger Joint Support (R),"Bort #133300 Finger Joint Support (R) ""XL"""
+PD000000324,Bort,Thumb,"Bort #112710 SOFT Thumb Splint, short ""S""","Bort #112710 SOFT Thumb Splint, short","Bort #112710 SOFT Thumb Splint, short ""S"""
+PD000000325,Bort,Thumb,"Bort #112710 SOFT Thumb Splint, short ""M""","Bort #112710 SOFT Thumb Splint, short","Bort #112710 SOFT Thumb Splint, short ""M"""
+PD000000326,Bort,Thumb,"Bort #112710 SOFT Thumb Splint, short ""L""","Bort #112710 SOFT Thumb Splint, short","Bort #112710 SOFT Thumb Splint, short ""L"""
+PD000000327,Bort,Body,"Bort #102900 Rib Belt for Women ""S""",Bort #102900 Rib Belt for Women,"Bort #102900 Rib Belt for Women ""S"""
+PD000000328,Bort,Body,"Bort #102900 Rib Belt for Women ""M""",Bort #102900 Rib Belt for Women,"Bort #102900 Rib Belt for Women ""M"""
+PD000000329,Bort,Body,"Bort #102900 Rib Belt for Women ""L""",Bort #102900 Rib Belt for Women,"Bort #102900 Rib Belt for Women ""L"""
+PD000000330,Bort,Body,"Bort #102900 Rib Belt for Women ""XL""",Bort #102900 Rib Belt for Women,"Bort #102900 Rib Belt for Women ""XL"""
+PD000000331,Bort,Arm,"Bort #122580 Epicondylitis-Brace "" 1 """,Bort #122580 Epicondylitis-Brace,"Bort #122580 Epicondylitis-Brace "" 1 """
+PD000000332,Bort,Arm,"Bort #122580 Epicondylitis-Brace "" 2 """,Bort #122580 Epicondylitis-Brace,"Bort #122580 Epicondylitis-Brace "" 2 """
+PD000000333,Bort,Neck,"Bort #127361 Cervical Support (10 x 7.5 cm)Lido""M""",Bort #127361 Cervical Support,"Bort #127361 Cervical Support (10 x 7.5 cm)Lido""M"""
+PD000000334,Bort,Neck,"Bort #127368 Cervical Support (10 x 7.5 cm)Lido""L""",Bort #127368 Cervical Support,"Bort #127368 Cervical Support (10 x 7.5 cm)Lido""L"""
+PD000000335,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Left) ""XS""",Bort #103500 Thumb/Hand Orthosis (Left),"Bort #103500 Thumb/Hand Orthosis (Left) ""XS"""
+PD000000336,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Left) ""S""",Bort #103500 Thumb/Hand Orthosis (Left),"Bort #103500 Thumb/Hand Orthosis (Left) ""S"""
+PD000000337,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Left) ""L""",Bort #103500 Thumb/Hand Orthosis (Left),"Bort #103500 Thumb/Hand Orthosis (Left) ""L"""
+PD000000338,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Left) ""XL""",Bort #103500 Thumb/Hand Orthosis (Left),"Bort #103500 Thumb/Hand Orthosis (Left) ""XL"""
+PD000000339,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Left) ""XXL""",Bort #103500 Thumb/Hand Orthosis (Left),"Bort #103500 Thumb/Hand Orthosis (Left) ""XXL"""
+PD000000340,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Right) ""XS""",Bort #103500 Thumb/Hand Orthosis (Right),"Bort #103500 Thumb/Hand Orthosis (Right) ""XS"""
+PD000000341,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Right) ""S""",Bort #103500 Thumb/Hand Orthosis (Right),"Bort #103500 Thumb/Hand Orthosis (Right) ""S"""
+PD000000342,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Right) ""M""",Bort #103500 Thumb/Hand Orthosis (Right),"Bort #103500 Thumb/Hand Orthosis (Right) ""M"""
+PD000000343,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Right) ""L""",Bort #103500 Thumb/Hand Orthosis (Right),"Bort #103500 Thumb/Hand Orthosis (Right) ""L"""
+PD000000344,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Right) ""XL""",Bort #103500 Thumb/Hand Orthosis (Right),"Bort #103500 Thumb/Hand Orthosis (Right) ""XL"""
+PD000000345,Bort,Thumb,"Bort #103500 Thumb/Hand Orthosis (Right) ""XXL""",Bort #103500 Thumb/Hand Orthosis (Right),"Bort #103500 Thumb/Hand Orthosis (Right) ""XXL"""
+PD000000346,Bort,Foot,"Bort #470620 Splint Peroneal""L""Right",Bort #470620 Splint Peroneal Right,"Bort #470620 Splint Peroneal""L""Right"
+PD000000347,Listra,Children Insole,"Listra Two-Layer Children Insole "" 25 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 25 """
+PD000000348,Listra,Children Insole,"Listra Two-Layer Children Insole "" 26 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 26 """
+PD000000349,Listra,Children Insole,"Listra Two-Layer Children Insole "" 27 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 27 """
+PD000000350,Listra,Children Insole,"Listra Two-Layer Children Insole "" 28 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 28 """
+PD000000351,Listra,Children Insole,"Listra Two-Layer Children Insole "" 29 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 29 """
+PD000000352,Listra,Children Insole,"Listra Two-Layer Children Insole "" 30 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 30 """
+PD000000353,Listra,Children Insole,"Listra Two-Layer Children Insole "" 31 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 31 """
+PD000000354,Listra,Children Insole,"Listra Two-Layer Children Insole "" 32 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 32 """
+PD000000355,Listra,Children Insole,"Listra Two-Layer Children Insole "" 33 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 33 """
+PD000000356,Listra,Children Insole,"Listra Two-Layer Children Insole "" 34 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 34 """
+PD000000357,Listra,Children Insole,"Listra Two-Layer Children Insole "" 35 """,Listra Two-Layer Children Insole,"Listra Two-Layer Children Insole "" 35 """
+PD000000358,Listra,Cushion,Listra Silicon Cushion #11071 (40 x 40 cm),Listra Silicon Cushion,Listra Silicon Cushion #11071 (40 x 40 cm)
+PD000000359,Listra,Cushion,Listra Silicon Cushion (58 x 38 cm),Listra Silicon Cushion ,Listra Silicon Cushion (58 x 38 cm)
+PD000000360,Boso,Blood Pressure Meter,Boso Medius Memory,Boso Medius Memory,Boso Medius Memory
+PD000000361,Boso,Blood Pressure Meter,Boso Medifit,Boso Medifit,Boso Medifit
+PD000000362,Boso,Blood Pressure Meter,Boso Egotest,Boso Egotest,Boso Egotest
+PD000000363,Boso,Blood Pressure Meter,Boso Clinicus I,Boso Clinicus I,Boso Clinicus I
+PD000000364,Boso,Blood Pressure Meter,Boso Privat-Automatic,Boso Privat-Automatic,Boso Privat-Automatic
+PD000000365,Boso,Medical Machine,Boso #1100 Heating Pad,Boso #1100 Heating Pad,Boso #1100 Heating Pad
+PD000000366,Boso,Massage machine,Boso #1300 Heating Pad for the Neck and Spine,Boso #1300 Heating Pad,Boso #1300 Heating Pad for the Neck and Spine
+PD000000367,Boso,Medical Machine,Boso #2100 Underblanket,Boso #2100 Underblanket,Boso #2100 Underblanket
+PD000000368,Boso,Medical Machine,Boso #3000 Foot Warmer,Boso #3000 Foot Warmer,Boso #3000 Foot Warmer
+PD000000369,Boso,Medical Machine,Boso #4000 Infrared Lamp,Boso #4000 Infrared Lamp,Boso #4000 Infrared Lamp
+PD000000370,Boso,Cushion,Boso Silicon Gel Cushion,Boso Silicon Gel Cushion,Boso Silicon Gel Cushion
+PD000000371,Boso,Cushion,Boso Sandwich Cushion,Boso Sandwich Cushion,Boso Sandwich Cushion
+PD000000372,Boso,Blood Pressure Meter,Boso Medistar S,Boso Medistar S,Boso Medistar S
+PD000000373,Boso,Optional Part,Boso Cuff,Boso Cuff,Boso Cuff
+PD000000374,Boso,Blood Pressure Meter,Boso Infrarot Stirn-Thermometer,Boso Infrarot Stirn-Thermometer,Boso Infrarot Stirn-Thermometer
+PD000000375,BGT,HC Pantyhose,"BGT HC Pantyhose Lido ""S""",BGT HC Pantyhose Lido,"BGT HC Pantyhose Lido ""S"""
+PD000000376,BGT,HC Pantyhose,"BGT HC Pantyhose Lido ""M""",BGT HC Pantyhose Lido,"BGT HC Pantyhose Lido ""M"""
+PD000000377,BGT,HC Pantyhose,"BGT HC Pantyhose Lido ""L""",BGT HC Pantyhose Lido,"BGT HC Pantyhose Lido ""L"""
+PD000000378,BGT,HC Pantyhose,"BGT HC Pantyhose Lido ""XL""",BGT HC Pantyhose Lido,"BGT HC Pantyhose Lido ""XL"""
+PD000000379,BGT,HC Pantyhose,"BGT HC Pantyhose Black ""S""",BGT HC Pantyhose Black,"BGT HC Pantyhose Black ""S"""
+PD000000380,BGT,HC Pantyhose,"BGT HC Pantyhose Black ""M""",BGT HC Pantyhose Black,"BGT HC Pantyhose Black ""M"""
+PD000000381,BGT,HC Pantyhose,"BGT HC Pantyhose Black ""L""",BGT HC Pantyhose Black,"BGT HC Pantyhose Black ""L"""
+PD000000382,BGT,HC Pantyhose,"BGT HC Pantyhose Black ""XL""",BGT HC Pantyhose Black,"BGT HC Pantyhose Black ""XL"""
+PD000000383,BGT,NC Pantyhose,"BGT NC Pantyhose Lido ""S""",BGT NC Pantyhose Lido,"BGT NC Pantyhose Lido ""S"""
+PD000000384,BGT,NC Pantyhose,"BGT NC Pantyhose Lido ""M""",BGT NC Pantyhose Lido,"BGT NC Pantyhose Lido ""M"""
+PD000000385,BGT,NC Pantyhose,"BGT NC Pantyhose Lido ""L""",BGT NC Pantyhose Lido,"BGT NC Pantyhose Lido ""L"""
+PD000000386,BGT,NC Pantyhose,"BGT NC Pantyhose Lido ""XL""",BGT NC Pantyhose Lido,"BGT NC Pantyhose Lido ""XL"""
+PD000000387,BGT,NC Pantyhose,"BGT NC Pantyhose Black ""S""",BGT NC Pantyhose Black,"BGT NC Pantyhose Black ""S"""
+PD000000388,BGT,NC Pantyhose,"BGT NC Pantyhose Black ""M""",BGT NC Pantyhose Black,"BGT NC Pantyhose Black ""M"""
+PD000000389,BGT,NC Pantyhose,"BGT NC Pantyhose Black ""L""",BGT NC Pantyhose Black,"BGT NC Pantyhose Black ""L"""
+PD000000390,BGT,NC Pantyhose,"BGT NC Pantyhose Black ""XL""",BGT NC Pantyhose Black,"BGT NC Pantyhose Black ""XL"""
+PD000000391,BGT,LC Pantyhose,"BGT LC Pantyhose Lido ""S""",BGT LC Pantyhose Lido ,"BGT LC Pantyhose Lido ""S"""
+PD000000392,BGT,LC Pantyhose,"BGT LC Pantyhose Lido ""M""",BGT LC Pantyhose Lido ,"BGT LC Pantyhose Lido ""M"""
+PD000000393,BGT,LC Pantyhose,"BGT LC Pantyhose Lido ""L""",BGT LC Pantyhose Lido ,"BGT LC Pantyhose Lido ""L"""
+PD000000394,BGT,LC Pantyhose,"BGT LC Pantyhose Lido ""XL""",BGT LC Pantyhose Lido ,"BGT LC Pantyhose Lido ""XL"""
+PD000000395,BGT,Short Stocking,"BGT HC Short Stocking Lido ""S""",BGT HC Short Stocking Lido,"BGT HC Short Stocking Lido ""S"""
+PD000000396,BGT,Short Stocking,"BGT HC Short Stocking Lido ""M""",BGT HC Short Stocking Lido,"BGT HC Short Stocking Lido ""M"""
+PD000000397,BGT,Short Stocking,"BGT HC Short Stocking Lido ""L""",BGT HC Short Stocking Lido,"BGT HC Short Stocking Lido ""L"""
+PD000000398,BGT,Short Stocking,"BGT HC Short Stocking Lido ""XL""",BGT HC Short Stocking Lido,"BGT HC Short Stocking Lido ""XL"""
+PD000000399,BGT,Short Stocking,"BGT HC Short Stocking Black ""S""",BGT HC Short Stocking Black,"BGT HC Short Stocking Black ""S"""
+PD000000400,BGT,Short Stocking,"BGT HC Short Stocking Black ""M""",BGT HC Short Stocking Black,"BGT HC Short Stocking Black ""M"""
+PD000000401,BGT,Short Stocking,"BGT HC Short Stocking Black ""L""",BGT HC Short Stocking Black,"BGT HC Short Stocking Black ""L"""
+PD000000402,BGT,Short Stocking,"BGT HC Short Stocking Black ""XL""",BGT HC Short Stocking Black,"BGT HC Short Stocking Black ""XL"""
+PD000000403,BGT,Short Stocking,"BGT NC Short Stocking Lido ""S""",BGT NC Short Stocking Lido,"BGT NC Short Stocking Lido ""S"""
+PD000000404,BGT,Short Stocking,"BGT NC Short Stocking Lido ""M""",BGT NC Short Stocking Lido,"BGT NC Short Stocking Lido ""M"""
+PD000000405,BGT,Short Stocking,"BGT NC Short Stocking Lido ""L""",BGT NC Short Stocking Lido,"BGT NC Short Stocking Lido ""L"""
+PD000000406,BGT,Short Stocking,"BGT NC Short Stocking Lido ""XL""",BGT NC Short Stocking Lido,"BGT NC Short Stocking Lido ""XL"""
+PD000000407,BGT,Short Stocking,"BGT NC Short Stocking Black ""S""",BGT NC Short Stocking Black,"BGT NC Short Stocking Black ""S"""
+PD000000408,BGT,Short Stocking,"BGT NC Short Stocking Black ""M""",BGT NC Short Stocking Black,"BGT NC Short Stocking Black ""M"""
+PD000000409,BGT,Short Stocking,"BGT NC Short Stocking Black ""L""",BGT NC Short Stocking Black,"BGT NC Short Stocking Black ""L"""
+PD000000410,BGT,Short Stocking,"BGT NC Short Stocking Black ""XL""",BGT NC Short Stocking Black,"BGT NC Short Stocking Black ""XL"""
+PD000000411,BGT,Short Stocking,"BGT HC Short for Men Black ""S""",BGT HC Short for Men Blac,"BGT HC Short for Men Black ""S"""
+PD000000412,BGT,Short Stocking,"BGT HC Short for Men Black ""M""",BGT HC Short for Men Blac,"BGT HC Short for Men Black ""M"""
+PD000000413,BGT,Short Stocking,"BGT HC Short for Men Black ""L""",BGT HC Short for Men Blac,"BGT HC Short for Men Black ""L"""
+PD000000414,BGT,Short Stocking,"BGT HC Short for Men Black ""XL""",BGT HC Short for Men Blac,"BGT HC Short for Men Black ""XL"""
+PD000000415,BGT,Flight sock,"BGT Flight Socks Lido ""S""",BGT Flight Socks Lido,"BGT Flight Socks Lido ""S"""
+PD000000416,BGT,Flight sock,"BGT Flight Socks Lido ""M""",BGT Flight Socks Lido,"BGT Flight Socks Lido ""M"""
+PD000000417,BGT,Flight sock,"BGT Flight Socks Lido ""L""",BGT Flight Socks Lido,"BGT Flight Socks Lido ""L"""
+PD000000418,BGT,Flight sock,"BGT Flight Socks Lido ""XL""",BGT Flight Socks Lido,"BGT Flight Socks Lido ""XL"""
+PD000000419,BGT,Flight sock,"BGT Flight Socks Black ""S""",BGT Flight Socks Black,"BGT Flight Socks Black ""S"""
+PD000000420,BGT,Flight sock,"BGT Flight Socks Black ""M""",BGT Flight Socks Black,"BGT Flight Socks Black ""M"""
+PD000000421,BGT,Flight sock,"BGT Flight Socks Black ""L""",BGT Flight Socks Black,"BGT Flight Socks Black ""L"""
+PD000000422,BGT,Flight sock,"BGT Flight Socks Black ""XL""",BGT Flight Socks Black,"BGT Flight Socks Black ""XL"""
+PD000000423,BGT,Flight sock,"BGT Flight Socks Navy ""S""",BGT Flight Socks Navy,"BGT Flight Socks Navy ""S"""
+PD000000424,BGT,Flight sock,"BGT Flight Socks Navy ""M""",BGT Flight Socks Navy,"BGT Flight Socks Navy ""M"""
+PD000000425,BGT,Flight sock,"BGT Flight Socks Navy ""L""",BGT Flight Socks Navy,"BGT Flight Socks Navy ""L"""
+PD000000426,BGT,Flight sock,"BGT Flight Socks Navy ""XL""",BGT Flight Socks Navy,"BGT Flight Socks Navy ""XL"""
+PD000000427,BGT,HC Pantyhose,"BGT Topwish HC Pantyhose Lido ""S""",BGT Topwish HC Pantyhose Lido,"BGT Topwish HC Pantyhose Lido ""S"""
+PD000000428,BGT,HC Pantyhose,"BGT Topwish HC Pantyhose Lido ""M""",BGT Topwish HC Pantyhose Lido,"BGT Topwish HC Pantyhose Lido ""M"""
+PD000000429,BGT,HC Pantyhose,"BGT Topwish HC Pantyhose Lido ""L""",BGT Topwish HC Pantyhose Lido,"BGT Topwish HC Pantyhose Lido ""L"""
+PD000000430,BGT,Ankle,"BGT Ankle Support ""S""",BGT Ankle Support,"BGT Ankle Support ""S"""
+PD000000431,BGT,Ankle,"BGT Ankle Support ""M""",BGT Ankle Support,"BGT Ankle Support ""M"""
+PD000000432,BGT,Ankle,"BGT Ankle Support ""L""",BGT Ankle Support,"BGT Ankle Support ""L"""
+PD000000433,BGT,Ankle,"BGT Ankle Support ""XL""",BGT Ankle Support,"BGT Ankle Support ""XL"""
+PD000000434,BGT,Elbow,"BGT Elbow Support ""S""",BGT Elbow Support,"BGT Elbow Support ""S"""
+PD000000435,BGT,Elbow,"BGT Elbow Support ""M""",BGT Elbow Support,"BGT Elbow Support ""M"""
+PD000000436,BGT,Elbow,"BGT Elbow Support ""L""",BGT Elbow Support,"BGT Elbow Support ""L"""
+PD000000437,BGT,Elbow,"BGT Elbow Support ""XL""",BGT Elbow Support,"BGT Elbow Support ""XL"""
+PD000000438,BGT,Knee,"BGT Knee Support w/Patella ""S""",BGT Knee Support w/Patella,"BGT Knee Support w/Patella ""S"""
+PD000000439,BGT,Knee,"BGT Knee Support w/Patella ""M""",BGT Knee Support w/Patella,"BGT Knee Support w/Patella ""M"""
+PD000000440,BGT,Knee,"BGT Knee Support w/Patella ""L""",BGT Knee Support w/Patella,"BGT Knee Support w/Patella ""L"""
+PD000000441,BGT,Knee,"BGT Knee Support w/Patella ""XL""",BGT Knee Support w/Patella,"BGT Knee Support w/Patella ""XL"""
+PD000000442,BGT,Wrist,"BGT Wrist Support ""S""",BGT Wrist Support,"BGT Wrist Support ""S"""
+PD000000443,BGT,Wrist,"BGT Wrist Support ""M""",BGT Wrist Support,"BGT Wrist Support ""M"""
+PD000000444,BGT,Wrist,"BGT Wrist Support ""L""",BGT Wrist Support,"BGT Wrist Support ""L"""
+PD000000445,BGT,Wrist,"BGT Wrist Support ""XL""",BGT Wrist Support,"BGT Wrist Support ""XL"""
+PD000000446,BGT,Long stocking,"BGT NC Long Stocking w/Lace Lido ""S""",BGT NC Long Stocking w/Lace Lido,"BGT NC Long Stocking w/Lace Lido ""S"""
+PD000000447,BGT,Long stocking,"BGT NC Long Stocking w/Lace Lido ""M""",BGT NC Long Stocking w/Lace Lido,"BGT NC Long Stocking w/Lace Lido ""M"""
+PD000000448,BGT,Long stocking,"BGT NC Long Stocking w/Lace Lido ""L""",BGT NC Long Stocking w/Lace Lido,"BGT NC Long Stocking w/Lace Lido ""L"""
+PD000000449,BGT,Long stocking,"BGT NC Long Stocking w/Lace Lido ""XL""",BGT NC Long Stocking w/Lace Lido,"BGT NC Long Stocking w/Lace Lido ""XL"""
+PD000000450,BGT,Long stocking,"BGT NC Long Stocking w/Lace White ""S""",BGT NC Long Stocking w/Lace White,"BGT NC Long Stocking w/Lace White ""S"""
+PD000000451,BGT,Long stocking,"BGT NC Long Stocking w/Lace White ""M""",BGT NC Long Stocking w/Lace White,"BGT NC Long Stocking w/Lace White ""M"""
+PD000000452,BGT,Long stocking,"BGT NC Long Stocking w/Lace White ""L""",BGT NC Long Stocking w/Lace White,"BGT NC Long Stocking w/Lace White ""L"""
+PD000000453,BGT,Long stocking,"BGT NC Long Stocking w/Lace White ""XL""",BGT NC Long Stocking w/Lace White,"BGT NC Long Stocking w/Lace White ""XL"""
+PD000000454,BGT,Long stocking,"BGT LC Long Stocking Marrone ""L""",BGT LC Long Stocking Marrone,"BGT LC Long Stocking Marrone ""L"""
+PD000000455,BGT,Long stocking,"BGT NC Long Stocking w/Lace White ""XL""",BGT NC Long Stocking w/Lace White,"BGT NC Long Stocking w/Lace White ""XL"""
+PD000000456,BGT,Short Stocking,"BGT NC Short Stocking White ""S""",BGT NC Short Stocking White,"BGT NC Short Stocking White ""S"""
+PD000000457,BGT,Short Stocking,"BGT NC Short Stocking White ""M""",BGT NC Short Stocking White,"BGT NC Short Stocking White ""M"""
+PD000000458,BGT,Short Stocking,"BGT NC Short Stocking White ""L""",BGT NC Short Stocking White,"BGT NC Short Stocking White ""L"""
+PD000000459,BGT,Short Stocking,"BGT NC Short Stocking White ""XL""",BGT NC Short Stocking White,"BGT NC Short Stocking White ""XL"""
+PD000000460,BGT,Long stocking,"BGT HC Long Stocking Lido ""S""",BGT HC Long Stocking Lido,"BGT HC Long Stocking Lido ""S"""
+PD000000461,BGT,Long stocking,"BGT HC Long Stocking Lido ""M""",BGT HC Long Stocking Lido,"BGT HC Long Stocking Lido ""M"""
+PD000000462,BGT,Long stocking,"BGT HC Long Stocking Lido ""L""",BGT HC Long Stocking Lido,"BGT HC Long Stocking Lido ""L"""
+PD000000463,BGT,Long stocking,"BGT HC Long Stocking Lido ""XL""",BGT HC Long Stocking Lido,"BGT HC Long Stocking Lido ""XL"""
+PD000000464,BGT,Long stocking,"BGT NC Long Stocking Lido ""S""",BGT NC Long Stocking Lido,"BGT NC Long Stocking Lido ""S"""
+PD000000465,BGT,Long stocking,"BGT NC Long Stocking Lido ""M""",BGT NC Long Stocking Lido,"BGT NC Long Stocking Lido ""M"""
+PD000000466,BGT,Long stocking,"BGT NC Long Stocking Lido ""L""",BGT NC Long Stocking Lido,"BGT NC Long Stocking Lido ""L"""
+PD000000467,BGT,Long stocking,"BGT NC Long Stocking Lido ""XL""",BGT NC Long Stocking Lido,"BGT NC Long Stocking Lido ""XL"""
+PD000000468,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Lido ""S""",BGT LC Organic Pantyhose Lido,"BGT LC Organic Pantyhose Lido ""S"""
+PD000000469,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Lido ""M""",BGT LC Organic Pantyhose Lido,"BGT LC Organic Pantyhose Lido ""M"""
+PD000000470,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Lido ""L""",BGT LC Organic Pantyhose Lido,"BGT LC Organic Pantyhose Lido ""L"""
+PD000000471,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Lido ""XL""",BGT LC Organic Pantyhose Lido,"BGT LC Organic Pantyhose Lido ""XL"""
+PD000000472,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Euro ""S""",BGT LC Organic Pantyhose Euro,"BGT LC Organic Pantyhose Euro ""S"""
+PD000000473,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Euro ""M""",BGT LC Organic Pantyhose Euro,"BGT LC Organic Pantyhose Euro ""M"""
+PD000000474,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Euro ""L""",BGT LC Organic Pantyhose Euro,"BGT LC Organic Pantyhose Euro ""L"""
+PD000000475,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Euro ""XL""",BGT LC Organic Pantyhose Euro,"BGT LC Organic Pantyhose Euro ""XL"""
+PD000000476,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Black ""S""",BGT LC Organic Pantyhose Black,"BGT LC Organic Pantyhose Black ""S"""
+PD000000477,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Black ""M""",BGT LC Organic Pantyhose Black,"BGT LC Organic Pantyhose Black ""M"""
+PD000000478,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Black ""L""",BGT LC Organic Pantyhose Black,"BGT LC Organic Pantyhose Black ""L"""
+PD000000479,BGT,Organic Pantyhose,"BGT LC Organic Pantyhose Black ""XL""",BGT LC Organic Pantyhose Black,"BGT LC Organic Pantyhose Black ""XL"""
+PD000000480,BGT,HC Pantyhose,"BGT Topwish HC Pantyhose Lido ""XL""",BGT Topwish HC Pantyhose Lido,"BGT Topwish HC Pantyhose Lido ""XL"""
+PD000000481,BGT,HC Pantyhose,"BGT Topwish HC Pantyhose Black ""S""",BGT Topwish HC Pantyhose Black,"BGT Topwish HC Pantyhose Black ""S"""
+PD000000482,BGT,HC Pantyhose,"BGT Topwish HC Pantyhose Black ""M""",BGT Topwish HC Pantyhose Black,"BGT Topwish HC Pantyhose Black ""M"""
+PD000000483,BGT,HC Pantyhose,"BGT Topwish HC Pantyhose Black ""L""",BGT Topwish HC Pantyhose Black,"BGT Topwish HC Pantyhose Black ""L"""
+PD000000484,BGT,HC Pantyhose,"BGT Topwish HC Pantyhose Black ""XL""",BGT Topwish HC Pantyhose Black,"BGT Topwish HC Pantyhose Black ""XL"""
+PD000000485,BGT,NC Pantyhose,"BGT Topwish NC Pantyhose Lido ""S""",BGT Topwish NC Pantyhose Lido,"BGT Topwish NC Pantyhose Lido ""S"""
+PD000000486,BGT,NC Pantyhose,"BGT Topwish NC Pantyhose Lido ""M""",BGT Topwish NC Pantyhose Lido,"BGT Topwish NC Pantyhose Lido ""M"""
+PD000000487,BGT,NC Pantyhose,"BGT Topwish NC Pantyhose Lido ""L""",BGT Topwish NC Pantyhose Lido,"BGT Topwish NC Pantyhose Lido ""L"""
+PD000000488,BGT,NC Pantyhose,"BGT Topwish NC Pantyhose Lido ""XL""",BGT Topwish NC Pantyhose Lido,"BGT Topwish NC Pantyhose Lido ""XL"""
+PD000000489,Taiwan,Fullinsole,"TW Full-Length Insole "" 36 """,TW Full-Length Insole ,"TW Full-Length Insole "" 36 """
+PD000000490,Taiwan,Fullinsole,"TW Full-Length Insole "" 38 """,TW Full-Length Insole ,"TW Full-Length Insole "" 38 """
+PD000000491,Taiwan,Fullinsole,"TW Full-Length Insole "" 40 """,TW Full-Length Insole ,"TW Full-Length Insole "" 40 """
+PD000000492,Taiwan,Fullinsole,"TW Full-Length Insole "" 42 """,TW Full-Length Insole ,"TW Full-Length Insole "" 42 """
+PD000000493,Taiwan,Fullinsole,"TW Full-Length Insole "" 44 """,TW Full-Length Insole ,"TW Full-Length Insole "" 44 """
+PD000000494,Taiwan,Heel Cup,"TW Heel Cup ""M""",TW Heel Cup,"TW Heel Cup ""M"""
+PD000000495,Taiwan,Heel Cup,"TW Heel Cup ""L""",TW Heel Cup,"TW Heel Cup ""L"""
+PD000000496,Taiwan,3/4 Insole,"TW 3/4 Length Insole ""S""",TW 3/4 Length Insole ,"TW 3/4 Length Insole ""S"""
+PD000000497,Taiwan,3/4 Insole,"TW 3/4 Length Insole ""M""",TW 3/4 Length Insole ,"TW 3/4 Length Insole ""M"""
+PD000000498,Taiwan,3/4 Insole,"TW 3/4 Length Insole ""L""",TW 3/4 Length Insole ,"TW 3/4 Length Insole ""L"""
+PD000000499,Taiwan,3/4 Insole,"TW 3/4 Length Insole ""XL""",TW 3/4 Length Insole ,"TW 3/4 Length Insole ""XL"""
+PD000000500,Askle,Cushion,Askle Kineris Wheelchair Cushion (8x8 cells) 7cm,Askle Kineris Wheelchair Cushion,Askle Kineris Wheelchair Cushion (8x8 cells) 7cm
+PD000000501,Askle,Cushion,Askle Kineris Wheelchair Cushion (8x8 cells) 10cm,Askle Kineris Wheelchair Cushion,Askle Kineris Wheelchair Cushion (8x8 cells) 10cm
+PD000000502,Askle,Cushion,Askle Kineris Wheelchair Cushion (9x9 cells) 7cm,Askle Kineris Wheelchair Cushion,Askle Kineris Wheelchair Cushion (9x9 cells) 7cm
+PD000000503,Askle,Cushion,Askle Kineris Wheelchair Cushion (8x9 cells) 7cm,Askle Kineris Wheelchair Cushion,Askle Kineris Wheelchair Cushion (8x9 cells) 7cm
+PD000000504,3A,Atomizer,3A Atomizer,3A Atomizer,3A Atomizer
+PD000000505,Takale,Optional Part,Takale 電療拖鞋,Takale 電療拖鞋,Takale 電療拖鞋
+PD000000506,Takale,Massage machine,Takale #CY-819 Leg Massage Fairy,Takale #CY-819 Leg Massage Fairy,Takale #CY-819 Leg Massage Fairy
+PD000000507,Takale,Massage machine,Takale #CY-169 舒之健 Rotating Point Massage,Takale #CY-169 舒之健 Rotating Point Massage,Takale #CY-169 舒之健 Rotating Point Massage
+PD000000508,Takale,Massage machine,Takale #CY-718 Dolphin Fairy,Takale #CY-718 Dolphin Fairy,Takale #CY-718 Dolphin Fairy
+PD000000509,Takale,Massage machine,Takale #TB-201 Rolling Message Bed,Takale #TB-201 Rolling Message Bed,Takale #TB-201 Rolling Message Bed
+PD000000510,Takale,Optional Part,Takale 旋轉指壓球護套,Takale 旋轉指壓球護套,Takale 旋轉指壓球護套
+PD000000511,Takale,Massage machine,Takale Spine Align Equipment,Takale Spine Align Equipment,Takale Spine Align Equipment
+PD000000512,Takale,Massage machine,Takale #CY-169L 足之康保健儀,Takale #CY-169L 足之康保健儀,Takale #CY-169L 足之康保健儀
+PD000000513,Takale,Massage machine,Takale #CY-106 Health Oxy-twistst Device,Takale #CY-106 Health Oxy-twistst Device,Takale #CY-106 Health Oxy-twistst Device
+PD000000514,寶生,O3,寶生 #990- B Air Disinfector,Air Disinfector,寶生 #990- B Air Disinfector
+PD000000515,EZ-Com,O3,EZ-Com 易立康 #EA-8705 純O3生氧機,EZ-Com 易立康 #EA-8705,EZ-Com 易立康 #EA-8705 純O3生氧機
+PD000000516,EZ-Com,O3,EZ-Com 可利淨 #SW-2000/T 活氧機,EZ-Com 可利淨,EZ-Com 可利淨 #SW-2000/T 活氧機
+PD000000517,Pals,Gel Pad,Pals #896 240 Gel Pad Oval (5 x 10 cm) 4pcs,Pals Gel Pad Oval,Pals #896 240 Gel Pad Oval (5 x 10 cm) 4pcs
+PD000000518,Pals,Gel Pad,Pals #896 350 Gel Pad Oval (8 x 13 cm) 2pcs,Pals Gel Pad Oval,Pals #896 350 Gel Pad Oval (8 x 13 cm) 2pcs
+PD000000519,Pals,Gel Pad,Pals #895 250 Gel Pad Rectangle (5 x 13 cm) 2pcs,Pals Gel Pad Rectangle,Pals #895 250 Gel Pad Rectangle (5 x 13 cm) 2pcs
+PD000000520,Pals,Gel Pad,Pals #895 340 Gel Pad Rectangle (8 x 10 cm) 2pcs,Pals Gel Pad Rectangle,Pals #895 340 Gel Pad Rectangle (8 x 10 cm) 2pcs
+PD000000521,Pals,Gel Pad,Pals #879 200 Gel Pad Round (50 mm) 4pcs,Pals Gel Pad Round,Pals #879 200 Gel Pad Round (50 mm) 4pcs
+PD000000522,Pals,Gel Pad,Pals #879 300 Gel Pad Round (70 mm) 4pcs,Pals Gel Pad Round,Pals #879 300 Gel Pad Round (70 mm) 4pcs
+PD000000523,Pals,Gel Pad,Pals #896 230 Gel Pad Oval (4 x 6 cm) 4pcs,Pals Gel Pad Oval,Pals #896 230 Gel Pad Oval (4 x 6 cm) 4pcs
+PD000000524,Pals,Gel Pad,Pals #879 100 Gel Pad Round (3.2cm) 4 pcs,Pals Gel Pad Round,Pals #879 100 Gel Pad Round (3.2cm) 4 pcs
+PD000000525,Pals,Gel Pad,Pals #J10 R00 Gel Pad Round (25mm) 4 pcs,Pals Gel Pad Round,Pals #J10 R00 Gel Pad Round (25mm) 4 pcs
+PD000000526,Pals,Gel Pad,"Pals #SEN 5001 Gel Pad (0.9 x 1.1"") Little Pad",Pals Gel Pad,"Pals #SEN 5001 Gel Pad (0.9 x 1.1"") Little Pad"
+PD000000527,Pals,Gel Pad,Pals #895 220 Gel Pad Square (5 x 5 cm)4 Pcs,Pals Gel Pad Square,Pals #895 220 Gel Pad Square (5 x 5 cm)4 Pcs
+PD000000528,Pals,Gel Pad,Pals #SN2040 UltraStimRect. (5 x 10cm)4pcs,Pals UltraStimRect,Pals #SN2040 UltraStimRect. (5 x 10cm)4pcs
+PD000000529,chattanooga,Hot & Cold Pad,"Chattanooga Flexi Pac #4026 Hot Cold Pad ""S""",Chattanooga Flexi Pac #4026,"Chattanooga Flexi Pac #4026 Hot Cold Pad ""S"""
+PD000000530,chattanooga,Hot & Cold Pad,"Chattanooga Flexi Pac #4020 Hot Cold Pad ""M""",Chattanooga Flexi Pac #4020,"Chattanooga Flexi Pac #4020 Hot Cold Pad ""M"""
+PD000000531,chattanooga,Hot & Cold Pad,"Chattanooga Flexi Pac #4028 Hot Cold Pad ""L""",Chattanooga Flexi Pac #4028,"Chattanooga Flexi Pac #4028 Hot Cold Pad ""L"""
+PD000000532,chattanooga,Hot & Cold Pad,"Chattanooga Sensa Flex #1541 Hot Cold Pad ""XS""",Sensa Flex #1541,"Chattanooga Sensa Flex #1541 Hot Cold Pad ""XS"""
+PD000000533,chattanooga,Hot & Cold Pad,Chattanooga Sensa Flex #1546 Facial Mask,Chattanooga Sensa,Chattanooga Sensa Flex #1546 Facial Mask
+PD000000534,USA,Gel Pad,USA S-5002 Gel Pad 4pcs,USA S-5002 Gel Pad 4pcs,USA S-5002 Gel Pad 4pcs
+PD000000535,USA,Gel Pad,USA S-5212 Gel Pad 4 pcs,USA S-5212 Gel Pad 4 pcs,USA S-5212 Gel Pad 4 pcs
+PD000000536,USA,Gel Pad,USA S-5212 Gel Pad 20pcs,USA S-5212 Gel Pad 20pcs,USA S-5212 Gel Pad 20pcs
+PD000000537,Cefar,Optional Part,Cefar Lead,Cefar Lead,Cefar Lead
+PD000000538,Everyway,Optional Part,Everyway E704 Lead,Everyway E704 Lead,Everyway E704 Lead
+PD000000539,Seinex,Optional Part,Seinex SE-33 Lead,Seinex SE-33 Lead,Seinex SE-33 Lead
+PD000000540,USA,Optional Part,USA Heavy-Duty Full-Length Insole for MEN,USA Heavy-Duty Full-Length Insole for MEN,USA Heavy-Duty Full-Length Insole for MEN
+PD000000541,USA,Fullinsole,USA Heavy-Duty Full-Length Insole for WOMEN,USA Heavy-Duty Full-Length Insole for WOMEN,USA Heavy-Duty Full-Length Insole for WOMEN
+PD000000542,Co,Optional Part,CO Better Sight Glasses,CO Better Sight Glasses,CO Better Sight Glasses
+PD000000543,USA,Cushion,USA Gel of Foot Cushion,USA Gel of Foot Cushion,USA Gel of Foot Cushion
+PD000000544,Cefar,Medical Machine,Cefar 2.4 TENS,Cefar 2.4 TENS,Cefar 2.4 TENS
+PD000000545,Co,Massage machine,CO 太空小靈精,CO 太空小靈精,CO 太空小靈精
+PD000000546,Co,Massage machine,CO Freelady Tens,CO Freelady Tens,CO Freelady Tens
+PD000000547,Everyway,Massage machine,Everyway LP-1000 Electrical Massager,Everyway LP-1000,Everyway LP-1000 Electrical Massager
+PD000000548,Co,Optional Part,CO 太空小靈精配件 Leadwire (CE mark) 2pcs,CO 太空小靈精,CO 太空小靈精配件 Leadwire (CE mark) 2pcs
+PD000000549,Co,Optional Part,CO 太空小靈精配件 Comb-Space Healer,CO 太空小靈精,CO 太空小靈精配件 Comb-Space Healer
+PD000000550,Co,Optional Part,CO 太空小靈精配件 6mm Face-Lifting Stimolation Pencil 2pcs,CO 太空小靈精配件,CO 太空小靈精配件 6mm Face-Lifting Stimolation Pencil 2pcs
+PD000000551,Co,Optional Part,CO 太空小靈精配件 15mm Face-Lifting Stimolation Pencil,CO 太空小靈精配件,CO 太空小靈精配件 15mm Face-Lifting Stimolation Pencil
+PD000000552,Co,Optional Part,CO 太空小靈精配件 Electrostimulation Mask,CO 太空小靈精,CO 太空小靈精配件 Electrostimulation Mask
+PD000000553,Co,Optional Part,CO 太空小靈精配件 Space Healer Handle,CO 太空小靈精,CO 太空小靈精配件 Space Healer Handle
+PD000000554,EZ-Com,醫療書,EZ-Com 全方位健康新概念‧臭氧療法,EZ-Com 全方位健康新概念,EZ-Com 全方位健康新概念‧臭氧療法
+PD000000555,Co,Massage machine,CO #Nr.:SM40 Bioenergy Biene,CO Bioenergy Biene,CO #Nr.:SM40 Bioenergy Biene
+PD000000556,Co,Massage machine,CO #Nr.:SM35 Bioenergy Doggy,CO Bioenergy Doggy,CO #Nr.:SM35 Bioenergy Doggy
+PD000000557,Co,Massage machine,CO #DS 2003 KongKong Massager for Head & Joints,CO HongKong Massager,CO #DS 2003 KongKong Massager for Head & Joints
+PD000000558,Everyway,Optional Part,Everyway LP-1000 Lead,Everyway LP-1000 Lead,Everyway LP-1000 Lead
+PD000000559,Seinex,Tens,Seinex SE-33 TENS,Seinex SE-33 TENS,Seinex SE-33 TENS
+PD000000560,Seinex,Tens,Seinex SE-7000,Seinex SE-7000,Seinex SE-7000
+PD000000561,Seinex,Tens,Seinex SG-310,Seinex SG-310,Seinex SG-310
+PD000000562,Seinex,Optional Part,Seinex Cuff,Seinex Cuff,Seinex Cuff
+PD000000563,Move,support,Move #6006 Com Pads,Move #6006 Com Pads,Move #6006 Com Pads
+PD000000564,Move,support,Move #6085 Toe/Finger Tube,Move #6085 Toe/Finger Tube,Move #6085 Toe/Finger Tube
+PD000000565,Move,support,Move #6023 Toe/Finger Cap,Move #6023 Toe/Finger Cap,Move #6023 Toe/Finger Cap
+PD000000566,Move,support,Move Support,Move Support,Move Support
+PD000000567,Move,support,Move #6162 Toe Separators,Move #6162 Toe Separators,Move #6162 Toe Separators
+PD000000568,Move,support,Move #6008 Bunion Shield,Move #6008 Bunion Shield,Move #6008 Bunion Shield
+PD000000569,Move,support,Move #6400 Heel Cup,Move #6400 Heel Cup,Move #6400 Heel Cup
+PD000000570,Move,support,Move #6157 Toe Spreaders,Move #6157 Toe Spreaders,Move #6157 Toe Spreaders
+PD000000571,Takale,Heating Pad,"Takale #IH-332 Moist Heating Pad (14"" x 20"")","Takale #IH-332 Moist Heating Pad (14"" x 20"")","Takale #IH-332 Moist Heating Pad (14"" x 20"")"
+PD000000572,Takale,Heating Pad,"Takale #IH-331 Moist Heating Pad (14"" x 27"")","Takale #IH-331 Moist Heating Pad (14"" x 27"")","Takale #IH-331 Moist Heating Pad (14"" x 27"")"
+PD000000573,Takale,Heating Pad,"Takale #IH-334 Moist Heating Pad (15"" x 7"")","Takale #IH-334 Moist Heating Pad (15"" x 7"")","Takale #IH-334 Moist Heating Pad (15"" x 7"")"
+PD000000574,Takale,Optional Part,Takale TKH-889 Moist Heating Pad (絨布套),Takale TKH-889 Moist Heating Pad,Takale TKH-889 Moist Heating Pad (絨布套)
+PD000000575,Takale,Heating Pad,"Takale TKH-889 Moist Heating Pad (220v) 14"" x 27""",Takale TKH-889 Moist Heating Pad,"Takale TKH-889 Moist Heating Pad (220v) 14"" x 27"""
+PD000000576,Takale,Heating Pad,Takale TKH-889 Moist Heating Pad (110V),Takale TKH-889 Moist Heating Pad,Takale TKH-889 Moist Heating Pad (110V)
+PD000000577,Co,健康食品,CO 健康食品,CO 健康食品,CO 健康食品
+PD000000578,R&R,Hot & Cold Pad,R&R #SP-7207 Cold/Hot Compress Pack (42 x 36.5 cm),冷熱敷,R&R #SP-7207 Cold/Hot Compress Pack (42 x 36.5 cm)
+PD000000579,R&R,Hot & Cold Pad,R&R #SP-7207B Cold/Hot Compress Pack(42 x 36.5 cm),冷熱敷,R&R #SP-7207B Cold/Hot Compress Pack(42 x 36.5 cm)
+PD000000580,R&R,Hot & Cold Pad,R&R #SP-8406C Full Face Mask,冷熱敷,R&R #SP-8406C Full Face Mask
+PD000000581,R&R,Optional Part,R&R #SV-201 Physiological Douche,冷熱敷,R&R #SV-201 Physiological Douche
+PD000000582,R&R,Cushion,R&R #SU-8204 Decubitus Ulcer Cushion,冷熱敷,R&R #SU-8204 Decubitus Ulcer Cushion
+PD000000583,R&R,Cushion,R&R 空氣及水墊床,冷熱敷,R&R 空氣及水墊床
+PD000000584,R&R,Hot & Cold Pad,R&R #SP-7216 Cold/Hot Pack (19 x 29cm),冷熱敷,R&R #SP-7216 Cold/Hot Pack (19 x 29cm)
+PD000000585,R&R,Hot & Cold Pad,R&R #SP-7217 Hot/Cold Pack(25 x 29.5cm),冷熱敷,R&R #SP-7217 Hot/Cold Pack(25 x 29.5cm)
+PD000000586,Elasto-Gel,Hot & Cold Pad,"Elasto-Gel #TW6001 Therapy Wrap (4"" x 24"")",Elasto-Gel #TW6001,"Elasto-Gel #TW6001 Therapy Wrap (4"" x 24"")"
+PD000000587,Elasto-Gel,Hot & Cold Pad,"Elasto-Gel #TW6005 Therapy Wrap (6"" x 24"")",Elasto-Gel #TW6005,"Elasto-Gel #TW6005 Therapy Wrap (6"" x 24"")"
+PD000000588,Elasto-Gel,Hot & Cold Pad,"Elasto-Gel #TW6040 Therapy Wrap (9"" x 30"")",Elasto-Gel #TW6040,"Elasto-Gel #TW6040 Therapy Wrap (9"" x 30"")"
+PD000000589,Elasto-Gel,Hot & Cold Pad,Elasto-Gel #LW202 Medium Lumber Wrap (Waist 32-36),Elasto-Gel #LW202 Medium,Elasto-Gel #LW202 Medium Lumber Wrap (Waist 32-36)
+PD000000590,Co,售前服務(試TENS),CO 售前服務(試TENS),CO 售前服務(試TENS),CO 售前服務(試TENS)
+PD000000591,Co,Health Pro Cushion,CO 譜健枕 Heat Cushion,CO 譜健枕 Heat Cushion,CO 譜健枕 Heat Cushion
+PD000000592,Cefar,Tens,Cefar Primo TENS,Cefar Primo TENS,Cefar Primo TENS
+PD000000593,Cefar,Tens,Cefar Active 2 TENS,Cefar Active 2 TENS,Cefar Active 2 TENS
+PD000000594,Cefar,Tens,Cefar Active 4 TENS,Cefar Active 4 TENS,Cefar Active 4 TENS
+PD000000595,Cefar,Tens,Cefar Tempo TENS,Cefar Tempo TENS,Cefar Tempo TENS
+PD000000596,Cefar,Optional Part,Cefar Active Lead,Cefar Active Lead,Cefar Active Lead
+PD000000597,Cefar,Tens,Cefar Easy Export TENS,Cefar Easy Export TENS,Cefar Easy Export TENS
+PD000000598,Cefar,Tens,Cefar IFC Export TENS,Cefar IFC Export TENS,Cefar IFC Export TENS
+PD000000599,Cefar,Tens,Cefar Activ XT Komplett TENS,Cefar Activ XT Komplett TENS,Cefar Activ XT Komplett TENS
+PD000000600,Cefar,Optional Part,Cefar Easy Belt,Cefar Easy Belt,Cefar Easy Belt
+PD000000601,Cefar,Gel Pad,Cefar Optional Parts (Gel Pad),Cefar Optional Parts (Gel Pad),Cefar Optional Parts (Gel Pad)
+PD000000602,Likon,Tens,Likon Easy So TENS 中頻機,Likon Easy So TENS 中頻機,Likon Easy So TENS 中頻機
+PD000000603,Likon,Optional Part,Likon Health Lead (1 pcs),Likon Health Lead (1 pcs),Likon Health Lead (1 pcs)
+PD000000604,Likon,Gel Pad,Likon Health Gel Pad (Small),Likon Health Gel Pad (Small),Likon Health Gel Pad (Small)
+PD000000605,Likon,Gel Pad,Likon Health Gel Pad (Large),Likon Health Gel Pad (Large),Likon Health Gel Pad (Large)
+PD000000606,NEOT,Medical Machine,NEOT 日本電熱墊,日本電熱墊,NEOT 日本電熱墊
+PD000000607,Clearview,Cushion,Clearview CushionAir (36 x 36 x 6cm),Clearview CushionAir,Clearview CushionAir (36 x 36 x 6cm)
+PD000000608,Clearview,Cushion,Clearview CushionAir (36 x 40 x 6cm),Clearview CushionAir,Clearview CushionAir (36 x 40 x 6cm)
+PD000000609,Clearview,Cushion,Clearview CushionAir (40 x 40 x 6cm),Clearview CushionAir,Clearview CushionAir (40 x 40 x 6cm)
+PD000000610,Clearview,Cushion,Clearview CushionAir (44 x 40 x 6cm),Clearview CushionAir,Clearview CushionAir (44 x 40 x 6cm)
+PD000000611,Clearview,Cushion,Clearview CushionAir (44 x 44 x 6cm),Clearview CushionAir,Clearview CushionAir (44 x 44 x 6cm)
+PD000000612,Comefree,Hot & Cold Pad,Comefree竹炭遠赤外線熱敷 (14小時用),Comefree竹炭遠赤外線熱敷,Comefree竹炭遠赤外線熱敷 (14小時用)
+PD000000613,Comefree,Hot & Cold Pad,Comefree 竹炭遠赤外線熱敷 (24小時用),遠赤外線熱敷 (24小時用),Comefree 竹炭遠赤外線熱敷 (24小時用)
+PD000000614,澄村,Medical Machine,澄村 上醫倒立機,澄村 上醫倒立機,澄村 上醫倒立機
+PD000000615,澄村,Service,澄村 倒吊服務,澄村 倒吊服務,澄村 倒吊服務
+PD000000616,Ofa,NC Pantyhose,"Ofa 140den AT襪衭 Pantyhose (Muschel) "" 1 """,Ofa 140den AT襪衭 Pantyhose (Muschel),"Ofa 140den AT襪衭 Pantyhose (Muschel) "" 1 """
+PD000000617,Ofa,NC Pantyhose,"Ofa 140den AT襪衭 Pantyhose (Muschel) "" 2 """,Ofa 140den AT襪衭 Pantyhose (Muschel),"Ofa 140den AT襪衭 Pantyhose (Muschel) "" 2 """
+PD000000618,Ofa,NC Pantyhose,"Ofa 140den AT襪衭 Pantyhose (Muschel) "" 3 """,Ofa 140den AT襪衭 Pantyhose (Muschel),"Ofa 140den AT襪衭 Pantyhose (Muschel) "" 3 """
+PD000000619,Ofa,NC Pantyhose,"Ofa 140den AT襪衭 Pantyhose (Muschel) "" 4 """,Ofa 140den AT襪衭 Pantyhose (Muschel),"Ofa 140den AT襪衭 Pantyhose (Muschel) "" 4 """
+PD000000620,Ofa,NC Pantyhose,"Ofa 140den AT襪衭 Pantyhose (Black) "" 1 """,Ofa 140den AT襪衭 Pantyhose (Black),"Ofa 140den AT襪衭 Pantyhose (Black) "" 1 """
+PD000000621,Ofa,NC Pantyhose,"Ofa 140den AT襪衭 Pantyhose (Black) "" 2 """,Ofa 140den AT襪衭 Pantyhose (Black),"Ofa 140den AT襪衭 Pantyhose (Black) "" 2 """
+PD000000622,Ofa,NC Pantyhose,"Ofa 140den AT襪衭 Pantyhose (Black) "" 3 """,Ofa 140den AT襪衭 Pantyhose (Black),"Ofa 140den AT襪衭 Pantyhose (Black) "" 3 """
+PD000000623,Ofa,NC Pantyhose,"Ofa 140den AT襪衭 Pantyhose (Black) "" 4 """,Ofa 140den AT襪衭 Pantyhose (Black),"Ofa 140den AT襪衭 Pantyhose (Black) "" 4 """
+PD000000624,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (mode bright) "" 1 "" - closed toe",Ofa Classic AT襪衭 Pantyhose (mode bright) - closed toe,"Ofa AT襪衭 (mode bright) "" 1 "" - closed toe"
+PD000000625,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (mode bright) "" 2 "" - closed toe",Ofa Classic AT襪衭 Pantyhose (mode bright) - closed toe,"Ofa AT襪衭 (mode bright) "" 2 "" - closed toe"
+PD000000626,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (mode bright) "" 3 "" - closed toe",Ofa Classic AT襪衭 Pantyhose (mode bright) - closed toe,"Ofa AT襪衭 (mode bright) "" 3 "" - closed toe"
+PD000000627,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (mode bright) "" 4 "" - closed toe",Ofa Classic AT襪衭 Pantyhose (mode bright) - closed toe,"Ofa AT襪衭 (mode bright) "" 4 "" - closed toe"
+PD000000628,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (Black) "" 1 "" - closed toe",Ofa Classic AT襪衭 Pantyhose (Black) - closed toe,"Ofa AT襪衭 (Black) "" 1 "" - closed toe"
+PD000000629,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (Black) "" 2 "" - closed toe",Ofa Classic AT襪衭 Pantyhose (Black) - closed toe,"Ofa AT襪衭 (Black) "" 2 "" - closed toe"
+PD000000630,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (Black) "" 3 "" - closed toe",Ofa Classic AT襪衭 Pantyhose (Black) - closed toe,"Ofa AT襪衭 (Black) "" 3 "" - closed toe"
+PD000000631,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (Black) "" 4 "" - closed toe",Ofa Classic AT襪衭 Pantyhose (Black) - closed toe,"Ofa AT襪衭 (Black) "" 4 "" - closed toe"
+PD000000632,Ofa,Short Stocking,"Ofa Classic AD三骨 (mode bright) "" 1 "" - closed toe",Ofa Classic AD三骨 Short (mode bright) - closed toe,"Ofa AD三骨 (mode bright) "" 1 "" - closed toe"
+PD000000633,Ofa,Short Stocking,"Ofa Classic AD三骨 (mode bright) "" 2 "" - closed toe",Ofa Classic AD三骨 Short (mode bright) - closed toe,"Ofa AD三骨 (mode bright) "" 2 "" - closed toe"
+PD000000634,Ofa,Short Stocking,"Ofa Classic AD三骨 (mode bright) "" 3 "" - closed toe",Ofa Classic AD三骨 Short (mode bright) - closed toe,"Ofa AD三骨 (mode bright) "" 3 "" - closed toe"
+PD000000635,Ofa,Short Stocking,"Ofa Classic AD三骨 (mode bright) "" 4 "" - closed toe",Ofa Classic AD三骨 Short (mode bright) - closed toe,"Ofa AD三骨 (mode bright) "" 4 "" - closed toe"
+PD000000636,Ofa,Short Stocking,"Ofa Classic AD三骨 (mode bright) "" 1 "" - open toe",Ofa Classic AD三骨 Short (mode bright) - open toe,"Ofa AD三骨 (mode bright) "" 1 "" - open toe"
+PD000000637,Ofa,Short Stocking,"Ofa Classic AD三骨 (mode bright) "" 2 "" - open toe",Ofa Classic AD三骨 Short (mode bright) - open toe,"Ofa AD三骨 (mode bright) "" 2 "" - open toe"
+PD000000638,Ofa,Short Stocking,"Ofa Classic AD三骨 (mode bright) "" 3 "" - open toe",Ofa Classic AD三骨 Short (mode bright) - open toe,"Ofa AD三骨 (mode bright) "" 3 "" - open toe"
+PD000000639,Ofa,Short Stocking,"Ofa Classic AD三骨 (mode bright) "" 4 "" - open toe",Ofa Classic AD三骨 Short (mode bright) - open toe,"Ofa AD三骨 (mode bright) "" 4 "" - open toe"
+PD000000640,Ofa,Flight sock,"Ofa Gilofa 2000 AD三骨 (Black) "" 1 """,Ofa Gilofa 2000 AD三骨 Short (Black),"Ofa Gilofa 2000 AD三骨 (Black) "" 1 """
+PD000000641,Ofa,Flight sock,"Ofa Gilofa 2000 AD三骨 (Black) "" 2 """,Ofa Gilofa 2000 AD三骨 Short (Black),"Ofa Gilofa 2000 AD三骨 (Black) "" 2 """
+PD000000642,Ofa,Flight sock,"Ofa Gilofa 2000 AD三骨 (Black) "" 3 """,Ofa Gilofa 2000 AD三骨 Short (Black),"Ofa Gilofa 2000 AD三骨 (Black) "" 3 """
+PD000000643,Ofa,Flight sock,"Ofa Gilofa 2000 AD三骨 (Black) "" 4 """,Ofa Gilofa 2000 AD三骨 Short (Black),"Ofa Gilofa 2000 AD三骨 (Black) "" 4 """
+PD000000644,Ofa,Long stocking,"Ofa Classic AG四骨 (mode bright) - close toe "" 1 """,Ofa Classic AG四骨 Long Stocking (mode bright) - close toe,"Ofa AG四骨 (mode bright) "" 1 "" - close toe"
+PD000000645,Ofa,Long stocking,"Ofa Classic AG四骨 (mode bright) - close toe "" 2 """,Ofa Classic AG四骨 Long Stocking (mode bright) - close toe,"Ofa AG四骨 (mode bright) "" 2 "" - close toe"
+PD000000646,Ofa,Long stocking,"Ofa Classic AG四骨 (mode bright) - close toe "" 3 """,Ofa Classic AG四骨 Long Stocking (mode bright) - close toe,"Ofa AG四骨 (mode bright) "" 3 "" - close toe"
+PD000000647,Ofa,Long stocking,"Ofa Classic AG四骨 (mode bright) - close toe "" 4 """,Ofa Classic AG四骨 Long Stocking (mode bright) - close toe,"Ofa AG四骨 (mode bright) "" 4 "" - close toe"
+PD000000648,Ofa,Short Stocking,"Ofa Classic AD三骨 (Black) - close toe "" 1 """,Ofa Classic AD三骨 Short (black) - close toe,"Ofa AD三骨 (Black) "" 1 "" - close toe"
+PD000000649,Ofa,Short Stocking,"Ofa Classic AD三骨 (Black) - close toe "" 2 """,Ofa Classic AD三骨 Short (black) - close toe,"Ofa AD三骨 (Black) "" 2 "" - close toe"
+PD000000650,Ofa,Short Stocking,"Ofa Classic AD三骨 (Black) - close toe "" 3 """,Ofa Classic AD三骨 Short (black) - close toe,"Ofa AD三骨 (Black) "" 3 "" - close toe "
+PD000000651,Ofa,Short Stocking,"Ofa Classic AD三骨 (Black) - close toe "" 4 """,Ofa Classic AD三骨 Short (black) - close toe,"Ofa AD三骨 (Black) "" 4 "" - close toe "
+PD000000652,Flexi,Gel Pad,Flexi Gel Pad (Large),Flexi Gel Pad (Large),Flexi Gel Pad (Large)
+PD000000653,Flexi,Gel Pad,Flexi Gel Pad (Small),Flexi Gel Pad (Small),Flexi Gel Pad (Small)
+PD000000654,Flexi,Gel Pad,Flexi Sensa (#1541),Flexi Sensa (#1541),Flexi Sensa (#1541)
+PD000000655,Co,Watch,CO Watch 錶,CO Watch 錶,CO Watch 錶
+PD000000656,Co,Ball Pan,CO Rock Ball Pan,CO Rock Ball Pan,CO Rock Ball Pan
+PD000000657,Ofa,NC Pantyhose,"Ofa 140den AT襪衭 Pantyhose (Muschel) "" 5 """,Ofa 140den AT襪衭 Pantyhose (Muschel),"Ofa 140den AT襪衭 Pantyhose (Muschel) "" 5 """
+PD000000658,Ofa,NC Pantyhose,"Ofa 140den AT襪衭 Pantyhose (Black) "" 5 """,Ofa 140den AT襪衭 Pantyhose (Black),"Ofa 140den AT襪衭 Pantyhose (Black) "" 5 """
+PD000000659,Co,Company usage,CO Company usage 易拉架,CO Company usage 易拉架,CO Company usage 易拉架
+PD000000660,Co,Company usage,CO Company usage 宣傳單張,CO Company usage 宣傳單張,CO Company usage 宣傳單張
+PD000000661,Co,貼布,CO TETSU 日本樹液貼布,CO TETSU 日本樹液貼布,CO TETSU 日本樹液貼布
+PD000000662,Nabon,Nabon,Nabon De-chlorine & De-toxin Pack,Nabon De-chlorine & De-toxin Pack,Nabon De-chlorine & De-toxin Pack
+PD000000663,華豐,柺杖,華豐 HF111- 木柺杖,華豐 輪椅柺杖 ,華豐 HF111- 木柺杖
+PD000000664,華豐,柺杖,華豐 HF939L- 鋁柺杖,華豐 輪椅柺杖 ,華豐 HF939L- 鋁柺杖
+PD000000665,華豐,柺杖,華豐 小四爪柺杖_HF924,華豐 輪椅柺杖 ,華豐 小四爪柺杖_HF924
+PD000000666,華豐,輪椅,華豐 輪椅 HF870-LB,華豐 輪椅柺杖 ,華豐 輪椅 HF870-LB
+PD000000667,華豐,柺杖,華豐 鋁伸縮柺杖_HF9296L,華豐 輪椅柺杖 ,華豐 鋁伸縮柺杖_HF9296L
+PD000000668,華豐,柺杖,華豐 助行架 HF913L,華豐 輪椅柺杖 ,華豐 助行架 HF913L
+PD000000669,華豐,Belt,華豐 輪椅安全belt_HF02,華豐 輪椅柺杖 ,華豐 輪椅安全belt_HF02
+PD000000670,華豐,輪椅,華豐 重型輪椅_HF874,華豐 輪椅柺杖 ,華豐 重型輪椅_HF874
+PD000000671,華豐,椅,華豐 坐椅_HF696,華豐 輪椅柺杖 ,華豐 坐椅_HF696
+PD000000672,華豐,輪椅,華豐 輪椅坐墊_HF01,華豐 輪椅柺杖 ,華豐 輪椅坐墊_HF01
+PD000000673,華豐,柺杖,華豐 方四爪柺杖_HF932,華豐 輪椅柺杖 ,華豐 方四爪柺杖_HF932
+PD000000674,華豐,椅,華豐 沐浴Chair_HS7981L,華豐 Support,華豐 沐浴Chair_HS7981L
+PD000000675,亞洲輪椅,柺杖,亞洲輪椅 四腳爪 (高腳)_932,亞洲 輪椅柺杖,亞洲輪椅 四腳爪 (高腳)_932
+PD000000676,亞洲輪椅,柺杖,亞洲輪椅 柺杖椅_940,亞洲 輪椅柺杖,亞洲輪椅 柺杖椅_940
+PD000000677,亞洲輪椅,柺杖,亞洲輪椅 摺疊柺杖_927L,亞洲 輪椅柺杖,亞洲輪椅 摺疊柺杖_927L
+PD000000678,亞洲輪椅,輪椅,亞洲輪椅 鋁合金輪椅(細輪)活動扶手及腳扥_908_18,亞洲 輪椅柺杖,亞洲輪椅 鋁合金輪椅(細輪)活動扶手及腳扥_908_18
+PD000000679,亞洲輪椅,坐墊,亞洲輪椅 透氣輪椅用坐墊_571,亞洲 輪椅柺杖,亞洲輪椅 透氣輪椅用坐墊_571
+PD000000680,華豐,輪椅,華豐 輪椅 HF871-LBJ-41,華豐 輪椅柺杖 ,華豐 輪椅 HF871-LBJ-41
+PD000000681,華豐,椅,華豐 沐浴Chair_HS7971L,華豐 Support,華豐 沐浴Chair_HS7971L
+PD000000682,華豐,Parts,華豐 枴杖膠粒,華豐 輪椅柺杖 ,華豐 枴杖膠粒
+PD000000683,Comefree,Massage machine,Comefree 指壓按摩單球,Comefree 指壓按摩單球,Comefree 指壓按摩單球
+PD000000684,Ofa,Long stocking,"Ofa AG四骨 Long Stocking size "" 5 ""Black",Ofa Classic AG四骨 Long Stocking size  Black,"Ofa AG四骨 Long Stocking size "" 5 ""Black"
+PD000000685,華豐,柺杖,華豐 柺仗Chair_HS911L,華豐 輪椅柺杖 ,華豐 柺仗Chair_HS911L
+PD000000686,華豐,輪椅,華豐 輪椅_HF874L,華豐 輪椅柺杖 ,華豐 輪椅_HF874L
+PD000000687,華豐,輪椅,華豐 輪椅_HF874-LAH,華豐 輪椅柺杖 ,華豐 輪椅_HF874-LAH
+PD000000688,華豐,沐浴Chair,華豐 沐浴Chair_HS7920L,華豐 Support,華豐 沐浴Chair_HS7920L
+PD000000689,華豐,椅,華豐 坐椅_HF896,華豐 輪椅柺杖 ,華豐 坐椅_HF896
+PD000000690,Deposit,Deposit,Deposit received from customer on shop,Deposit received,Deposit received from customer on shop
+PD000000691,亞洲輪椅,腳踏器,亞洲輪椅 腳踏器_960,亞洲 輪椅柺杖,亞洲輪椅 腳踏器_960
+PD000000692,盈康,柺杖,盈康串手柺杖 FL-933L,盈康 輪椅柺杖,盈康串手柺杖 FL-933L
+PD000000693,亞洲輪椅,輪椅安全belt,亞洲輪椅 輪椅安全belt_SB001,亞洲 輪椅柺杖,亞洲輪椅 輪椅安全belt_SB001
+PD000000694,亞洲輪椅,柺仗Chair,亞洲輪椅 柺仗Chair_911L,亞洲 輪椅柺杖,亞洲輪椅 柺仗Chair_911L
+PD000000695,亞洲輪椅,輪椅,亞洲輪椅 鋁合金輪椅(細輪)活動扶手及腳扥_907,亞洲 輪椅柺杖,亞洲輪椅 鋁合金輪椅(細輪)活動扶手及腳扥_907
+PD000000696,亞洲輪椅,柺杖,亞洲輪椅 四腳爪 (低腳)_931,亞洲 輪椅柺杖,亞洲輪椅 四腳爪 (低腳)_931
+PD000000697,亞洲輪椅,柺杖,亞洲輪椅 T型柺杖_9206L,亞洲 輪椅柺杖,亞洲輪椅 T型柺杖_9206L
+PD000000698,亞洲輪椅,柺杖,亞洲輪椅 T型柺杖_929L,亞洲 輪椅柺杖,亞洲輪椅 T型柺杖_929L
+PD000000699,華豐,柺杖,華豐 枴杖膠粒_大,華豐 輪椅柺杖 ,華豐 枴杖膠粒_大
+PD000000700,華豐,柺杖,華豐 枴杖膠粒_細,華豐 輪椅柺杖 ,華豐 枴杖膠粒_細
+PD000000701,Bort,Body,"Bort #112610 Vario Back Support with Pelotte ""S""",Bort #112610 Vario Back Support with Pelotte,"Bort #112610 Vario Back Support with Pelotte ""S"""
+PD000000702,Bort,Body,"Bort #112610 Vario Back Support with Pelotte ""M""",Bort #112610 Vario Back Support with Pelotte,"Bort #112610 Vario Back Support with Pelotte ""M"""
+PD000000703,Bort,Body,"Bort #112610 Vario Back Support with Pelotte ""L""",Bort #112610 Vario Back Support with Pelotte,"Bort #112610 Vario Back Support with Pelotte ""L"""
+PD000000704,Bort,Body,"Bort #112610 Vario Back Support ""XL""",Bort #112610 Vario Back Support,"Bort #112610 Vario Back Support ""XL"""
+PD000000705,華豐,單車,華豐 運動單車_FS960,華豐 Support,華豐 運動單車_FS960
+PD000000706,華豐,坐椅,華豐 坐椅_HF693,華豐 輪椅柺杖 ,華豐 坐椅_HF693
+PD000000707,亞洲輪椅,柺杖,亞洲輪椅 T型柺杖_930L,亞洲 輪椅柺杖,亞洲輪椅 T型柺杖_930L
+PD000000708,Everyway,Tens,Everyway EV-507D Combo StimTENS/EMS,Everyway EV-507D Combo,Everyway EV-507D Combo StimTENS/EMS
+PD000000709,Bort,Knee,"Bort #114420 Bort StabiloGen ""XXL""",Bort #114420 Bort StabiloGen,"Bort #114420 Bort StabiloGen ""XXL"""
+PD000000710,Bort,Active Support,"Bort #116250 Calf Support size ""S""",Bort #116250 Calf Support,"Bort #116250 Calf Support size ""S"""
+PD000000711,Bort,Active Support,"Bort #116250 Active Support size ""M""",Bort #116250 Active Support,"Bort #116250 Active Support size ""M"""
+PD000000712,Bort,Active Support,"Bort #116250 Active Support size ""L""",Bort #116250 Active Support,"Bort #116250 Active Support size ""L"""
+PD000000713,Bort,Active Support,"Bort #116250 Active Support size ""XL""",Bort #116250 Active Support,"Bort #116250 Active Support size ""XL"""
+PD000000714,華豐,柺杖,華豐 四節鋁柺杖_HF927L,華豐 輪椅柺杖 ,華豐 四節鋁柺杖_HF927L
+PD000000715,Everyway,Optional Part,MIA 3D Pad Part (Bak鈕),MIA 3D Pad Part (Bak鈕),MIA 3D Pad Part (Bak鈕)
+PD000000716,華豐,輪椅,"華豐 16"" 輪椅_HF870 LBJ",華豐 輪椅柺杖 ,"華豐 16"" 輪椅_HF870 LBJ"
+PD000000717,華豐,拐杖,華豐 拐杖_FS930L,華豐 輪椅柺杖 ,華豐 拐杖_FS930L
+PD000000718,華豐,拐杖,華豐 銀色柺杖(可伸縮)_FS920L,華豐 輪椅柺杖 ,華豐 銀色柺杖(可伸縮)_FS920L
+PD000000719,China,Miscellaneous,China Pinhole Glasses - Vision Theraphy,China Pinhole Glasses,China Pinhole Glasses - Vision Theraphy
+PD000000720,Jintong,Watch,Jintong Pulse Rate Watch,Jintong Pulse Rate Watch,Jintong Pulse Rate Watch
+PD000000721,China,Slipper,China石春拖鞋Healthy Step 細 (Stone),China石春拖鞋Healthy Step,China石春拖鞋Healthy Step 細 (Stone)
+PD000000722,China,Slipper,China石春拖鞋Healthy Step 中 (Stone),China石春拖鞋Healthy Step,China石春拖鞋Healthy Step 中 (Stone)
+PD000000723,China,Slipper,China石春拖鞋Healthy Step 大 (Stone),China石春拖鞋Healthy Step,China石春拖鞋Healthy Step 大 (Stone)
+PD000000724,China,Slipper,China Healthy Step for Woman (Plastic),China Healthy Step,China Healthy Step for Woman (Plastic)
+PD000000725,Comefree,Pillow Cushion,Comefree CF-816 Comfortable Pillow舒適枕(一盒二只),CF-816 舒適枕(一盒二只),CF-816 Comfortable Pillow舒適枕(一盒二只)
+PD000000726,Comefree,Pantyhose,"Comefree CF-8616M Health Hosiery中統彈性襪240den""M""Lido",Comefree CF-8616M,"CF-8616M Health Hosiery中統彈性襪240den""M""Lido"
+PD000000727,Comefree,Pantyhose,Comefree CF-8616M Health Hosiery中統彈性襪240den L - Lido,Comefree CF-8616M,CF-8616M Health Hosiery中統彈性襪240den L - Lido
+PD000000728,Comefree,Pantyhose,"Comefree CF-8616M Health Hosiery中統彈性襪240den""M""Black",Comefree CF-8616M,"CF-8616M Health Hosiery中統彈性襪240den""M""Black"
+PD000000729,Comefree,Pantyhose,"Comefree CF-8616M Health Hosiery中統彈性襪240den""L""Black",Comefree CF-8616M,"CF-8616M Health Hosiery中統彈性襪240den""L""Black"
+PD000000730,Comefree,Pantyhose,Comefree CF-8617 Health Hosiery菱格彈性襪280den(free size)Black,Comefree CF-8617,CF-8617 Health Hosiery菱格彈性襪280den(free size)Black
+PD000000731,華豐,便壺,華豐 小便壼,華豐 Support,華豐 小便壼
+PD000000732,Co,Optional Part,CO GP 9V Battery,CO GP 9V Battery,CO GP 9V Battery
+PD000000733,Wolke 7,Fullinsole,"Wolke 7 Full Insole ""XS""",Wolke 7 Full Insole,"Wolke 7 全墊 ""XS"""
+PD000000734,Wolke 7,Fullinsole,"Wolke 7 Full Insole ""S""",Wolke 7 Full Insole,"Wolke 7 全墊 ""S"""
+PD000000735,Wolke 7,Fullinsole,"Wolke 7 Full Insole ""M""",Wolke 7 Full Insole,"Wolke 7 全墊 ""M"""
+PD000000736,Wolke 7,Fullinsole,"Wolke 7 Full Insole ""L""",Wolke 7 Full Insole,"Wolke 7 全墊 ""L"""
+PD000000737,Wolke 7,Fullinsole,"Wolke 7 Full Insole ""XL""",Wolke 7 Full Insole,"Wolke 7 全墊 ""XL"""
+PD000000738,Wolke 7,Heel Cup,"Wolke 7 Heel Cup ""M""",Wolke 7 Heel Cup,"Wolke 7 半墊 ""M"""
+PD000000739,Wolke 7,Heel Cup,"Wolke 7 Heel Cup ""L""",Wolke 7 Heel Cup,"Wolke 7 半墊 ""L"""
+PD000000740,Ofa,Long stocking,"Ofa Classic AG四骨 (black) - closed toe "" 1 """,Ofa Classic AG四骨 Long Stocking (black),"Ofa AG四骨 (black) "" 1 "" - close toe"
+PD000000741,Ofa,Long stocking,"Ofa Classic AG四骨 (black) - closed toe "" 2 """,Ofa Classic AG四骨 Long Stocking (black) - close toe,"Ofa AG四骨 (black) "" 2 "" - close toe"
+PD000000742,Ofa,Long stocking,"Ofa Classic AG四骨 (black) - closed toe "" 3 """,Ofa Classic AG四骨 Long Stocking (black) - close toe,"Ofa AG四骨 (black) "" 3 "" - close toe"
+PD000000743,Ofa,Long stocking,"Ofa Classic AG四骨 (black) - closed toe "" 4 """,Ofa Classic AG四骨 Long Stocking (black) - close toe,"Ofa AG四骨 (black) "" 4 "" - close toe"
+PD000000744,Ofa,Long stocking,"Ofa Classic AG四骨 (black) - open toe "" 1 """,Ofa Classic AG四骨 Long Stocking (black) - open toe,"Ofa AG四骨 (black) "" 1 "" - open toe"
+PD000000745,Ofa,Long stocking,"Ofa Classic AG四骨 (black) - open toe "" 2 """,Ofa Classic AG四骨 Long Stocking (black) - open toe,"Ofa AG四骨 (black) "" 2 "" - open toe"
+PD000000746,Ofa,Long stocking,"Ofa Classic AG四骨 (black) - open toe "" 3 """,Ofa Classic AG四骨 Long Stocking (black) - open toe,"Ofa AG四骨 (black) "" 3 "" - open toe"
+PD000000747,Ofa,Long stocking,"Ofa Classic AG四骨 (black) - open toe "" 4 """,Ofa Classic AG四骨 Long Stocking (black) - open toe,"Ofa AG四骨 (black) "" 4 "" - open toe"
+PD000000748,Ofa,Long stocking,"Ofa Classic AG四骨 (mode bright) - open toe "" 1 """,Ofa Classic AG四骨 Long Stocking (mode bright) - open toe,"Ofa AG四骨 (mode bright) "" 1 "" - open toe"
+PD000000749,Ofa,Long stocking,"Ofa Classic AG四骨 (mode bright) - open toe "" 2 """,Ofa Classic AG四骨 Long Stocking (mode bright) - open toe,"Ofa AG四骨 (mode bright) "" 2 "" - open toe"
+PD000000750,Ofa,Long stocking,"Ofa Classic AG四骨 (mode bright) - open toe "" 3 """,Ofa Classic AG四骨 Long Stocking (mode bright) - open toe,"Ofa AG四骨 (mode bright) "" 3 "" - open toe"
+PD000000751,Ofa,Long stocking,"Ofa Classic AG四骨 (mode bright) - open toe "" 4 """,Ofa Classic AG四骨 Long Stocking (mode bright) - open toe,"Ofa AG四骨 (mode bright) "" 4 "" - open toe"
+PD000000752,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (mode bright) "" 1 "" - open toe",Ofa Classic AT襪衭 Pantyhose (mode bright) - open toe,"Ofa AT襪衭 (mode bright) "" 1 "" - open toe"
+PD000000753,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (mode bright) "" 2 "" - open toe",Ofa Classic AT襪衭 Pantyhose (mode bright) - open toe,"Ofa AT襪衭 (mode bright) "" 2 "" - open toe"
+PD000000754,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (mode bright) "" 3 "" - open toe",Ofa Classic AT襪衭 Pantyhose (mode bright) - open toe,"Ofa AT襪衭 (mode bright) "" 3 "" - open toe"
+PD000000755,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (mode bright) "" 4 "" - open toe",Ofa Classic AT襪衭 Pantyhose (mode bright) - open toe,"Ofa AT襪衭 (mode bright) "" 4 "" - open toe"
+PD000000756,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (Black) "" 1 "" - open toe",Ofa Classic AT襪衭 Pantyhose (Black) - open toe,"Ofa AT襪衭 (Black) "" 1 "" - open toe"
+PD000000757,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (Black) "" 2 "" - open toe",Ofa Classic AT襪衭 Pantyhose (Black) - open toe,"Ofa AT襪衭 (Black) "" 2 "" - open toe"
+PD000000758,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (Black) "" 3 "" - open toe",Ofa Classic AT襪衭 Pantyhose (Black) - open toe,"Ofa AT襪衭 (Black) "" 3 "" - open toe"
+PD000000759,Ofa,HC Pantyhose,"Ofa Classic AT襪衭 (Black) "" 4 "" - open toe",Ofa Classic AT襪衭 Pantyhose (Black) - open toe,"Ofa AT襪衭 (Black) "" 4 "" - open toe"
+PD000000760,盈康,Belt,盈康 輪椅安全belt_HF02,盈康 輪椅柺杖,盈康 輪椅安全belt_HF02
+PD000000761,盈康,Parts,盈康 枴杖膠粒,盈康 輪椅柺杖,盈康 枴杖膠粒
+PD000000762,盈康,坐椅,盈康 坐椅_HF693,盈康 輪椅柺杖,盈康 坐椅_HF693
+PD000000763,Bauerfeind,Knee,Bauerfeind GenuTrain A3 titan R 1,Bauerfeind GenuTrain A3 Titan,Bauerfeind GenuTrain A3 titan R 1
+PD000000764,Bauerfeind,Knee,Bauerfeind GenuTrain A3 titan R 2,Bauerfeind GenuTrain A3 Titan,Bauerfeind GenuTrain A3 titan R 2
+PD000000765,Bauerfeind,Knee,Bauerfeind GenuTrain A3 titan R 3,Bauerfeind GenuTrain A3 Titan,Bauerfeind GenuTrain A3 titan R 3
+PD000000766,Bauerfeind,Knee,Bauerfeind GenuTrain A3 titan L 1,Bauerfeind GenuTrain A3 Titan,Bauerfeind GenuTrain A3 titan L 1
+PD000000767,Bauerfeind,Knee,Bauerfeind GenuTrain A3 titan L 2,Bauerfeind GenuTrain A3 Titan,Bauerfeind GenuTrain A3 titan L 2
+PD000000768,Bauerfeind,Knee,Bauerfeind GenuTrain A3 titan L 3,Bauerfeind GenuTrain A3 Titan,Bauerfeind GenuTrain A3 titan L 3
+PD000000769,Bauerfeind,support,Bauerfeind ValguLoc L No.1,Bauerfeind ValguLoc L,Bauerfeind ValguLoc L No.1
+PD000000770,Bauerfeind,support,Bauerfeind ValguLoc L No.2,Bauerfeind ValguLoc L,Bauerfeind ValguLoc L No.2
+PD000000771,Bauerfeind,support,Bauerfeind ValguLoc L No.3,Bauerfeind ValguLoc L,Bauerfeind ValguLoc L No.3
+PD000000772,Comefree,Massage machine,Comefree CF-342 小刺蝟指壓按器,Comefree CF-342 小刺蝟,CF-342 小刺蝟指壓按器
+PD000000773,Comefree,Foot,Comefree CF-651 襪套(角質&保溫),Comefree CF-651,CF-651 襪套(角質&保溫)
+PD000000774,盈康,沐浴Chair,盈康 沐浴Chair_HS7920L,盈康 Support,盈康 沐浴Chair_HS7920L
+PD000000775,盈康,柺杖,盈康 拐杖_FS930L,盈康 輪椅柺杖,盈康 拐杖_FS930L
+PD000000776,盈康,柺杖,盈康 銀色柺杖(可伸縮)_FS920L,盈康 輪椅柺杖,盈康 銀色柺杖(可伸縮)_FS920L
+PD000000777,盈康,便壺,盈康 小便壼 男用,盈康 Support,盈康 小便壼 男用
+PD000000778,盈康,柺杖,盈康 HF111- 木柺杖,盈康 輪椅柺杖,盈康 HF111- 木柺杖
+PD000000779,盈康,柺杖,盈康 HF939L- 鋁柺杖,盈康 輪椅柺杖,盈康 HF939L- 鋁柺杖
+PD000000780,盈康,柺杖,盈康 小四爪柺杖_HF924,盈康 輪椅柺杖,盈康 小四爪柺杖_HF924
+PD000000781,盈康,柺杖,盈康 鋁伸縮柺杖_HF9296L,盈康 輪椅柺杖,盈康 鋁伸縮柺杖_HF9296L
+PD000000782,盈康,Parts,盈康 助行架 HF913L,盈康 輪椅柺杖,盈康 助行架 HF913L
+PD000000783,盈康,柺杖,盈康 方四爪柺杖_HF932,盈康 輪椅柺杖,盈康 方四爪柺杖_HF932
+PD000000784,盈康,柺仗Chair,盈康 柺仗Chair_HS911L,盈康 輪椅柺杖,盈康 柺仗Chair_HS911L
+PD000000785,盈康,Parts,盈康 枴杖膠粒_細,盈康 輪椅柺杖,盈康 枴杖膠粒_細
+PD000000786,盈康,Parts,盈康 枴杖膠粒_大,盈康 輪椅柺杖,盈康 枴杖膠粒_大
+PD000000787,盈康,柺杖,盈康 四節鋁柺杖_HF927L,盈康 輪椅柺杖,盈康 四節鋁柺杖_HF927L
+PD000000788,盈康,單車,盈康 運動單車_FS960,盈康 Support,盈康 運動單車_FS960
+PD000000789,盈康,坐椅,盈康 坐椅_HF696,盈康 輪椅柺杖,盈康 坐椅_HF696
+PD000000790,盈康,沐浴Chair,盈康 沐浴Chair HS7981L,盈康 Support,盈康 沐浴Chair HS7981L
+PD000000791,盈康,沐浴Chair,盈康 沐浴Chair_HS7971L,盈康 Support,盈康 沐浴Chair_HS7971L
+PD000000792,盈康,坐椅,盈康 坐椅_HF896,盈康 輪椅柺杖,盈康 坐椅_HF896
+PD000000793,盈康,輪椅,盈康 輪椅 HF870-LB,盈康 輪椅柺杖,盈康 輪椅 HF870-LB
+PD000000794,盈康,輪椅,盈康 輪椅_HF874 LAH,盈康 輪椅柺杖,盈康 輪椅_HF874 LAH
+PD000000795,盈康,坐墊,盈康 輪椅坐墊_HF01,盈康 輪椅柺杖,盈康 輪椅坐墊_HF01
+PD000000796,盈康,輪椅,盈康 輪椅 HF871-LBJ-41,盈康 輪椅柺杖,盈康 輪椅 HF871-LBJ-41
+PD000000797,盈康,輪椅,盈康 輪椅_HF874 LAJ,盈康 輪椅柺杖,盈康 輪椅_HF874 LAJ
+PD000000799,盈康,輪椅,"盈康 16"" 輪椅_HF870 LBJ",盈康 輪椅柺杖,"盈康 16"" 輪椅_HF870 LBJ"
+PD000000800,Comefree,Elbow,Comefree CF-855 遠紅外線負離子 護肘 S,Comefree CF-855 遠紅外線負離子 護肘,CF-855 遠紅外線負離子 護肘 S
+PD000000801,Comefree,Elbow,Comefree CF-855 遠紅外線負離子 護肘 M,Comefree CF-855 遠紅外線負離子 護肘,CF-855 遠紅外線負離子 護肘 M
+PD000000802,Comefree,Elbow,Comefree CF-855 遠紅外線負離子 護肘 L,Comefree CF-855 遠紅外線負離子 護肘,CF-855 遠紅外線負離子 護肘 L
+PD000000803,Comefree,Elbow,Comefree CF-855 遠紅外線負離子 護肘 XL,Comefree CF-855 遠紅外線負離子 護肘,CF-855 遠紅外線負離子 護肘 XL
+PD000000804,Comefree,Knee,Comefree CF-856 遠紅外線負離子 護膝 - S,Comefree CF-856 遠紅外線負離子 護膝,CF-856 遠紅外線負離子 護膝 - S
+PD000000805,Comefree,Knee,Comefree CF-856 遠紅外線負離子 護膝 - M,Comefree CF-856 遠紅外線負離子 護膝,CF-856 遠紅外線負離子 護膝 - M
+PD000000806,Comefree,Knee,Comefree CF-856 遠紅外線負離子 護膝 - L,Comefree CF-856 遠紅外線負離子 護膝,CF-856 遠紅外線負離子 護膝 - L
+PD000000807,Comefree,Knee,Comefree CF-856 遠紅外線負離子 護膝 - XL,Comefree CF-856 遠紅外線負離子 護膝,CF-856 遠紅外線負離子 護膝 - XL
+PD000000808,Comefree,Massage machine,Comefree CF-311 按摩刷,Comefree CF-311,CF-311 按摩刷
+PD000000809,Comefree,Body,Comefree CF-853 專業型護具free size 腰,Comefree CF-853 專業型護具free size,CF-853 專業型護具free size 腰
+PD000000810,Comefree,Wrist,Comefree CF-813 護腕 M,Comefree CF-813 護腕,CF-813 護腕 M
+PD000000811,Comefree,Wrist,Comefree CF-813 護腕 L,Comefree CF-813 護腕,CF-813 護腕 L
+PD000000812,Comefree,Ankle,Comefree CF-811 美腿修護套(小腿) M,Comefree CF-811 美腿修護套(小腿),CF-811 美腿修護套(小腿) M
+PD000000813,Comefree,Ankle,Comefree CF-811 美腿修護套(小腿) L,Comefree CF-811 美腿修護套(小腿),CF-811 美腿修護套(小腿) L
+PD000000814,Comefree,Knee,Comefree CF-814 護膝 M,Comefree CF-814 護膝,CF-814 護膝 M
+PD000000815,Comefree,Knee,Comefree CF-814 護膝 L,Comefree CF-814 護膝,CF-814 護膝 L
+PD000000816,Comefree,Foot,Comefree CF-852 專業型護具free size 護踝,Comefree CF-852 專業型護具free size,CF-852 專業型護具free size 護踝
+PD000000817,Comefree,Knee,Comefree CF-851 專業型護具free size 護膝,Comefree CF-851 專業型護具,CF-851 專業型護具free size 護膝
+PD000000818,華豐,Hot & Cold Pad,華豐 RH-500 按片發熱包 大,華豐 Support,華豐 RH-500 按片發熱包 大
+PD000000819,華豐,Hot & Cold Pad,華豐 RH-200 按片發熱包 細,華豐 Support,華豐 RH-200 按片發熱包 細
+PD000000820,華豐,Body,華豐 RH-0212 充氣坐墊,華豐 Support,華豐 RH-0212 充氣坐墊
+PD000000821,華豐,Hot & Cold Pad,華豐 SH-0511 微波加熱包 頸敷,華豐 Support,華豐 SH-0511 微波加熱包 頸敷
+PD000000822,華豐,Hot & Cold Pad,華豐 SH-0512 微波加熱包 眼敷,華豐 Support,華豐 SH-0512 微波加熱包 眼敷
+PD000000823,華豐,Hot & Cold Pad,華豐 SH-0513 微波加熱包 背墊敷,華豐 Support,華豐 SH-0513 微波加熱包 背墊敷
+PD000000824,華豐,Hot & Cold Pad,華豐 SH-0514 微波加熱包 肩敷,華豐 Support,華豐 SH-0514 微波加熱包 肩敷
+PD000000825,Comefree,HC Pantyhose,"Comefree CF-8619 壓力襪 玉色 AD ""M""",Comefree CF-8619 壓力襪 玉色 AD,"CF-8619 壓力襪 玉色 AD ""M"""
+PD000000826,Comefree,HC Pantyhose,"Comefree CF-8619 壓力襪 玉色 AD ""L""",Comefree CF-8619 壓力襪,"CF-8619 壓力襪 玉色 AD ""L"""
+PD000000827,Ofa,Short Stocking,"Ofa Classic AD三骨 (Black) - open toe "" 1 """,Ofa Classic AD三骨 Short (black) - open toe,"Ofa AD三骨 (Black) "" 1 "" - open toe "
+PD000000828,Ofa,Short Stocking,"Ofa Classic AD三骨 (Black) - open toe "" 2 """,Ofa Classic AD三骨 Short (black) - open toe,"Ofa AD三骨 (Black) "" 2 "" - open toe "
+PD000000829,Ofa,Short Stocking,"Ofa Classic AD三骨 (Black) - open toe "" 3 """,Ofa Classic AD三骨 Short (black) - open toe,"Ofa AD三骨 (Black) "" 3 "" - open toe "
+PD000000830,Ofa,Short Stocking,"Ofa Classic AD三骨 (Black) - open toe "" 4 """,Ofa Classic AD三骨 Short (black) - open toe,"Ofa AD三骨 (Black) "" 4 "" - open toe "
+PD000000831,Comefree,Body,"Comefree CF-711 背姿矯正帶 ""S""",Comefree CF-711 背姿矯正帶,"CF-711 背姿矯正帶 ""S"""
+PD000000832,Comefree,Body,"Comefree CF-711 背姿矯正帶 ""M""",Comefree CF-711 背姿矯正帶,"CF-711 背姿矯正帶 ""M"""
+PD000000833,Comefree,Body,"Comefree CF-711 背姿矯正帶 ""L""",Comefree CF-711 背姿矯正帶,"CF-711 背姿矯正帶 ""L"""
+PD000000834,JSP,Hot & Cold Pad,JSP Nano Vibrational pad 頸 (大),JSP Nano Vibrational pad,JSP Nano Vibrational pad 頸 (大)
+PD000000835,JSP,Hot & Cold Pad,JSP Nano Vibrational pad 膝,JSP Nano Vibrational pad,JSP Nano Vibrational pad 膝
+PD000000836,JSP,Hot & Cold Pad,JSP Nano Vibrational pad 腰,JSP Nano Vibrational pad,JSP Nano Vibrational pad 腰
+PD000000837,JSP,Hot & Cold Pad,JSP Nano Vibrational pad 肩膊,JSP Nano Vibrational pad,JSP Nano Vibrational pad 肩膊
+PD000000838,盈康,便壺,盈康 小便壼 女用,盈康 Support,盈康 小便壼 女用
+PD000000839,盈康,Parts,盈康 柺杖繩,盈康 輪椅柺杖,盈康 柺杖繩
+PD000000840,華豐,Parts,華豐 柺杖繩,華豐 輪椅柺杖 ,華豐 柺杖繩
+PD000000841,盈康,柺杖,盈康 FHS-10B 黑頭銀柺杖,盈康 輪椅柺杖,盈康 FHS-10B 黑頭銀柺杖
+PD000000842,盈康,Neck,盈康 頸椎牽引器,盈康 Support,盈康 頸椎牽引器
+PD000000843,Boso,Blood Pressure Meter,Boso Family,Boso Family,Boso Family
+PD000000844,華豐,輪椅,華豐 特輕輪椅FS804-LABJ,華豐 輪椅柺杖 ,華豐 特輕輪椅FS804-LABJ
+PD000000845,盈康,拐杖,盈康 拐杖FHS-11,盈康 輪椅柺杖,盈康 拐杖FHS-11
+PD000000846,盈康,椅,盈康 FL-893便椅,盈康 輪椅柺杖,盈康 FL-893便椅
+PD000000847,盈康,Back Cushion,盈康 FS-531床用靠背墊,盈康 Support,盈康 FS-531床用靠背墊
+PD000000848,Bort,Foot,Bort #137030 Pedi Soft Texline Hallux-Pad (S),Bort #137030 Pedi Soft Texline Hallux-Pad,Bort #137030 Pedi Soft Texline Hallux-Pad (S)
+PD000000849,Bort,Foot,Bort #137030 Pedi Soft Texline Hallux-Pad (L),Bort #137030 Pedi Soft Texline Hallux-Pad,Bort #137030 Pedi Soft Texline Hallux-Pad (L)
+PD000000850,Bort,Foot,Bort #137050 Pedi Soft Toe-/Finger Cap (S),Bort #137050 Pedi Soft Toe-/Finger Cap,Bort #137050 Pedi Soft Toe-/Finger Cap (S)
+PD000000851,Bort,Foot,Bort #137050 Pedi Soft Toe-/Finger Cap ( M),Bort #137050 Pedi Soft Toe-/Finger Cap,Bort #137050 Pedi Soft Toe-/Finger Cap ( M)
+PD000000852,Bort,Foot,Bort #137050 Pedi Soft Toe-/Finger Cap ( L),Bort #137050 Pedi Soft Toe-/Finger Cap,Bort #137050 Pedi Soft Toe-/Finger Cap ( L)
+PD000000853,盈康,拐杖,盈康 拐杖 FHS-02金色拐杖,盈康 輪椅柺杖,盈康 拐杖 FHS-02金色拐杖
+PD000000854,盈康,柺杖,盈康 銀色柺杖FH-17B,盈康 輪椅柺杖,盈康 銀色柺杖FH-17B
+PD000000855,盈康,柺杖,盈康 銀色柺杖FH-13B,盈康 輪椅柺杖,盈康 銀色柺杖FH-13B
+PD000000856,華豐,柺杖,華豐 柺杖FL-9306L,華豐 輪椅柺杖 ,華豐 柺杖FL-9306L
+PD000000857,盈康,拐杖,盈康 拐杖FL-9306L,盈康 輪椅柺杖,盈康 拐杖FL-9306L
+PD000000858,盈康,柺杖,盈康 柺杖金色HS-13A,盈康 輪椅柺杖,盈康 柺杖金色HS-13A
+PD000000859,Bauerfeind,Knee,Bauerfeind GenuTrain #1,Bauerfeind Genu Train,Bauerfeind GenuTrain #1
+PD000000860,盈康,拐杖,盈康 柺杖 FHS-07,盈康 輪椅柺杖,盈康 柺杖 FHS-07
+PD000000861,JSP,Hot & Cold Pad,JSP Nano Vibrational pad 頸 (中),JSP Nano Vibrational pad,JSP Nano Vibrational pad 頸 (中)
+PD000000862,Bauerfeind,Knee,Bauerfeind Genu Train #4,Bauerfeind Genu Train,Bauerfeind Genu Train #4
+PD000000863,Comefree,Pantyhose,Comefree CF-8619 (M) Health Hoslery 240 den Black (Open Toe),Comefree CF-8619 (M),CF-8619 (M) Health Hoslery 240 den Black (Open Toe)
+PD000000864,Comefree,Pantyhose,Comefree CF-8619 (L) Health Hoslery 240 den Black (Open Toe),Comefree CF-8619,CF-8619 (L) Health Hoslery 240 den Black (Open Toe)
+PD000000865,華豐,柺仗Chair,華豐 FS-961L 助行坐椅,華豐 輪椅柺杖 ,華豐 FS-961L 助行坐椅
+PD000000866,盈康,拐杖,盈康拐杖金色FHS-12A,盈康 輪椅柺杖,盈康拐杖金色FHS-12A
+PD000000867,盈康,柺仗Chair,盈康 FS-961L助行架,盈康 Support,盈康 FS-961L助行架
+PD000000868,Comefree,Body,Comefree CF-713 健美帶(M),Comefree CF-713 健美帶,CF-713 健美帶(M)
+PD000000869,Comefree,Body,Comefree CF-713 健美帶(L),Comefree CF-713 健美帶,CF-713 健美帶(L)
+PD000000870,Comefree,Body,Comefree CF-713 健美帶(S),Comefree CF-713 健美帶,CF-713 健美帶(S)
+PD000000871,華豐,沐浴Chair,華豐沐浴Chair FS-894,華豐 Support,華豐沐浴Chair FS-894
+PD000000872,盈康,拐杖,盈康拐杖FL-9281,盈康 輪椅柺杖,盈康拐杖FL-9281
+PD000000873,華豐,Hot & Cold Pad,華豐 RH-1000 按片發熱包,華豐 Support,華豐 RH-1000 按片發熱包
+PD000000874,Bauerfeind,Knee,Bauerfeind Genu Train #2,Bauerfeind Genu Train,Bauerfeind Genu Train #2
+PD000000875,Bauerfeind,Knee,Bauerfeind Genu Train #3,Bauerfeind Genu Train,Bauerfeind Genu Train #3
+PD000000876,Bauerfeind,Knee,Bauerfeind GenuTrain A3 Titan R4,Bauerfeind GenuTrain A3 Titan,Bauerfeind GenuTrain A3 Titan R4
+PD000000877,Bauerfeind,Knee,Bauerfeind GenuTrain A3 Titan R5,Bauerfeind GenuTrain A3 Titan,Bauerfeind GenuTrain A3 Titan R5
+PD000000878,Bauerfeind,Knee,Bauerfeind GenuTrain A3 Titan L4,Bauerfeind GenuTrain A3 Titan,Bauerfeind GenuTrain A3 Titan L4
+PD000000879,Bauerfeind,Knee,Bauerfeind GenuTrain A3 Titan L5,Bauerfeind GenuTrain A3 Titan,Bauerfeind GenuTrain A3 Titan L5
+PD000000880,Bort,support,Bort #112900 SellaFix,Bort #112900 SellaFix,Bort #112900 SellaFix
+PD000000881,盈康,單車,盈康運動單車-B085,盈康 Support,盈康運動單車-B085
+PD000000882,Comefree,Pantyhose,"Comefree CF-8618M Health Hosiery中統彈性襪240den""M""Lido Black",Comefree CF-8618M,"CF-8618M Health Hosiery中統彈性襪240den""M""Lido Black"
+PD000000883,Comefree,Hot & Cold Pad,Comefree CF-911 Smoothing Eye Mask,Comefree Smoothing Eye Mask,CF-911 Smoothing Eye Mask
+PD000000884,盈康,拐杖,盈康摺疊拐杖 FL9276L,盈康摺疊拐杖 FL9276L,盈康摺疊拐杖 FL9276L
+PD000000885,盈康,坐墊,盈康水泡坐墊 Fl1003,盈康水泡坐墊 Fl1003,盈康水泡坐墊 Fl1003
+PD000000886,盈康,輪椅,盈康電鍍輪椅PM2(固手拆腳),盈康電鍍輪椅PM2(固手拆腳),盈康電鍍輪椅PM2(固手拆腳)
+PD000000887,盈康,support,盈康拔罐器,盈康拔罐器,盈康拔罐器
+PD000000888,華豐,輪椅,華豐多功能輪椅16吋FS907-LAJ,華豐多功能輪椅16吋FS907-LAJ,華豐多功能輪椅16吋FS907-LAJ
+PD000000889,華豐,輪椅,華豐多功能輪椅FS907-LAJ,華豐多功能輪椅FS907-LAJ,華豐多功能輪椅FS907-LAJ
+PD000000890,Comefree,Blood Pressure Meter,Comefree #888HA 手臂式 cuff,Comefree #888HA 手臂式 cuff,Comefree #888HA 手臂式 cuff
+PD000000891,華豐,Parts,華豐有轆助行架FS-912L,華豐有轆助行架FS-912L,華豐有轆助行架FS-912L
+PD000000892,華豐,柺杖,華豐木柺杖FS-929L-,華豐木柺杖FS-929L-,華豐木柺杖FS-929L-
+PD000000893,盈康,拐杖,盈康不秀鋼四腳拐杖 MQP12,盈康不秀鋼四腳拐杖 MQP12,盈康不秀鋼四腳拐杖 MQP12
+PD000000894,Bauerfeind,Knee,Bauerfeind Genu Train #5,Bauerfeind Genu Train,Bauerfeind Genu Train #5
+PD000000895,Bort,Wrist,Bort #112620 ManuZip Eco (XL),Bort #112620 ManuZip Eco (XL),Bort #112620 ManuZip Eco (XL)
+PD000000896,盈康,輪椅,盈康03B輪椅,盈康03B輪椅,盈康03B輪椅
+PD000000897,Comefree,Pantyhose,Comefree CF-8618 Health Hosiery 中統彈性襪 240den 玉色(L),Comefree CF-8618,CF-8618 Health Hosiery 中統彈性襪 240den 玉色(L)
+PD000000898,Comefree,Body,ComefreeCF-541熱力七分襪,,CF-541熱力七分襪
+PD000000899,Comefree,Body,ComefreeCF-541熱力七分襪,,CF-541熱力七分襪
+PD000000900,Comefree,Body,Comefree CF-541 熱力七分褲(XL),Comefree CF-541 熱力七分褲(XL),CF-541 熱力七分褲(XL)
+PD000000901,Comefree,Body,Comefree CF-541 熱力七分褲(M),Comefree CF-541 熱力七分褲,CF-541 熱力七分褲(M)
+PD000000902,Comefree,Body,Comefree CF-541 熱力七分褲(L),Comefree CF-541 熱力七分褲,CF-541 熱力七分褲(L)
+PD000000903,Comefree,Body,Comefree CF-544 熱力背心(M),Comefree CF-544 熱力背心,CF-544 熱力背心(M)
+PD000000904,Comefree,Body,Comefree CF-544 熱力背心(L),Comefree CF-544 熱力背心,CF-544 熱力背心(L)
+PD000000905,Comefree,Body,Comefree CF-544 熱力背心(XL),Comefree CF-544 熱力背心,CF-544 熱力背心(XL)
+PD000000906,盈康,輪椅,盈康B082換症車,盈康B082換症車,盈康B082換症車
+PD000000907,Bort,Wrist,Bort #1410 wrist support lido,Bort #1410 wrist support lido,Bort #1410 wrist support lido
+PD000000908,Comefree,Body,Comefree CF-552 奈米鈦纖腰套(M),Comefree CF-552 奈米鈦美背套,CF-552 奈米鈦纖腰套(M)
+PD000000909,Comefree,Body,Comefree CF-551 奈米鈦美背套,Comefree CF-551 奈米鈦美背套,CF-551 奈米鈦美背套
+PD000000910,Comefree,Body,Comefree CF-552 奈米鈦纖腰套(L),Comefree CF-552 奈米鈦纖腰套(L),CF-552 奈米鈦纖腰套(L)
+PD000000911,Comefree,Body,Comefree CF-553 奈米鈦纖大腿 (free size),Comefree CF-553 奈米鈦纖大腿,CF-553 奈米鈦纖大腿 (free size)
+PD000000912,Comefree,Body,Comefree CF-554 奈米鈦纖小腿(free size),Comefree CF-554 奈米鈦纖小腿,CF-554 奈米鈦纖小腿(free size)
+PD000000913,Comefree,Body,Comefree CF-561 奈米鈦纖體背心(M),Comefree CF-561 奈米鈦纖體背心,CF-561 奈米鈦纖體背心(M)
+PD000000914,Comefree,Body,Comefree CF-561 奈米鈦纖體背心(L),Comefree CF-561 奈米鈦纖體背心,CF-561 奈米鈦纖體背心(L)
+PD000000915,Comefree,Body,Comefree CF-562 奈米鈦纖體短褲(M),Comefree CF-562 奈米鈦纖體短褲,CF-562 奈米鈦纖體短褲(M)
+PD000000916,Comefree,Body,Comefree CF-562 奈米鈦纖體短褲(L),Comefree CF-562 奈米鈦纖體短褲,CF-562 奈米鈦纖體短褲(L)
+PD000000917,Comefree,Body,Comefree CF-681 吸濕排汗縮腹背心(M),Comefree CF-681 吸濕排汗縮腹背心,CF-681 吸濕排汗縮腹背心(M)
+PD000000918,Comefree,Body,Comefree CF-681 吸濕排汗縮腹背心(L),Comefree CF-681 吸濕排汗縮腹背心,CF-681 吸濕排汗縮腹背心(L)
+PD000000919,Comefree,Body,Comefree CF-681 吸濕排汗縮腹背心(XL),Comefree CF-681 吸濕排汗縮腹背心,CF-681 吸濕排汗縮腹背心(XL)
+PD000000920,Comefree,Body,Comefree CF-683 吸濕排汗無縫束褲(M),Comefree CF-683 吸濕排汗無縫束褲,CF-683 吸濕排汗無縫束褲(M)
+PD000000921,Comefree,Body,Comefree CF-683 吸濕排汗無縫束褲(L),Comefree CF-683 吸濕排汗無縫束褲,CF-683 吸濕排汗無縫束褲(L)
+PD000000922,Comefree,Body,Comefree CF-683 吸濕排汗無縫束褲(XL),Comefree CF-683 吸濕排汗無縫束褲,CF-683 吸濕排汗無縫束褲(XL)
+PD000000923,Comefree,Elbow,Comefree CF-812 Elbow Support護肘,Comefree CF-812 Elbow Support,CF-812 Elbow Support護肘
+PD000000924,Bort,Pedi-soft,Bort #137010 Pedi Soft Texline(2只),Bort #137010 Pedi Soft Texline(2只),Bort #137010 Pedi Soft Texline(2只)
+PD000000925,Bort,Pedi-soft,Bort #137010 Pedi Soft Texline(2只),Bort #137010 Pedi Soft Texline(2只),Bort #137010 Pedi Soft Texline(2只)
+PD000000926,Bort,Pedi-soft,Bort #137010 Pedi Soft Texline(2只),Bort #137010 Pedi Soft Texline(2只),Bort #137010 Pedi Soft Texline(2只)
+PD000000927,Bort,Pedi-soft,Bort #137040 Pedi Soft Texline(2只),Bort #137040 Pedi Soft Texline(2只),Bort #137040 Pedi Soft Texline(2只)
+PD000000928,Bort,Pedi-soft,Bort #137040 Pedi Soft Texline(2只),Bort #137040 Pedi Soft Texline(2只),Bort #137040 Pedi Soft Texline(2只)

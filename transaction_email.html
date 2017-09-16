@@ -1,0 +1,70 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Print Sales Order</title>
+	</head>
+	<style>
+	body{font-size:14px}
+	.content{width:600px;margin:0 auto}
+	table {border-collapse: collapse;font-size:14px}
+	th, td {padding:3px}
+	table.items {width:100%}
+	.ttotal {width:50%;float:right}
+	.ttotal > table {width:100%;font-weight:bold}
+	table.items th {border:1px solid #333;background:#ccc;}
+	.slogan{text-align:center}
+	.slogan h2{font-size:18px;margin:0;padding:0}
+	.slogan p{font-size:16px;margin:2px;padding:2px}
+	.clear{clear:both;padding:5px}
+	hr{border-top:1px solid #3}
+	</style>
+<body>
+	<div class="content">
+		<div class="slogan">
+		<h2>Rock Medical</h2>
+		<p>Solution of your health care</p>
+		</div>
+	<hr />
+	<div style="float:left;">
+	<table border="0">
+	<tr><td>SO No.</td><td>: {rck:detail[tno]:}</td></tr>
+	<tr><td>Customer</td><td>: {rck:detail[cname]:}</td></tr>
+	<tr><td>Sales</td><td>: {rck:detail[name]:}</td></tr>
+	</table>
+	</div>
+	<div style="float:right;">
+	<table border="0">
+	<tr><td>Date Order</td><td>: {rck:detail[tdate]:}</td></tr>
+	<tr><td>Date Warranty</td><td>: {rck:detail[twarranty]:}</td></tr>
+	<tr><td></td><td></td></tr>
+	</table>
+	</div>
+	<div class="clear"></div>
+	<table border="0" class="items">
+	<thead>
+	<tr>
+	<th>Products</th>
+	<th style="width:15%;">Price</th>
+	<th style="width:5%;">QTY</th>
+	<th style="width:15%;">Total</th>
+	</tr>
+	</thead>
+	<tbody>
+		{rck:items:}
+	</tbody>
+	</table>
+	<hr />
+	<div class="ttotal">
+	<table border="0">
+		<tr><td style="text-align:right;">Total</td><td style="text-align:right;">{rck:detail[tammount]:}</td></tr>
+		<tr><td style="text-align:right;">Discount</td><td style="text-align:right;">{rck:detail[tdiscount]:}</td></tr>
+		<tr><td style="text-align:right;">Grand Total</td><td style="text-align:right;">{rck:detail[ttotal]:}</td></tr>
+	</table>
+	</div>
+	<div class="clear"></div>
+	<div class="note">
+	<p><i>Note: Do not lose the invoice for claim your product warranty </i></p>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>Insert Link</title>
+<link href="../style.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body bgcolor=#ffffff style='margin:0px;'>
+
+<table width=100% cellspacing=7 border=0 bgcolor=#ffffff style='border:solid 1px #aaaaaa;'><tr><td>URL : </td><td><input type=text value='' id=slink_url></td></tr><tr><td>Target:</td><td><input type=checkbox value=_blank id=slink_target> New Window</td></tr><tr><td></td><td><input type=button value=Insert onclick="self.parent.insertLink('', document.getElementById('slink_url').value, document.getElementById('slink_target').checked); "></td></tr></table>
+
+</form>
+</body>
+</html>
