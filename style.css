@@ -553,6 +553,7 @@ textarea {
 }
 #paging_header .pages,
 #paging_footer .pages {
+float:right;
   display: inline-block;
 }
 #paging_form {

@@ -74,13 +74,13 @@ if (isset($PAGING_STRING)) {
 	if ($topage != $page_total)		echo "<a class='page_number' href='$url&topage=" . ($topage+1) . "'>&gt;</a>";
 	if ($page_end != $page_total)	echo "<a class='page_number' href='$url&topage=$page_total'>&gt;&gt;</a>";
 
-	echo "</div> ".lang('當前第')." <b>$topage</b> ".lang('頁')."</td><td width=110>";
-	echo "<form id=paging_form action='' method=get>";
-	echo "<input type=hidden name='search_word' value='{$_GET['search_word']}'>";
-	echo "<input type=hidden name='search_field' value='{$_GET['search_field']}'>";
-	echo "<div class='input-group'><input class='form-control' type=text name=topage size=2 onkeydown='if (event.keyCode == 13) document.getElementById(\"paging_form\").submit();'> ";
-	echo "<span class='input-group-btn'><input class='btn btn-default' type=submit value='".lang('跳頁')."'></span></div>";
-	echo "</form>";
+	echo "".lang('當前第')." <b>$topage</b> ".lang('頁')."</div> </td><td width=110>";
+	//~ echo "<form id=paging_form action='' method=get>";
+	//~ echo "<input type=hidden name='search_word' value='{$_GET['search_word']}'>";
+	//~ echo "<input type=hidden name='search_field' value='{$_GET['search_field']}'>";
+	//~ echo "<div class='input-group'><input class='form-control' type=text name=topage size=2 onkeydown='if (event.keyCode == 13) document.getElementById(\"paging_form\").submit();'> ";
+	//~ echo "<span class='input-group-btn'><input class='btn btn-default' type=submit value='".lang('跳頁')."'></span></div>";
+	//~ echo "</form>";
 
 	echo "</div></div></div>";
 
