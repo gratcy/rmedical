@@ -61,7 +61,14 @@ $inputs->add(
 $invoice_info								= sql_getVar("select * from invoice where id='$id'");
 $customer_info								= sql_getObj("select * from customer where id='{$invoice_info['customer_id']}'");
 $staff_info									= sql_getObj("select * from staff where id='{$invoice_info['staff_id']}'");
-$invoice_info['customer_info']				= "$customer_info->name\r\n$customer_info->address\r\n\r\n$customer_info->attention\r\nTel:$customer_info->tel\r\nFax:$customer_info->fax";
+//~ $invoice_info['customer_info']				= "$customer_info->name\r\n$customer_info->address\r\n\r\n$customer_info->attention\r\nTel:$customer_info->tel\r\nFax:$customer_info->fax";
+$invoice_info['customer_info']				= "$customer_info->name<br />$customer_info->address<br /><br />$customer_info->attention<br />Tel:$customer_info->tel<br />Fax:$customer_info->fax";
+
+$npa = "$customer_info->name<br />";
+$npa .= ($customer_info->address ? $customer_info->address."<br />" : "");
+$npa .= ($customer_info->attention ? $customer_info->attention."<br />" : "");
+$npa .= ($customer_info->tel ? $customer_info->tel."<br />" : "");
+$npa .= ($customer_info->fax ? $customer_info->fax."<br />" : "");
 
 $inputs->value 	= $invoice_info;
 
@@ -127,14 +134,13 @@ echo <<<EOS
 		display			: none;
 	}
 }
-
+.logo {text-align:center;border-bottom: 2px solid #000;width: 800px;margin: 0 auto;}
 
 </style>
 
 
 
-<div class=print_page_header></div>
-
+<div class="logo"><img src="/images/print_header_logo.jpg"></div>
 <div class=height20></div>
 <div class=height20></div>
 
@@ -172,7 +178,7 @@ echo <<<EOS
 	</colgroup>
 	<tr>
 		<td>Customer :</td>
-		<td>$inputs->customer_info</td>
+		<td>$npa</td>
 		<td>Invoice No : <br>Invoice Date :<br>Delivery Terms : <br>Payment Terms : <br>Issue By : </td>
 		<td align=left>$invoice_info->invoice_id<br>$invoice_info->date_order<br>$invoice_info->deliveryterms<br>$invoice_info->paymentterms<br>$staff_info->name<br></td>
 	</tr>

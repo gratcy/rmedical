@@ -23,7 +23,7 @@ if (isset($PAGING_STRING)) {
 	$page_end				= min($topage + $adjacents, $page_total);
 
 
-	echo "<div class='row'><div class='col-sm-5'>".lang('總共')." <b>$record_count</b> ".lang('記錄').",&nbsp;".lang('共')." <b>$page_total</b> ".lang('頁')."</div><div class='col-sm-7'><div class='pages'>";
+	echo "<div class='row'><div class='col-sm-4'>".lang('總共')." <b>$record_count</b> ".lang('記錄').",&nbsp;".lang('共')." <b>$page_total</b> ".lang('頁')."</div><div class='col-sm-8'><div class='pages'>";
 
 	$temp					= $topage;
 	popURL('topage');

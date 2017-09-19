@@ -104,7 +104,7 @@ $sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JO
 else if ($_SESSION['class_staff'] == 8)
 $sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where a.tstore=".$_SESSION['store_id']." AND  ".$filter." ORDER BY $orderby $ordertype limit $offset, $record_per_page");
 else
-$sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where a.tsid=".$_SESSION['staff_id']." AND ".$filter." ORDER BY $orderby $ordertype limit $offset, $record_per_page");
+$sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where a.tstore=".$_SESSION['store_id']." AND ".$filter." ORDER BY $orderby $ordertype limit $offset, $record_per_page");
 foreach($sql as $k => $v) {
 ?>
 <tr>
