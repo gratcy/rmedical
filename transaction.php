@@ -25,9 +25,7 @@ unset($ccolumns['tstatus'],$ccolumns['ttotal'],$ccolumns['tdiscount'],$ccolumns[
 ?>
 <h3 class="pull-left"><?php echo $lang; ?></h3>
 		<div class='pull-right'>
-			<?php if (!empty($privilege->edit))	{ ?>
 			<input class="btn btn-default" type="button" value="Sales Order (N)" onclick="location.href=&quot;transaction_add.php&quot;;">
-			<?php } ?>
 			<input class="btn btn-default" type="button" value="Export (E)" onclick="exportform.submit()">
 		</div>
 		<br /><br /><br />
