@@ -1232,7 +1232,7 @@ function get_date_dropdown($date,$prefix='') {
 	$res .= '</select></div>';
 	$res .= ' &nbsp; <div class="col-sm-3"><select id="'.$prefix.'yyyy" name="'.$prefix.'yyyy" class="form-control">';
 	$res .= '<option value="0">Year</option>';
-	for($i=1950;$i<=2010;++$i) {
+	for($i=1900;$i<=2010;++$i) {
 		if ($yyyy == $i) {
 			$res .= '<option value="'.$i.'" selected>'.$i.'</option>';
 		}
