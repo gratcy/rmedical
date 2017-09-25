@@ -40,6 +40,7 @@ if ($submit || $test) {
 						
 						if ($blasting == 1 || $blasting == 2) {
 							$fields['etype'] = 1;
+							$fields['euid'] = $v['cid'];
 							$fields['eemail'] = $v['cemail'];
 							$fields['esubject'] = addslashes($subject);
 							$fields['econtent'] = addslashes($msg);
@@ -53,6 +54,7 @@ if ($submit || $test) {
 						if ($blasting == 1 || $blasting == 3) {
 							$phone = explode('*', $v['cphone']);
 							$fields2['stype'] = 1;
+							$fields2['suid'] = $v['cid'];
 							$fields2['sphone'] = $phone[0];
 							$fields2['smessage'] = addslashes(strip_tags($msgsms));
 							$fields2['sdate'] = date("Y-m-d H:i:s");

@@ -73,7 +73,7 @@ if ($submit) {
 <script>
 <?php if ($detail['bmtype'] == 2) : ?>
 tinymce.init({
-  selector: '.mce',
+  selector: '.content-messege',
   height: 500,
   menubar: false,
   plugins: [
