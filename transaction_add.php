@@ -111,6 +111,7 @@ if ($submit) {
 		exit;
 	}
 	else {
+		$wew = sql_getTable("select name FROM staff WHERE id=" . $staff_id);
 		$res = '';
 		foreach($pname as $k => $v) {
 			$res .= '<tr>';
@@ -121,7 +122,14 @@ if ($submit) {
 		}
 		$res .= '<tr><td><b>Total</b></td><td>'.array_sum($qty).'</td><td>'.array_sum($price).'</td></tr>';
 
-		__send_email($email, 'Rock Trading Transaction', array('table' => $res, 'cname' => $name),dirname(__FILE__) . '/tpl/transaction.html');
+		$Qdata['dateorder'] = date('Y-m-d H:i:s');
+		$Qdata['datewarranty'] = date('Y-m-d',strtotime("+1 year"));
+		$Qdata['sales'] = $wew[0]['name'];
+		$Qdata['sono'] = $tno;
+		$Qdata['table'] = $res;
+		$Qdata['cname'] = $name;
+		
+		__send_email($email, 'Rock Trading Transaction', $Qdata,dirname(__FILE__) . '/tpl/transaction.html');
 		
 		echo "<p><font color=blue>Sales Order successfully added :</font></p>";
 		echo "<p>( 3 秒內會自動反回前面，或按 <a href='transaction.php'> &lt; 這裡 &gt; </a> 返回。 )</p>";

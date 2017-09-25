@@ -101,44 +101,44 @@ if ($submit) {
 		}
 
 		if ($app == 1) {
-			$wew = sql_getTable("select a.*,b.sname,c.name,d.cname,d.cemail,d.cphone FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where (a.tstatus=1 OR a.tstatus=2) AND a.tid=" . $id);
-			$wew[0]['tdate'] = date('Y-m-d',strtotime($wew[0]['tdate']));
-			$wew[0]['twarranty'] = date('Y-m-d',strtotime("+1 year", strtotime($wew[0]['tdate'])));
-			$wew[0]['tdiscount'] = ($wew[0]['tdiscount'] ? $wew[0]['tdiscount'].'%' : '-');
-			$Qdata['detail'] = $wew[0];
-			$LItems = sql_getTable("select a.*,b.id,b.name,b.price from transaction_detail_tab a LEFT JOIN item b ON a.tpid=b.id where a.tstatus=1 AND a.ttid=".$id);
-			$phone = explode('*',$wew[0]['cphone']);
-			$fieldsMsg['stype'] = 1;
-			$fieldsMsg['sphone'] = $phone[0];
-			$fieldsMsg['smessage'] = 'Hello '.$wew[0]['cname'].', thanks for you Order at RockMedical. Your SO No. is '.$wew[0]['tno'].'. Thanks you and God Bless You.';
-			$fieldsMsg['sdate'] = date('Y-m-d H:i:s');
-			$fieldsMsg['sstatus'] = 1;
-			sql_query(sql_insert("sms_queue_tab", $fieldsMsg));
+			//~ $wew = sql_getTable("select a.*,b.sname,c.name,d.cname,d.cemail,d.cphone FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where (a.tstatus=1 OR a.tstatus=2) AND a.tid=" . $id);
+			//~ $wew[0]['tdate'] = date('Y-m-d',strtotime($wew[0]['tdate']));
+			//~ $wew[0]['twarranty'] = date('Y-m-d',strtotime("+1 year", strtotime($wew[0]['tdate'])));
+			//~ $wew[0]['tdiscount'] = ($wew[0]['tdiscount'] ? $wew[0]['tdiscount'].'%' : '-');
+			//~ $Qdata['detail'] = $wew[0];
+			//~ $LItems = sql_getTable("select a.*,b.id,b.name,b.price from transaction_detail_tab a LEFT JOIN item b ON a.tpid=b.id where a.tstatus=1 AND a.ttid=".$id);
+			//~ $phone = explode('*',$wew[0]['cphone']);
+			//~ $fieldsMsg['stype'] = 1;
+			//~ $fieldsMsg['sphone'] = $phone[0];
+			//~ $fieldsMsg['smessage'] = 'Hello '.$wew[0]['cname'].', thanks for you Order at RockMedical. Your SO No. is '.$wew[0]['tno'].'. Thanks you and God Bless You.';
+			//~ $fieldsMsg['sdate'] = date('Y-m-d H:i:s');
+			//~ $fieldsMsg['sstatus'] = 1;
+			//~ sql_query(sql_insert("sms_queue_tab", $fieldsMsg));
 
-			$items = '';
-				foreach($LItems as $k => $v) :
-				$items .= '<tr>';
-				$items .= '<td>'.$v['name'].'</td>';
-				$items .= '<td style="text-align:right;">$'.$v['price'].'</td>';
-				$items .= '<td style="text-align:right;">'.$v['tqty'].'</td>';
-				$items .= '<td style="text-align:right;">$'.$v['price']*$v['tqty'].'</td>';
-				$items .= '</tr>';
-				endforeach;
-			$Qdata['items'] = $items;
+			//~ $items = '';
+				//~ foreach($LItems as $k => $v) :
+				//~ $items .= '<tr>';
+				//~ $items .= '<td>'.$v['name'].'</td>';
+				//~ $items .= '<td style="text-align:right;">$'.$v['price'].'</td>';
+				//~ $items .= '<td style="text-align:right;">'.$v['tqty'].'</td>';
+				//~ $items .= '<td style="text-align:right;">$'.$v['price']*$v['tqty'].'</td>';
+				//~ $items .= '</tr>';
+				//~ endforeach;
+			//~ $Qdata['items'] = $items;
 
-			foreach($Qdata as $k => $v) $$k = $v;
-			$tpl = file_get_contents('transaction_email.html');
-			$tpl = str_replace('{rck:','$',$tpl);
-			$tpl = str_replace(':}','',$tpl);
-			$tpl = addslashes($tpl);
-			@eval("\$tpl = \"$tpl\";");
-			$tpl = stripslashes($tpl);
-			$fields3['etype'] = 1;
-			$fields3['estatus'] = 1;
-			$fields3['eemail'] = $wew[0]['cemail'];
-			$fields3['econtent'] = $tpl;
-			$fields3['edate'] = date('Y-m-d H:i:s');
-			sql_query(sql_insert("email_queue_tab", $fields3));
+			//~ foreach($Qdata as $k => $v) $$k = $v;
+			//~ $tpl = file_get_contents('transaction_email.html');
+			//~ $tpl = str_replace('{rck:','$',$tpl);
+			//~ $tpl = str_replace(':}','',$tpl);
+			//~ $tpl = addslashes($tpl);
+			//~ @eval("\$tpl = \"$tpl\";");
+			//~ $tpl = stripslashes($tpl);
+			//~ $fields3['etype'] = 1;
+			//~ $fields3['estatus'] = 1;
+			//~ $fields3['eemail'] = $wew[0]['cemail'];
+			//~ $fields3['econtent'] = $tpl;
+			//~ $fields3['edate'] = date('Y-m-d H:i:s');
+			//~ sql_query(sql_insert("email_queue_tab", $fields3));
 		}
 	}
 	if (!empty($error)) {
