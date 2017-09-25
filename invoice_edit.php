@@ -264,10 +264,9 @@ function tab_toggle(tab, content) {
 
 <table class='table table-borderless' $add_product_display>
 	<tr>
-		<td>
-			新增產品 ：
-			$inputs2->add_item_id
-			<input id='add_item_submit' class='btn btn-default' type='button' value='確定' style='width:70px;' onclick='
+		<td>新增產品 ：</td>
+			<td style="width:75%">$inputs2->add_item_id</td>
+			<td><input id='add_item_submit' class='btn btn-default' type='button' value='確定' style='width:70px;' onclick='
 				CSI_load(itemlist, "invoice_edit_item_add.php?invoice_id=$id&id=" + document.getElementById("form").elements.namedItem("add_item_id").value, "", "append");
 				document.getElementById("form").elements.namedItem("add_item_id").value = "";
 				document.getElementById("form").elements.namedItem("input_pulldownmenu_add_item_id").value = "";

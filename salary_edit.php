@@ -83,7 +83,7 @@ $staff_id									= $inputs->value['staff_id'];
 
 
 $inputs2									= new Inputs();
-$inputs2->add('add_invoice_id', 'select2', "", "", sql_getArray("select concat(invoice_id, ' ( ', date_order, ' ) - \$', amount_net), id from invoice where staff_id='$staff_id' order by date_order asc"), 50);
+$inputs2->add('add_invoice_id', 'select2', "", "", sql_getArray("select concat(invoice_id, ' ( ', date_order, ' ) - \$', amount_net), id from invoice where staff_id='$staff_id' order by date_order asc"), '100%');
 $inputs2->add('select_date_start', 'text', "", "", "", 10);
 $inputs2->add('select_date_end', 'text', "", "", "", 10);
 
@@ -103,7 +103,7 @@ echo <<<EOS
 <table class='table table-borderless noprint'>
 	<tr>
 		<td align=right>
-			<input class=size12 style='width:80px;' type=button value='返回 (B)' onclick='history.go(-1);' class=button>
+			<input class="size12 btn btn-default" type=button value='返回 (B)' onclick='history.go(-1);' class=button>
 		</td>
 	</tr>
 </table>
@@ -142,14 +142,22 @@ echo <<<EOS
 	</tr>
 	<tr>
 		<td>開始日期</td>
-		<td>$inputs->date_begin <img src='js/calendar.gif' onclick="show_cal(this, 'cms::$id::date_begin');" class=texticon />
-			&nbsp; &nbsp; &nbsp;
-			結束日期 $inputs->date_end <img src='js/calendar.gif' onclick="show_cal(this, 'cms::$id::date_end');" class=texticon />
-			&nbsp; &nbsp;
-			<input type=button value='計算佣金' onclick='CSI_load(itemlist, "salary_edit_item_add.php?sid=$id&staff_id=" + document.getElementById("form").elements.namedItem("input_pulldownmenu_staff_id_value").value + "&date_begin=" + document.getElementById("form").elements.namedItem("cms::$id::date_begin").value + "&date_end=" + document.getElementById("form").elements.namedItem("cms::$id::date_end").value, "", "append");'>
+		<td>
+		<div class="input-group">
+			$inputs->date_begin
+			<div class='input-group-addon' onclick="show_cal(this, 'cms::$id::date_begin');"><i class='fa fa-calendar-o'></i></div>
+			</div>
+			</td>
+	</tr>
+	<tr>
+		<td>結束日期</td>
+	<td>
+		<div class="input-group">
+			 $inputs->date_end
+			<div class='input-group-addon' onclick="show_cal(this, 'cms::$id::date_end');"><i class='fa fa-calendar-o'></i></div>
+			</div>
+			<input type=button value='計算佣金' class="btn btn-default onclick='CSI_load(itemlist, "salary_edit_item_add.php?sid=$id&staff_id=" + document.getElementById("form").elements.namedItem("input_pulldownmenu_staff_id_value").value + "&date_begin=" + document.getElementById("form").elements.namedItem("cms::$id::date_begin").value + "&date_end=" + document.getElementById("form").elements.namedItem("cms::$id::date_end").value, "", "append");'>
 		</td>
-		<td></td>
-		<td></td>
 	</tr>
 	<tr>
 		<td>備註</td>
@@ -168,11 +176,10 @@ echo <<<EOS
 
 <table class='table table-borderless'>
 	<tr>
-		<td>
-			新增帳單 ：
-			$inputs2->add_invoice_id
-			<input type=button value='確定'		onclick='CSI_load(itemlist, "salary_edit_item_add.php?sid=$id&iid=" + document.getElementById("form").elements.namedItem("add_invoice_id").value + "&staff_id=" + document.getElementById("form").elements.namedItem("input_pulldownmenu_staff_id_value").value, "", "append"); document.getElementById("form").elements.namedItem("add_invoice_id").value = ""; document.getElementById("form").elements.namedItem("input_pulldownmenu_add_invoice_id").value = "";'>
-			<input type=button value='清除記錄'	onclick='clear_record();'>
+		<td>新增帳單 ：</td>
+			<td style="width:75%;">$inputs2->add_invoice_id</td>
+			<td><input class="btn btn-default" type='button' value='確定'		onclick='CSI_load(itemlist, "salary_edit_item_add.php?sid=$id&iid=" + document.getElementById("form").elements.namedItem("add_invoice_id").value + "&staff_id=" + document.getElementById("form").elements.namedItem("input_pulldownmenu_staff_id_value").value, "", "append"); document.getElementById("form").elements.namedItem("add_invoice_id").value = ""; document.getElementById("form").elements.namedItem("input_pulldownmenu_add_invoice_id").value = "";'></td>
+			<td><input class="btn btn-default" type='button' value='清除記錄'	onclick='clear_record();'>
 		</td>
 	</tr>
 </table>
@@ -259,7 +266,7 @@ echo <<<EOS
 
 	<tr>
 		<td>記錄數</td>
-		<td><input type=text name=item_count value='$item_count' size=10 class=number readonly></td>
+		<td><input type=text name=item_count value='$item_count' size=10 class="form-control number" readonly></td>
 		<td></td>
 		<td></td>
 	</tr>
@@ -267,7 +274,7 @@ echo <<<EOS
 		<td>銷售佣金</td>
 		<td>$inputs->commission</td>
 		<td>總銷售額	&nbsp; $inputs->amount_sales</td>
-		<td><input type=button value='重新計算 (C)' onclick='calculate();'></td>
+		<td><input class="btn btn-default" type=button value='重新計算 (C)' onclick='calculate();'></td>
 	</tr>
 	<tr>
 		<td>其他佣金</td>
@@ -282,8 +289,8 @@ echo <<<EOS
 
 	<tr>
 		<td colspan=4 align=center class=noprint>
-			<input type=submit name=save value='確定 (S)' class=noprint>
-			<input type=submit name=save value='儲存及預覽 (P)' class=noprint>
+			<input class="btn btn-default noprint" type=submit name=save value='確定 (S)'>
+			<input class="btn btn-default noprint" type=submit name=save value='儲存及預覽 (P)'>
 		</td>
 	</tr>
 

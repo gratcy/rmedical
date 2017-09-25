@@ -77,7 +77,7 @@ $inputs->tag['tel']							= "class='form-control'";
 $inputs->tag['fax']							= "class='form-control'";
 $inputs->tag['email']							= "class='form-control'";
 $inputs->tag['website']							= "class='form-control'";
-$inputs->tag['address']							= "class='form-control'";
+$inputs->tag['address']							= "class='form-control' rows='4'";
 $inputs->tag['attention']							= "class='form-control'";
 $inputs->tag['payday']							= "class='form-control'";
 $inputs->tag['paymentterms']							= "class='form-control'";

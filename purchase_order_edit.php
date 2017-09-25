@@ -126,8 +126,8 @@ $supplier_id								= $inputs->value['supplier_id'];
 
 
 $inputs2				= new Inputs();
-$inputs2->add('add_item_id', 'select2', "", "", sql_getArray("select concat(item_id, ' - ', name), id from item where supplier_id='$supplier_id' order by name"), 80);
-$inputs2->tag['add_item_id']					= "class='form-control' style='width:50%; display:inline-block'";
+$inputs2->add('add_item_id', 'select2', "", "", sql_getArray("select concat(item_id, ' - ', name), id from item where supplier_id='$supplier_id' order by name"), 100);
+$inputs2->tag['add_item_id']					= "class='form-control' style='display:inline-block'";
 
 
 
@@ -216,10 +216,9 @@ function tab_toggle(tab, content) {
 
 <table class='table table-borderless'>
 	<tr>
-		<td>
-			新增產品 ：
-			$inputs2->add_item_id
-			<input type=button class='btn btn-default' value='確定' style='width:70px;' onclick='
+		<td>新增產品 ：</td>
+		<td style="width:75%">$inputs2->add_item_id</td>
+			<td><input type=button class='btn btn-default' value='確定' style='width:70px;' onclick='
 				CSI_load(itemlist, "purchase_order_item_add.php?purchase_order_id=$id&id=" + document.getElementById("form").elements.namedItem("add_item_id").value, "", "append");
 				document.getElementById("form").elements.namedItem("add_item_id").value = "";
 				document.getElementById("form").elements.namedItem("input_pulldownmenu_add_item_id").value = "";

@@ -172,9 +172,9 @@ $inputs->status
 
 <table class='table table-borderless'>
 	<tr>
-		<td>
-			新增帳單 ：
-			$inputs2->add_invoice_id
+		<td>新增帳單 ：</td>
+			<td style="width:75%">$inputs2->add_invoice_id</td>
+			<td>
 			<input class='btn btn-default' type=button value='確定' onclick='CSI_load(itemlist, "customer_payment_edit_item_add.php?cp_id=$id&id=" + document.getElementById("form").elements.namedItem("add_invoice_id").value, "", "append"); document.getElementById("form").elements.namedItem("add_invoice_id").value = ""; document.getElementById("form").elements.namedItem("input_pulldownmenu_add_invoice_id").value = "";'>
 			<input class='btn btn-default' type=button value='清除記錄'	onclick='clear_record();'>
 		</td>
