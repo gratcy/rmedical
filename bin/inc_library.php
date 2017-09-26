@@ -1243,3 +1243,12 @@ function get_date_dropdown($date,$prefix='') {
 	$res .= '</select></div>';
 	return $res;
 }
+
+function __is_root($id) {
+	global $root;
+	
+	foreach($root['root'] as $k => $v) {
+		if ($id == $v) return 1;
+	}
+	return 0;
+}

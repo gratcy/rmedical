@@ -93,8 +93,8 @@ if ($date_end < $date_start)
     $date_end		= $date_start;
 
 if (isset($_GET['daterange'])) {
-	$dto = date('Y-m-d', $date_start);
-	$dfrom = date('Y-m-d', $date_end);
+	$dto = date('Y-m-d', $date_end);
+	$dfrom = date('Y-m-d', $date_start);
 }
 else {
 	$dto = '';
@@ -168,10 +168,18 @@ EOS;
 
 if (empty($page))			$page	= 'staff_group';
 
-if ($page == 'staff_group')
-	$options				= sql_getArray("select description, id from class_staff_group order by description asc");
-if ($page == 'staff')
-	$options				= sql_getArray("select a.name,  a.id from staff a join class_staff b on a.`class`=b.id order by a.`class`, a.name");
+if ($_SESSION['root'] == 1) {
+	if ($page == 'staff_group')
+		$options				= sql_getArray("select description, id from class_staff_group order by description asc");
+	if ($page == 'staff')
+		$options				= sql_getArray("select a.name,  a.id from staff a join class_staff b on a.`class`=b.id order by a.`class`, a.name");
+}
+else {
+	if ($page == 'staff_group')
+		$options				= sql_getArray("select description, id from class_staff_group WHERE id=".$_SESSION['group']." order by description asc");
+	if ($page == 'staff')
+		$options				= sql_getArray("select a.name,  a.id from staff a join class_staff b on a.`class`=b.id WHERE a.`group`=".$_SESSION['group']." order by a.`class`, a.name");
+}
 if ($page == 'customer')
 	$options				= sql_getArray("select name, id from customer order by name asc");
 
@@ -363,6 +371,7 @@ if ($_GET['page'] == 'customer') {
 	if (!empty($filter_value))
 		$filter		.= " and a.customer_id='$filter_value'";
 
+		if ($_SESSION['root'] == 0) $filterLevel .= " AND a.staff_group=".$_SESSION['group'];
 	 $items			= sql_getTable(
      		"select
 				a.invoice_id as invoice_id,
@@ -378,7 +387,7 @@ if ($_GET['page'] == 'customer') {
 				join customer b on a.customer_id=b.id
 				join staff c on a.staff_id=c.id
 			where
-				$filter order by $orderby $ordertype");
+				$filter $filterLevel order by $orderby $ordertype");
 
 	$columns_end		= sql_getObj("
 			select
@@ -390,7 +399,7 @@ if ($_GET['page'] == 'customer') {
 			from
 				invoice a
 			where
-				$filter");
+				$filter $filterLevel");
 
 }
 

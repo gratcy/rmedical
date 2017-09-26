@@ -92,8 +92,8 @@ if ($date_end < $date_start)
     $date_end		= $date_start;
 
 if (isset($_GET['daterange'])) {
-	$dto = date('Y-m-d', $date_start);
-	$dfrom = date('Y-m-d', $date_end);
+	$dto = date('Y-m-d', $date_end);
+	$dfrom = date('Y-m-d', $date_start);
 }
 else {
 	$dto = date('Y-m-d');
@@ -226,8 +226,12 @@ if ($_GET['page'] == 'staff_group') {
 	$bar_width_max		= 500;
 
 	get_orderby();
-
-	$items				= sql_getTable("select b.description as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join class_staff_group b on a.staff_group=b.id where $filter group by staff_group order by $orderby $ordertype");
+	if ($_SESSION['root'] == 1)
+		$filterLevel = "";
+	else
+		$filterLevel = " AND a.staff_group=" . $_SESSION['group'];
+	
+	$items				= sql_getTable("select b.description as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join class_staff_group b on a.staff_group=b.id where $filter $filterLevel group by staff_group order by $orderby $ordertype");
 
 	$columns_end		= sql_getObj("select concat('記錄數：', count(*), ' 　　　　加總：') as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a where $filter");
 
@@ -245,7 +249,12 @@ if ($_GET['page'] == 'staff') {
 
 	$bar_width_max		= 500;
 
-	$items				= sql_getTable("select b.name as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join staff b on a.staff_id=b.id where $filter group by a.staff_id order by $orderby $ordertype");
+	if ($_SESSION['root'] == 1)
+		$filterLevel = "";
+	else
+		$filterLevel = " AND b.`group`=" . $_SESSION['group'];
+		
+	$items				= sql_getTable("select b.name as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join staff b on a.staff_id=b.id where $filter $filterLevel group by a.staff_id order by $orderby $ordertype");
 
 	$columns_end		= sql_getObj("select concat('記錄數：', count(*), ' 　　　　加總：') as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a where $filter");
 
@@ -262,10 +271,14 @@ if ($_GET['page'] == 'item') {
 	get_orderby();
 
 	$bar_width_max		= 500;
+	if ($_SESSION['root'] == 1)
+		$filterLevel = "";
+	else
+		$filterLevel = " AND c.`group`=" . $_SESSION['group'];
 
-	$items				= sql_getTable("select b.name as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join item b on a.item_id=b.id where $filter group by `class` , a.item_id order by $orderby $ordertype");
-	$itemsHighQ			= sql_getTable("select b.name as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join item b on a.item_id=b.id where $filter group by `class` , a.item_id order by SUM(a.quantity) DESC LIMIT 10");
-	$itemsHighA			= sql_getTable("select b.name as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join item b on a.item_id=b.id where $filter group by `class` , a.item_id order by SUM(a.amount) DESC LIMIT 10");
+	$items				= sql_getTable("select b.name as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join item b on a.item_id=b.id join staff c on a.staff_id=c.id where $filter $filterLevel group by b.`class` , a.item_id order by $orderby $ordertype");
+	$itemsHighQ			= sql_getTable("select b.name as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join item b on a.item_id=b.id join staff c on a.staff_id=c.id where $filter $filterLevel group by b.`class` , a.item_id order by SUM(a.quantity) DESC LIMIT 10");
+	$itemsHighA			= sql_getTable("select b.name as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join item b on a.item_id=b.id join staff c on a.staff_id=c.id where $filter $filterLevel group by b.`class` , a.item_id order by SUM(a.amount) DESC LIMIT 10");
 
 	$columns_end		= sql_getObj("select concat('記錄數：', count(*), ' 　　　　加總：') as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a where $filter");
 
@@ -282,8 +295,12 @@ if ($_GET['page'] == 'brand') {
 	get_orderby();
 
 	$bar_width_max		= 500;
+	if ($_SESSION['root'] == 1)
+		$filterLevel = "";
+	else
+		$filterLevel = " AND c.`group`=" . $_SESSION['group'];
 
-	$items				= sql_getTable("select b.description as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join class_brand b on a.item_brand=b.id where $filter group by a.item_brand order by $orderby $ordertype");
+	$items				= sql_getTable("select b.description as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join class_brand b on a.item_brand=b.id join staff c on a.staff_id=c.id where $filter $filterLeve group by a.item_brand order by $orderby $ordertype");
 
 	$columns_end		= sql_getObj("select concat('記錄數：', count(*), ' 　　　　加總：') as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a where $filter");
 
@@ -300,8 +317,12 @@ if ($_GET['page'] == 'customer') {
 	get_orderby();
 
 	$bar_width_max		= 500;
+	if ($_SESSION['root'] == 1)
+		$filterLevel = "";
+	else
+		$filterLevel = " AND c.`group`=" . $_SESSION['group'];
 
-	$items				= sql_getTable("select b.name as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join customer b on a.customer_id=b.id where $filter group by a.customer_id order by $orderby $ordertype");
+	$items				= sql_getTable("select b.name as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a join customer b on a.customer_id=b.id join staff c on a.staff_id=c.id where $filter $filterLeve group by a.customer_id order by $orderby $ordertype");
 
 	$columns_end		= sql_getObj("select concat('記錄數：', count(*), ' 　　　　加總：') as name, sum(a.quantity) as quantity, sum(a.amount) as amount from invoice_detail a where $filter");
 

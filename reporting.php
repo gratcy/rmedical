@@ -48,7 +48,7 @@ $inputs->add(
 			'tstatus'				, 'radio'	, 'Status'	, '100%',
 			'reporttype'				, 'radio'	, 'Report Type'	, '100%'
 				);
-if ($_SESSION['class_staff'] == 1)
+if ($_SESSION['root'] == 1)
 $inputs->options['staff_id__'] = sql_getArray("select a.name, a.id from staff a JOIN service_user b ON a.id=b.staff_id WHERE a.class IN (2,3) AND b.store_id>0 order by a.name asc");
 else
 $inputs->options['staff_id__'] = sql_getArray("select a.name, a.id from staff a JOIN service_user b ON a.id=b.staff_id WHERE a.class IN (2,3) AND b.store_id=".$_SESSION['store_id']." order by a.name asc");
@@ -135,7 +135,7 @@ if ($orderby == $k) {
 </thead>
 <tbody>
 <?php
-if ($_SESSION['class_staff'] == 1)
+if ($_SESSION['root'] == 1)
 $filter = "a.tstatus!=0";
 else
 $filter = "a.tstatus!=0 AND b.sid=".$_SESSION['store_id'];

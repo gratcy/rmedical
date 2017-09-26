@@ -130,11 +130,18 @@ EOS;
 
 if (empty($page))			$page	= 'staff_group';
 
-if ($page == 'staff_group')
+if ($_SESSION['root'] == 1) {
+	if ($page == 'staff_group')
 	$options				= sql_getArray("select description, id from class_staff_group order by description asc");
-if ($page == 'staff')
+	if ($page == 'staff')
 	$options				= sql_getArray("select a.name,  a.id from staff a join class_staff b on a.`class`=b.id order by a.`class`, a.name");
-
+}
+else {
+	if ($page == 'staff_group')
+	$options				= sql_getArray("select description, id from class_staff_group WHERE id=".$_SESSION['group']." order by description asc");
+	if ($page == 'staff')
+	$options				= sql_getArray("select a.name,  a.id from staff a join class_staff b on a.`class`=b.id WHERE a.`group`=".$_SESSION['group']." order by a.`class`, a.name");
+}
 
 $inputs->clear();
 $inputs->add('filter_value', 'select2', $filter_value, 'Filter value', $options, '100%');

@@ -92,8 +92,8 @@ if ($date_end < $date_start)
     $date_end		= $date_start;
 
 if (isset($_GET['daterange'])) {
-	$dto = date('Y-m-d', $date_start);
-	$dfrom = date('Y-m-d', $date_end);
+	$dto = date('Y-m-d', $date_end);
+	$dfrom = date('Y-m-d', $date_start);
 }
 else {
 	$dto = '';
@@ -167,11 +167,18 @@ EOS;
 
 if (empty($page))			$page	= 'staff_group';
 
-if ($page == 'staff_group')
-	$options				= sql_getArray("select description, id from class_staff_group order by description asc");
-if ($page == 'staff')
-	$options				= sql_getArray("select a.name,  a.id from staff a join class_staff b on a.`class`=b.id order by a.`class`, a.name");
-
+if ($_SESSION['root'] == 1) {
+	if ($page == 'staff_group')
+		$options				= sql_getArray("select description, id from class_staff_group order by description asc");
+	if ($page == 'staff')
+		$options				= sql_getArray("select a.name,  a.id from staff a join class_staff b on a.`class`=b.id order by a.`class`, a.name");
+}
+else {
+	if ($page == 'staff_group')
+		$options				= sql_getArray("select description, id from class_staff_group WHERE id=".$_SESSION['group']." order by description asc");
+	if ($page == 'staff')
+		$options				= sql_getArray("select a.name,  a.id from staff a join class_staff b on a.`class`=b.id WHERE a.`group`=".$_SESSION['group']." order by a.`class`, a.name");
+}
 
 $inputs->clear();
 $inputs->add('filter_value', 'select2', $filter_value, 'Filter value', $options, 80);
@@ -244,6 +251,7 @@ if ($_GET['page'] == 'staff_group') {
 
 	if (!empty($filter_value))
 		$filter		.= " and staff_group='$filter_value'";
+	if ($_SESSION['root'] == 0) $filterLevel .= " AND staff_group=".$_SESSION['group'];
 
 	$items				= sql_getTable("
 			select
@@ -254,7 +262,7 @@ if ($_GET['page'] == 'staff_group') {
 				sum(a.unpaid) as unpaid,
 				sum(a.amount_net)-sum(a.unpaid) as paid,
 				(sum(a.amount_net)/sum(a.amount_gross)*100) as discount_percentage
-			from invoice a where $filter group by a.customer_id order by $orderby $ordertype");
+			from invoice a where $filter $filterLevel group by a.customer_id order by $orderby $ordertype");
 
 	$columns_end		= sql_getObj("
 			select
@@ -265,7 +273,7 @@ if ($_GET['page'] == 'staff_group') {
 				sum(a.unpaid) as unpaid,
 				sum(a.amount_net)-sum(a.unpaid) as paid,
 				(sum(a.amount_net)/sum(a.amount_gross)*100) as discount_percentage
-			from invoice a where $filter");
+			from invoice a where $filter $filterLevel");
 
 }
 
@@ -289,6 +297,8 @@ if ($_GET['page'] == 'staff') {
 
 	if (!empty($filter_value))
 		$filter		.= " and staff_id='$filter_value'";
+		
+		if ($_SESSION['root'] == 0) $filterLevel .= " AND staff_group=".$_SESSION['group'];
 
 	$items				= sql_getTable("
 			select
@@ -299,7 +309,7 @@ if ($_GET['page'] == 'staff') {
 				sum(a.unpaid) as unpaid,
 				amount_net-unpaid as paid,
 				(sum(a.amount_net)/sum(a.amount_gross)*100) as discount_percentage
-			from invoice a where $filter group by a.customer_id order by $orderby $ordertype");
+			from invoice a where $filter $filterLevel group by a.customer_id order by $orderby $ordertype");
 
 	$columns_end		= sql_getObj("
 			select
@@ -310,7 +320,7 @@ if ($_GET['page'] == 'staff') {
 				sum(a.unpaid) as unpaid,
 				sum(a.amount_net)-sum(a.unpaid) as paid,
 				(sum(a.amount_net)/sum(a.amount_gross)*100) as discount_percentage
-			from invoice a where $filter");
+			from invoice a where $filter $filterLevel");
 
 }
 

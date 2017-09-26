@@ -12,9 +12,7 @@ unset($_SESSION['privilege']);
 unset($_SESSION['user_name']);
 unset($_SESSION['user_id']);
 
-
-
-$user						= sql_getObj("select a.id,a.staff_id,a.store_id,a.name,a.privilege,b.class as class_staff from service_user a LEFT JOIN staff b ON a.staff_id=b.id where a.user='$id' and md5('$password')=a.password");
+$user						= sql_getObj("select a.id,a.staff_id,a.store_id,a.name,a.privilege,b.class as class_staff,b.group from service_user a LEFT JOIN staff b ON a.staff_id=b.id where a.user='$id' and md5('$password')=a.password");
 
 if (!empty($user->id)) {
 	$_SESSION['user_id']	= $user->id;
@@ -23,6 +21,8 @@ if (!empty($user->id)) {
 	$_SESSION['user_name']	= $user->name;
 	$_SESSION['privilege']	= $user->privilege;
 	$_SESSION['class_staff']	= $user->class_staff;
+	$_SESSION['group']	= $user->group;
+	$_SESSION['root']	= __is_root($user->id);
 	$_SESSION['lang']	= 'hk';
 }
 
