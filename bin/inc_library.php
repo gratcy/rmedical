@@ -1192,7 +1192,7 @@ function get_status_queue($id) {
 
 function __get_month($id) {
 	$id = (int) $id;
-	$month = array('Januari', 'Febuari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember');
+	$month = array('January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
 	return $month[($id - 1)];
 }
 
