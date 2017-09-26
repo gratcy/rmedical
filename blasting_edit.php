@@ -212,7 +212,9 @@ else {
 			    <div class="col-sm-8">
 			    	<input name="test" class="btn btn-default" type="submit" value="Testing">
 						<input name="submit" class="btn btn-default" type="submit" value="Submit (S)">
+				<?php if ($_SESSION['root'] == 1) { ?>
 						<span id="input_approve_button"><input name="app" type="button" value="Approved (A)" class="btn btn-default" style="width:110px;"> </span>
+			  <?php } ?>
 			    </div>
 			  </div>
 				<hr />
