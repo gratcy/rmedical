@@ -78,9 +78,15 @@ if ($orderby == $k) {
 ?>
 <th <?php echo ($k == 'tid' ? 'class="ids"' : ''); ?>><a href="<?php echo getURL('file'); ?>?ordertype=<?php echo $order; ?>&name=<?php echo $k; ?>"><?php echo $v?></a> <?php echo $arrow; ?></th>
 <?php } ?>
+<?php if (!empty($privilege->print)) : ?>
 <th>Print</th>
+<?php endif; ?>
+<?php if (!empty($privilege->edit)) : ?>
 <th>Edit</th>
+<?php endif; ?>
+<?php if (!empty($privilege->delete)) : ?>
 <th>Delete</th>
+<?php endif; ?>
 </tr>
 </thead>
 <tbody>

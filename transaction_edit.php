@@ -144,13 +144,13 @@ if ($submit) {
 	if (!empty($error)) {
 		echo "<p><font color=red>Error :</font></p>";
 		echo "<p>( ".$error." )</p>";
-		gotoURL(-1, 3);
+		gotoURL('/transaction_edit.php?id=' . $id, 3);
 		exit;
 	}
 	else {
 		echo "<p><font color=blue>Sales Order successfully ".($app == 1 ? "approved" : "updated")." :</font></p>";
 		echo "<p>( 3 秒內會自動反回前面，或按 <a href='transaction.php'> &lt; 這裡 &gt; </a> 返回。 )</p>";
-		gotoURL('/transaction.php', 0);
+		gotoURL('/transaction.php', 3);
 		exit;
 	}
 }
