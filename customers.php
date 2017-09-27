@@ -133,8 +133,12 @@ if ($orderby == $k) {
 ?>
 <th <?php echo ($k == 'cid' ? 'class="ids"' : ''); ?>><a href="<?php echo getURL('file'); ?>?ordertype=<?php echo $order; ?>&name=<?php echo $k; ?>"><?php echo $v?></a> <?php echo $arrow; ?></th>
 <?php } ?>
+<?php if (!empty($privilege->edit)) : ?>
 <th class="noprint">Edit</th>
+<?php endif; ?>
+<?php if (!empty($privilege->delete)) : ?>
 <th class="noprint">Delete</th>
+<?php endif; ?>
 </tr>
 </tfoot>
 </table>
