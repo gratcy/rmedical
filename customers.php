@@ -106,8 +106,12 @@ foreach($sql as $k => $v) {
 <td><?php echo $v['cemail']; ?></td>
 <td><?php echo $phone[0] . ($phone[1] ? ' / '.$phone[1] : ''); ?></td>
 <td><?php echo $v['caddr']; ?></td>
+<?php if (!empty($privilege->edit)) : ?>
 <td><?php if (!empty($privilege->edit)) : ?><a href="customers_edit.php?id=<?php echo $v['cid']; ?>"><i class='fa fa-pencil'></i></a><?php endif; ?></td>
+<?php endif; ?>
+<?php if (!empty($privilege->delete)) : ?>
 <td><?php if (!empty($privilege->delete)) : ?><a href="customers.php?delete=<?php echo $v['cid']; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class='fa fa-times'></i></a><?php endif; ?></td>
+<?php endif; ?>
 </tr>
 <?php
 }

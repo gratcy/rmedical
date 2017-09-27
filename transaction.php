@@ -124,9 +124,15 @@ foreach($sql as $k => $v) {
 <td><?php echo get_payment_type($v['tpayment']); ?></td>
 <td><?php echo ($v['tcardno'] ? $v['tcardno'] : '-'); ?></td>
 <td><?php echo ($v['tstatus'] == 1 ? 'Active' : 'Approved'); ?></td>
+<?php if (!empty($privilege->print)) : ?>
 <td><?php if (!empty($privilege->print)) : ?><a target="_blank" href="transaction_print.php?id=<?php echo $v['tid']; ?>"><i class='fa fa-print'></i></a><?php endif; ?></td>
+<?php endif; ?>
+<?php if (!empty($privilege->edit)) : ?>
 <td><?php if (!empty($privilege->edit) && $v['tstatus'] != 2) : ?><a href="transaction_edit.php?id=<?php echo $v['tid']; ?>"><i class='fa fa-pencil'></i></a><?php endif; ?></td>
+<?php endif; ?>
+<?php if (!empty($privilege->delete)) : ?>
 <td><?php if (!empty($privilege->delete) && $v['tstatus'] != 2) : ?><a href="transaction.php?delete=<?php echo $v['tid']; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class='fa fa-times'></i></a><?php endif; ?></td>
+<?php endif; ?>
 </tr>
 <?php
 }
