@@ -133,7 +133,7 @@ if ($submit) {
 		
 		echo "<p><font color=blue>Sales Order successfully added :</font></p>";
 		echo "<p>( 3 秒內會自動反回前面，或按 <a href='transaction.php'> &lt; 這裡 &gt; </a> 返回。 )</p>";
-		gotoURL(-2, 3);
+		gotoURL('/transaction.php', 0);
 		exit;
 	}
 }
