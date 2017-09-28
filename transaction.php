@@ -176,7 +176,10 @@ if ($orderby == $k) {
             <input type="hidden" name="page" value="transaction" />
       </form>
 <?php
+if ($_SESSION['root'] == 1)
 $record_sql				= "select count(*) from transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid WHERE $filter";
+else
+$record_sql				= "select count(*) from transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid WHERE a.tstore=".$_SESSION['store_id']." $filter";
 
 echo "<div id='paging_footer'>";
 include "paging.php";
