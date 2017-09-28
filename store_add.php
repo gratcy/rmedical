@@ -11,9 +11,6 @@ if ($submit) {
 	if (!$name || !$phone || !$address || !$manager) {
 		$error = 'Data you input is incomplete !!!';
 	}
-	else if (!is_numeric($phone[0]) || isset($phone[1]) && !is_numeric($phone[1])) {
-		$error = 'Invalid phone number format !!!';
-	}
 	else {
 		$fields['sname'] = $name;
 		$fields['smanager'] = $manager;
