@@ -4,14 +4,6 @@ $privilege			= sql_getObj("select * from service_user_privilege where user_id='$
 
 if (empty($privilege->view))	{	gotoURL("index.php"); exit; }
 
-if (isset($_GET['delete']) && $privilege->delete == 'on') {
-	$id		= sql_secure($_GET['delete']);
-	$fields['sstatus'] = 0;
-	$fields['smodified'] = json_encode(array('uid' => $user -> id, 'date' => date("Y-m-d H:i:s")));
-	sql_query(sql_update("store_tab", $fields, "sid='$id'"));
-	gotoURL(-1);
-	exit;
-}
 $ordertype = isset($_GET['ordertype']) ? $_GET['ordertype'] : 'desc';
 $name = isset($_GET['name']) ? $_GET['name'] : '';
 $columns = array('sid' => 'ID Store', 'name' => 'Store Manager', 'sname' => 'Name', 'salestotal' => 'Sales', 'sphone' => 'Phone', 'saddr' => 'Address');
@@ -74,11 +66,11 @@ $inputs->value['reporttype'] = $reporttype;
 <br />
 <form id="search_box" action="" method="GET">
 <table border="0" class="table_filter">
-<?php if ($_SESSION['class_staff'] == 1) { ?>
+<?php if ($_SESSION['root'] == 1) { ?>
 <tr><td style="width:20%">Manager</td><td><?php echo $inputs->manager_id__; ?></td></tr>
 <tr><td>Store</td><td><?php echo $inputs->store_id__; ?></td></tr>
 <tr><td>Sales</td><td><?php echo $inputs->staff_id__; ?></td></tr>
-<?php } else if ($_SESSION['class_staff'] == 8) { ?>
+<?php } else if ($_SESSION['class_staff'] == 1 || $_SESSION['class_staff'] == 8) { ?>
 <input type="hidden" name="store_id[]" value="<?php echo $_SESSION['store_id']; ?>">
 <tr><td>Sales</td><td><?php echo $inputs->staff_id__; ?></td></tr>
 <?php } else { ?>
@@ -218,7 +210,7 @@ if ($orderby == $k) {
 </tfoot>
 </table>
 <p>&nbsp;</p>
-<?php if ($_SESSION['class_staff'] == 1) { ?>
+<?php if ($_SESSION['root'] == 1) { ?>
 <div id="container"></div>
 <?php } ?>
 <p>&nbsp;</p>
@@ -236,7 +228,7 @@ if ($orderby == $k) {
 		$cat = array();
 		$rr = array();
 		$l1 = '';
-		if ($_SESSION['class_staff'] == 1)
+		if ($_SESSION['root'] == 1)
 		$str = sql_getTable("SELECT sid,sname FROM store_tab WHERE sstatus=1");
 		else
 		$str = sql_getTable("SELECT sid,sname FROM store_tab WHERE sstatus=1 AND sid=" . $_SESSION['store_id']);
@@ -300,7 +292,7 @@ if (count($chats) > 0) {
 	  
 	  $(document).ready(function () {
 
-<?php if ($_SESSION['class_staff'] == 1) { ?>
+<?php if ($_SESSION['root'] == 1) { ?>
     // Build the chart
     Highcharts.chart('container', {
         chart: {

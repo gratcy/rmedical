@@ -103,9 +103,9 @@ if (!empty($search_word) && !empty($search_field)) {
 		$filter .= " AND $search_field LIKE '%$search_word%'";
 	}
 }
-if ($_SESSION['class_staff'] == 1)
+if ($_SESSION['root'] == 1)
 $sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where ".$filter." ORDER BY $orderby $ordertype limit $offset, $record_per_page");
-else if ($_SESSION['class_staff'] == 8)
+else if ($_SESSION['class_staff'] == 8 || $_SESSION['class_staff'] == 1)
 $sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where a.tstore=".$_SESSION['store_id']." AND  ".$filter." ORDER BY $orderby $ordertype limit $offset, $record_per_page");
 else
 $sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where a.tstore=".$_SESSION['store_id']." AND ".$filter." ORDER BY $orderby $ordertype limit $offset, $record_per_page");
