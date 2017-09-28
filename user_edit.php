@@ -81,7 +81,7 @@ else {
 }
 
 $inputs->options['staff_id']		= sql_getArray("select name, id from staff order by name asc");
-$inputs->options['store_id']				= sql_getArray("select sname, sid from store_tab order by sname asc");
+$inputs->options['store_id']				= sql_getArray("select sname, sid from store_tab WHERE sid=1 order by sname asc");
 
 
 $items		= sql_getTable("select * from service_user_page");
