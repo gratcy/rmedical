@@ -179,7 +179,7 @@ if ($orderby == $k) {
 if ($_SESSION['root'] == 1)
 $record_sql				= "select count(*) from transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid WHERE $filter";
 else
-$record_sql				= "select count(*) from transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid WHERE a.tstore=".$_SESSION['store_id']." $filter";
+$record_sql				= "select count(*) from transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid WHERE a.tstore=".$_SESSION['store_id']." AND $filter";
 
 echo "<div id='paging_footer'>";
 include "paging.php";
