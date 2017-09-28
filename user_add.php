@@ -78,7 +78,7 @@ foreach ($items as $item) {
 }
 
 $inputs->options['staff_id']				= sql_getArray("select name, id from staff order by name asc");
-$inputs->options['store_id']				= sql_getArray("select sname, sid from store_tab WHERE sid=1 order by sname asc");
+$inputs->options['store_id']				= sql_getArray("select sname, sid from store_tab WHERE sstatus=1 order by sname asc");
 
 $username = lang('登入名稱');
 $staff = lang('員工');
