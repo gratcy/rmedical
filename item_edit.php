@@ -12,10 +12,11 @@ $id					= sql_secure($_GET['id']);
 $from_query			= $_GET['from_query'];
 
 if ($_POST['action'] == 'edit') {
-
+	$_POST['warranty'] = $_POST['warranty'] == 'on' ? 1 : 0;
+	
 	$error						= array();
 
-	$fields						= sql_secure($_POST, "date_modify, name, name_short,name_series, name_subitem, color,size, barcode, price, safelimit, purprice, name, supplier_id, brand, class, modify, edit_time, qty,dqty , remark");
+	$fields						= sql_secure($_POST, "date_modify, name, name_short,name_series, name_subitem, color,size, barcode, price, safelimit, purprice, name, supplier_id, brand, class, modify, edit_time, qty,dqty , remark, warranty");
 
 	$fields['date_modify']		= date("Y-m-d H:i:s");
 	$fields['modify']			= $user->id;
@@ -78,6 +79,7 @@ $inputs->add(
 			'photo'						, 'file'			, '圖片'							, '100%',
 			'sep2'						, ''				, '---'							, '100%',
 			'remark'					, 'textarea'		, '備註'						, '100%',
+			'warranty'					, 'checkbox'		, '保证'						, '100%',
 			'sep2'						, ''				, '---'							, '100%',
 			'submit_button'				, 'submit'			, '確定(S)'						, '100%'
 				);
@@ -89,12 +91,13 @@ if ($_POST['action'] == 'edit')
 else
 	$inputs->value 	= sql_getVar("select * from item where id='$id'");
 
-
+$inputs->value['warranty'] = ($inputs->value['warranty'] == 1 ? 'on' : 'off');
 $inputs->options['brand']					= sql_getArray("select description, id from class_brand order by description asc");
 $inputs->options['class']					= sql_getArray("select description, id from class_item order by description asc");
 $inputs->options['supplier_id']				= sql_getArray("select name, id from supplier order by name asc");
 $inputs->desc2['photo']						= "<br>".displayImage("content/product/" . $inputs->value['photo'], "", 100, 100, "", "style='border:solid 1px #aaaaaa'");
 
+$inputs->tag['warranty']							= "class=''";
 $inputs->tag['name']							= "class='form-control'";
 $inputs->tag['name_short']							= "class='form-control'";
 $inputs->tag['name_series']							= "class='form-control'";

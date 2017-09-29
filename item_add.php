@@ -9,10 +9,11 @@ $privilege			= sql_getObj("select * from service_user_privilege where user_id='$
 if (empty($privilege->edit))	{	gotoURL("item.php"); exit; }
 
 if ($_POST['action'] == 'add') {
+	$_POST['warranty'] = $_POST['warranty'] == 'on' ? 1 : 0;
 
 	$error						= array();
 
-	$fields						= sql_secure($_POST, "date_modify, name,name_short, name_series, name_subitem, color, size, barcode, price, safelimit, purprice, supplier_id, brand, class, user_sid, edit_time, qty,dqty , remark");
+	$fields						= sql_secure($_POST, "date_modify, name,name_short, name_series, name_subitem, color, size, barcode, price, safelimit, purprice, supplier_id, brand, class, user_sid, edit_time, qty,dqty , remark, warranty");
 
 	$fields['date_modify']		= date("Y-m-d H:i:s");
 	$fields['user_sid']			= $user->id;
@@ -83,6 +84,7 @@ $inputs->add(
 //			'photo'						, 'hidden'			, '圖片'						, '100%',
 			'sep1'						, ''				, '---'							, '100%',
 			'remark'					, 'textarea'		, '備註'						, '100%',
+			'warranty'					, 'checkbox'		, '保证'						, '100%',
 			'sep2'						, ''				, '---'							, '100%',
 			'submit_button'				, 'submit'			, '確定(S)'						, '100%'
 				);
@@ -104,6 +106,7 @@ $inputs->options['supplier_id']				= sql_getArray("select name, id from supplier
 
 //$inputs->exclude[]							= 'cost_currency';
 
+$inputs->tag['warranty']							= "class=''";
 $inputs->tag['name']							= "class='form-control'";
 $inputs->tag['name_short']							= "class='form-control'";
 $inputs->tag['name_series']							= "class='form-control'";
