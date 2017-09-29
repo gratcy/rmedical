@@ -21,6 +21,14 @@ if (!empty($user->id)) {
 	$_SESSION['user_name']	= $user->name;
 	$_SESSION['privilege']	= $user->privilege;
 	$_SESSION['class_staff']	= $user->class_staff;
+	if ($user->class_staff == 1 || $user->class_staff == 8) {
+		$store = sql_getTable("SELECT sid FROM store_tab WHERE smanager=" . $user->staff_id);
+		$rs = array();
+		foreach($store as $k => $v) {
+			$rs[] = $v['sid'];
+		}
+		$_SESSION['stores'] = $rs;
+	}
 	$_SESSION['group']	= $user->group;
 	$_SESSION['root']	= __is_root($user->id);
 	$_SESSION['lang']	= 'hk';

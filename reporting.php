@@ -43,13 +43,13 @@ $inputs->add(
 if ($_SESSION['root'] == 1)
 $inputs->options['staff_id__'] = sql_getArray("select a.name, a.id from staff a JOIN service_user b ON a.id=b.staff_id WHERE a.class IN (2,3) AND b.store_id>0 order by a.name asc");
 else if ($_SESSION['class_staff'] == 1 || $_SESSION['class_staff'] == 8)
-$inputs->options['staff_id__'] = sql_getArray("select a.name, a.id from staff a JOIN service_user b ON a.id=b.staff_id WHERE a.class IN (2,3) AND b.smanager=".$_SESSION['staff_id']." order by a.name asc");
+$inputs->options['staff_id__'] = sql_getArray("select a.name, a.id from staff a JOIN service_user b ON a.id=b.staff_id WHERE a.class IN (2,3) AND b.store_id IN(".implode(',',$_SESSION['stores']).") order by a.name asc");
 else
 $inputs->options['staff_id__'] = sql_getArray("select a.name, a.id from staff a JOIN service_user b ON a.id=b.staff_id WHERE a.class IN (2,3) AND b.store_id=".$_SESSION['store_id']." order by a.name asc");
 
 $inputs->options['store_id__'] = sql_getArray("select sname, sid from store_tab WHERE sstatus=1 order by sname asc");
 $inputs->options['customer_id__'] = sql_getArray("select cname, cid from customer_tab order by cname asc");
-$inputs->options['manager_id__'] = sql_getArray("select name, id from staff WHERE class=8 order by name asc");
+$inputs->options['manager_id__'] = sql_getArray("select name, id from staff WHERE `class` IN (1,8) order by name asc");
 $inputs->options['item_id__'] = sql_getArray("select name, id from item order by name asc");
 
 $inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' => 2);
@@ -63,6 +63,7 @@ if (count($customer_id) > 0) $inputs->value['customer_id__'] = implode(',',$cust
 if (count($item_id) > 0) $inputs->value['item_id__'] = implode(',',$item_id);
 $inputs->value['tpayment'] = $tpayment;
 $inputs->value['reporttype'] = $reporttype;
+
 ?>
 <h3>Reporting</h3>
 <br />
@@ -132,7 +133,7 @@ if ($orderby == $k) {
 if ($_SESSION['root'] == 1)
 $filter = "a.tstatus!=0";
 else if ($_SESSION['class_staff'] == 1 || $_SESSION['class_staff'] == 8)
-$filter = "a.tstatus!=0 AND b.smanager IN(".implode(",",$manager_id).")";
+$filter = "a.tstatus!=0 AND b.smanager=".$_SESSION['staff_id'];
 else
 $filter = "a.tstatus!=0 AND b.sid=".$_SESSION['store_id'];
 
