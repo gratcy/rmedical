@@ -96,10 +96,10 @@ foreach($sql as $k => $v) {
 <td><?php echo $v['mobile']; ?></td>
 <td><?php echo $v['email']; ?></td>
 <?php if (!empty($privilege->edit)) : ?>
-<td><a href="staff_edit.php?id=<?php echo $v['id']; ?>"><i class='fa fa-pencil'></i></a><?php endif; ?></td>
+<td><a href="staff_edit.php?id=<?php echo $v['id']; ?>"><i class='fa fa-pencil'></i></a></td>
 <?php endif; ?>
 <?php if (!empty($privilege->delete)) : ?>
-<td><?php if (!empty($privilege->delete)) : ?><a href="staff.php?delete=<?php echo $v['id']; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class='fa fa-times'></i></a><?php endif; ?></td>
+<td><?php if (!empty($privilege->delete)) : ?><a href="staff.php?delete=<?php echo $v['id']; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class='fa fa-times'></i></a></td>
 <?php endif; ?>
 </tr>
 <?php
