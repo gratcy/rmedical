@@ -70,8 +70,12 @@ if ($orderby == $k) {
 ?>
 <th <?php echo ($k == 'sid' ? 'class="ids"' : ''); ?>><a href="<?php echo getURL('file'); ?>?ordertype=<?php echo $order; ?>&name=<?php echo $k; ?>"><?php echo $v?></a> <?php echo $arrow; ?></th>
 <?php } ?>
+<?php if (!empty($privilege->edit)) : ?>
 <th>Edit</th>
+<?php endif; ?>
+<?php if (!empty($privilege->delete)) : ?>
 <th>Delete</th>
+<?php endif; ?>
 </tr>
 </thead>
 <tbody>
@@ -91,8 +95,12 @@ foreach($sql as $k => $v) {
 <td><?php echo $v['gender']; ?></td>
 <td><?php echo $v['mobile']; ?></td>
 <td><?php echo $v['email']; ?></td>
-<td><?php if (!empty($privilege->edit)) : ?><a href="staff_edit.php?id=<?php echo $v['id']; ?>"><i class='fa fa-pencil'></i></a><?php endif; ?></td>
+<?php if (!empty($privilege->edit)) : ?>
+<td><a href="staff_edit.php?id=<?php echo $v['id']; ?>"><i class='fa fa-pencil'></i></a><?php endif; ?></td>
+<?php endif; ?>
+<?php if (!empty($privilege->delete)) : ?>
 <td><?php if (!empty($privilege->delete)) : ?><a href="staff.php?delete=<?php echo $v['id']; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class='fa fa-times'></i></a><?php endif; ?></td>
+<?php endif; ?>
 </tr>
 <?php
 }
@@ -117,8 +125,12 @@ if ($orderby == $k) {
 ?>
 <th <?php echo ($k == 'sid' ? 'class="ids"' : ''); ?>><a href="<?php echo getURL('file'); ?>?ordertype=<?php echo $order; ?>&name=<?php echo $k; ?>"><?php echo $v?></a> <?php echo $arrow; ?></th>
 <?php } ?>
+<?php if (!empty($privilege->edit)) : ?>
 <th>Edit</th>
+<?php endif; ?>
+<?php if (!empty($privilege->delete)) : ?>
 <th>Delete</th>
+<?php endif; ?>
 </tr>
 </tfoot>
 </table>
