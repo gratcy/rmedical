@@ -42,6 +42,8 @@ $inputs->add(
 				);
 if ($_SESSION['root'] == 1)
 $inputs->options['staff_id__'] = sql_getArray("select a.name, a.id from staff a JOIN service_user b ON a.id=b.staff_id WHERE a.class IN (2,3) AND b.store_id>0 order by a.name asc");
+else if ($_SESSION['class_staff'] == 1 || $_SESSION['class_staff'] == 8)
+$inputs->options['staff_id__'] = sql_getArray("select a.name, a.id from staff a JOIN service_user b ON a.id=b.staff_id WHERE a.class IN (2,3) AND b.smanager=".$_SESSION['staff_id']." order by a.name asc");
 else
 $inputs->options['staff_id__'] = sql_getArray("select a.name, a.id from staff a JOIN service_user b ON a.id=b.staff_id WHERE a.class IN (2,3) AND b.store_id=".$_SESSION['store_id']." order by a.name asc");
 
@@ -129,6 +131,8 @@ if ($orderby == $k) {
 <?php
 if ($_SESSION['root'] == 1)
 $filter = "a.tstatus!=0";
+else if ($_SESSION['class_staff'] == 1 || $_SESSION['class_staff'] == 8)
+$filter = "a.tstatus!=0 AND b.smanager IN(".implode(",",$manager_id).")";
 else
 $filter = "a.tstatus!=0 AND b.sid=".$_SESSION['store_id'];
 
@@ -230,6 +234,8 @@ if ($orderby == $k) {
 		$l1 = '';
 		if ($_SESSION['root'] == 1)
 		$str = sql_getTable("SELECT sid,sname FROM store_tab WHERE sstatus=1");
+		else if ($_SESSION['class_staff'] == 1 || $_SESSION['class_staff'] == 8)
+		$str = sql_getTable("SELECT sid,sname FROM store_tab WHERE sstatus=1 AND smanager=".$_SESSION['staff_id']."");
 		else
 		$str = sql_getTable("SELECT sid,sname FROM store_tab WHERE sstatus=1 AND sid=" . $_SESSION['store_id']);
 		foreach($str as $k1 => $v1 ) {

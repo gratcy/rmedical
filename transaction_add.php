@@ -43,7 +43,7 @@ if ($submit) {
 	else if ($tammount <= 1 || $ttotal <= 1) {
 		$error = 'Total zero !!!';
 	}
-	else if ($tpayment > 0 && !$tcardno) {
+	else if ($tpayment > 1 && !$tcardno) {
 		$error = 'Card number must be filled !!!';
 	}
 	else if ($newcust == 0 && !$customer_id) {
@@ -418,7 +418,7 @@ $('input[name="addItem"]').click(function(){
 	}
 })
 $('input[name="tpayment"]').click(function(){
-	if ($(this).val() == 0) {
+	if ($(this).val() == 0 || $(this).val() == 1) {
 		$('tr.tcardno').hide();
 	}
 	else {

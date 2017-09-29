@@ -13,6 +13,7 @@ if (isset($_GET['delete']) && $privilege->delete == 'on') {
 	gotoURL(-1);
 	exit;
 }
+
 $ordertype = isset($_GET['ordertype']) ? $_GET['ordertype'] : 'desc';
 $name = isset($_GET['name']) ? $_GET['name'] : '';
 $search_word = isset($_GET['search_word']) ? $_GET['search_word'] : '';
@@ -105,8 +106,8 @@ if (!empty($search_word) && !empty($search_field)) {
 }
 if ($_SESSION['root'] == 1)
 $sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where ".$filter." ORDER BY $orderby $ordertype limit $offset, $record_per_page");
-else if ($_SESSION['class_staff'] == 8 || $_SESSION['class_staff'] == 1)
-$sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where a.tstore=".$_SESSION['store_id']." AND  ".$filter." ORDER BY $orderby $ordertype limit $offset, $record_per_page");
+else if ($_SESSION['class_staff'] == 1 || $_SESSION['class_staff'] == 8)
+$sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where b.smanager=".$_SESSION['staff_id']." AND  ".$filter." ORDER BY $orderby $ordertype limit $offset, $record_per_page");
 else
 $sql = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where a.tstore=".$_SESSION['store_id']." AND ".$filter." ORDER BY $orderby $ordertype limit $offset, $record_per_page");
 foreach($sql as $k => $v) {
@@ -178,6 +179,8 @@ if ($orderby == $k) {
 <?php
 if ($_SESSION['root'] == 1)
 $record_sql				= "select count(*) from transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid WHERE $filter";
+else if ($_SESSION['class_staff'] == 1 || $_SESSION['class_staff'] == 8)
+$record_sql				= "select count(*) from transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid WHERE b.smanager=".$_SESSION['staff_id']." AND $filter";
 else
 $record_sql				= "select count(*) from transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid WHERE a.tstore=".$_SESSION['store_id']." AND $filter";
 
