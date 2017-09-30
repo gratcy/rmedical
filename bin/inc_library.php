@@ -1185,6 +1185,9 @@ function get_payment_type($id) {
 	return $data[$id];
 }
 
+function __get_warranty($id) {
+	return ($id == 1 ? 'Yes' : 'No');
+}
 function get_status_queue($id) {
 	$arr = array('Cancel', 'Pending', 'Sent');
 	return $arr[$id];

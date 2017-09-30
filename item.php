@@ -50,6 +50,7 @@ $columns		= array(
 			"name_short"		=> "產品簡稱",
 			"name_series"		=> "產品系列",
 			"price"				=> "價格",
+			"warranty"			=> "備註",
 //			"status"			=> "狀態",
 			"#2"				=> "編輯",
 			"#3"				=> "刪除"
@@ -232,6 +233,7 @@ foreach ($items as $item) {
 	echo "<td>$item->name_short</td>";
 	echo "<td>$item->name_series</td>";
 	echo "<td class=number>\$$item->price</td>";
+	echo "<td class=number>".__get_warranty($item->warranty)."</td>";
 	echo "<td class=noprint width=60>$edit_link</td>";
 	echo "<td class=noprint width=60>$delete_link</td>";
 	echo "</tr>";

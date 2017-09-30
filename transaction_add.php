@@ -114,16 +114,17 @@ if ($submit) {
 		$wew = sql_getTable("select name FROM staff WHERE id=" . $staff_id);
 		$res = '';
 		foreach($pname as $k => $v) {
+			$warranty = sql_getTable("select warranty FROM item WHERE id=" . $k);
 			$res .= '<tr>';
 			$res .= '<td>'.$v.'</td>';
 			$res .= '<td>'.$qty[$k].'</td>';
+			$res .= '<td>'.($warranty[0]['warranty'] == 1 ? date('Y-m-d',strtotime("+1 year")) : 'No').'</td>';
 			$res .= '<td>'.$price[$k].'</td>';
 			$res .= '</tr>';
 		}
-		$res .= '<tr><td><b>Total</b></td><td>'.array_sum($qty).'</td><td>'.array_sum($price).'</td></tr>';
+		$res .= '<tr><td><b>Total</b></td><td>'.array_sum($qty).'</td><td></td><td>'.array_sum($price).'</td></tr>';
 
 		$Qdata['dateorder'] = date('Y-m-d H:i:s');
-		$Qdata['datewarranty'] = date('Y-m-d',strtotime("+1 year"));
 		$Qdata['sales'] = $wew[0]['name'];
 		$Qdata['sono'] = $tno;
 		$Qdata['table'] = $res;
