@@ -8,7 +8,7 @@ $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
 if (!$id) {	gotoURL("index.php"); exit; }
 
 $detail = sql_getTable("select a.*,b.sname,c.name,d.cname FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid where (a.tstatus=1 OR a.tstatus=2) AND a.tid=" . $id);
-$Items = sql_getTable("select a.*,b.id,b.name,b.price from transaction_detail_tab a LEFT JOIN item b ON a.tpid=b.id where a.tstatus=1 AND a.ttid=".$id);
+$Items = sql_getTable("select a.*,b.id,b.name,b.price,b.warranty from transaction_detail_tab a LEFT JOIN item b ON a.tpid=b.id where a.tstatus=1 AND a.ttid=".$id);
 ?>
 <html>
 	<head>
@@ -41,13 +41,12 @@ $Items = sql_getTable("select a.*,b.id,b.name,b.price from transaction_detail_ta
 	<table border="0">
 	<tr><td>SO No.</td><td>: <?php echo $detail[0]['tno']; ?></td></tr>
 	<tr><td>Customer</td><td>: <?php echo $detail[0]['cname']; ?></td></tr>
-	<tr><td>Sales</td><td>: <?php echo $detail[0]['name']; ?></td></tr>
 	</table>
 	</div>
 	<div style="float:right;">
 	<table border="0">
 	<tr><td>Date Order</td><td>: <?php echo date('Y-m-d',strtotime($detail[0]['tdate']));?></td></tr>
-	<tr><td>Date Warranty</td><td>: <?php echo date('Y-m-d',strtotime("+1 year", strtotime($detail[0]['tdate']))); ?></td></tr>
+	<tr><td>Sales</td><td>: <?php echo $detail[0]['name']; ?></td></tr>
 	</table>
 	</div>
 	<div class="clear"></div>
@@ -55,6 +54,7 @@ $Items = sql_getTable("select a.*,b.id,b.name,b.price from transaction_detail_ta
 	<thead>
 	<tr>
 	<th>Products</th>
+	<th style="width:15%;">Warranty</th>
 	<th style="width:15%;">Price</th>
 	<th style="width:5%;">QTY</th>
 	<th style="width:15%;">Total</th>
@@ -64,6 +64,7 @@ $Items = sql_getTable("select a.*,b.id,b.name,b.price from transaction_detail_ta
 	<?php foreach($Items as $k => $v) :?>
 	<tr>
 	<td><?php echo $v['name'];?></td>
+	<td style="text-align:right;"><?php echo ($v['warranty'] == 1 ? date('Y-m-d',strtotime("+1 year", strtotime($detail[0]['tdate']))) : 'No Warranty');?></td>
 	<td style="text-align:right;">$<?php echo $v['price'];?></td>
 	<td style="text-align:right;"><?php echo $v['tqty'];?></td>
 	<td style="text-align:right;">$<?php echo $v['price']*$v['tqty'];?></td>

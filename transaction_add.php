@@ -118,7 +118,7 @@ if ($submit) {
 			$res .= '<tr>';
 			$res .= '<td>'.$v.'</td>';
 			$res .= '<td>'.$qty[$k].'</td>';
-			$res .= '<td>'.($warranty[0]['warranty'] == 1 ? date('Y-m-d',strtotime("+1 year")) : 'No').'</td>';
+			$res .= '<td>'.($warranty[0]['warranty'] == 1 ? date('Y-m-d',strtotime("+1 year")) : 'No Warranty').'</td>';
 			$res .= '<td>'.$price[$k].'</td>';
 			$res .= '</tr>';
 		}
