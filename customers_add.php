@@ -23,17 +23,24 @@ if ($submit) {
 		$error = 'Invalid email number format !!!';
 	}
 	else {
-		$birthday = $yyyy.'-'.$mm.'-'.$dd;
-		
-		$fields['cname'] = $name;
-		$fields['cbirthday'] = strtotime($birthday);
-		$fields['cemail'] = $email;
-		$fields['cphone'] = implode('*',$phone);
-		$fields['caddr'] = $address;
-		$fields['cstatus'] = 1;
-		$fields['ccreated'] = json_encode(array('uid' => $user -> id, 'date' => date("Y-m-d H:i:s")));
-		sql_query(sql_insert("customer_tab", $fields));
+		$ck = sql_check("SELECT * FROM customer_tab WHERE cstatus=1 AND cemail='".$email."'");
+		if ($ck) {
+			$error = 'Email exists !!!';
+		}
+		else {
+			$birthday = $yyyy.'-'.$mm.'-'.$dd;
+			
+			$fields['cname'] = $name;
+			$fields['cbirthday'] = strtotime($birthday);
+			$fields['cemail'] = $email;
+			$fields['cphone'] = implode('*',$phone);
+			$fields['caddr'] = $address;
+			$fields['cstatus'] = 1;
+			$fields['ccreated'] = json_encode(array('uid' => $user -> id, 'date' => date("Y-m-d H:i:s")));
+			sql_query(sql_insert("customer_tab", $fields));
+		}
 	}
+	
 	if (!empty($error)) {
 		echo "<p><font color=red>Error :</font></p>";
 		echo "<p>( ".$error." )</p>";

@@ -51,16 +51,26 @@ if ($submit) {
 	}
 	else {
 		if ($newcust == 1) {
-			$birthday = $yyyy.'-'.$mm.'-'.$dd;
-			
-			$custFields['cname'] = $name;
-			$custFields['cbirthday'] = strtotime($birthday);
-			$custFields['cemail'] = $email;
-			$custFields['cphone'] = implode('*',$phone);
-			$custFields['cstatus'] = 1;
-			$custFields['ccreated'] = json_encode(array('uid' => $user -> id, 'date' => date("Y-m-d H:i:s")));
-			sql_query(sql_insert("customer_tab", $custFields));
-			$customer_id = sql_insert_id();
+			$ck = sql_check("SELECT * FROM customer_tab WHERE cstatus=1 AND cemail='".$email."'");
+			if ($ck) {
+				$error = 'Email exists !!!';
+				echo "<p><font color=red>Error :</font></p>";
+				echo "<p>( ".$error." )</p>";
+				gotoURL('/transaction_add.php', 3);
+				exit;
+			}
+			else {
+				$birthday = $yyyy.'-'.$mm.'-'.$dd;
+				
+				$custFields['cname'] = $name;
+				$custFields['cbirthday'] = strtotime($birthday);
+				$custFields['cemail'] = $email;
+				$custFields['cphone'] = implode('*',$phone);
+				$custFields['cstatus'] = 1;
+				$custFields['ccreated'] = json_encode(array('uid' => $user -> id, 'date' => date("Y-m-d H:i:s")));
+				sql_query(sql_insert("customer_tab", $custFields));
+				$customer_id = sql_insert_id();
+			}
 		}
 		else {
 			$obirthday = $oyyyy.'-'.$omm.'-'.$odd;

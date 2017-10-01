@@ -39,16 +39,18 @@ if ($submit || $test) {
 						$fields2 = array();
 						
 						if ($blasting == 1 || $blasting == 2) {
-							$fields['etype'] = 1;
-							$fields['euid'] = $v['cid'];
-							$fields['eemail'] = $v['cemail'];
-							$fields['esubject'] = addslashes($subject);
-							$fields['econtent'] = addslashes($msg);
-							$fields['edate'] = date("Y-m-d H:i:s");
-							$fields['eschedule'] = date('Y-m-d H:i:s',strtotime($schedule));
-							$fields['estatus'] = 1;
-							$fields['ecreated'] = json_encode(array('uid' => $user -> id, 'date' => date("Y-m-d H:i:s")));
-							sql_query(sql_insert("email_queue_tab", $fields));
+							if (filter_var($v['cemail'], FILTER_VALIDATE_EMAIL)) {
+								$fields['etype'] = 1;
+								$fields['euid'] = $v['cid'];
+								$fields['eemail'] = $v['cemail'];
+								$fields['esubject'] = addslashes($subject);
+								$fields['econtent'] = addslashes($msg);
+								$fields['edate'] = date("Y-m-d H:i:s");
+								$fields['eschedule'] = date('Y-m-d H:i:s',strtotime($schedule));
+								$fields['estatus'] = 1;
+								$fields['ecreated'] = json_encode(array('uid' => $user -> id, 'date' => date("Y-m-d H:i:s")));
+								sql_query(sql_insert("email_queue_tab", $fields));
+							}
 						}
 						
 						if ($blasting == 1 || $blasting == 3) {
