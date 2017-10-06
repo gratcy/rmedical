@@ -95,7 +95,7 @@ foreach($sql as $k => $v) {
 <tr>
 <td><?php echo $v['mid']; ?></td>
 <td><?php echo $v['mname']; ?></td>
-<td><a target="_blank" href="./upload/<?php echo $v['mfile']; ?>">Download File</a></td>
+<td><a target="_blank" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/upload/<?php echo $v['mfile']; ?>">Download File</a></td>
 <td style="text-align:left;float;left;"><?php if (!empty($privilege->delete)) : ?><a href="media.php?delete=<?php echo $v['mid']; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class='fa fa-times'></i></a><?php endif; ?></td>
 </tr>
 <?php

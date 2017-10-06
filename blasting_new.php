@@ -148,7 +148,7 @@ if ($submit || $test) {
 				<div class='form-group'>
 			    <label for='schedule' class='col-sm-2 control-label'>Schedule</label>
 					<div class='col-sm-8'>
-						<input type="text" name="schedule" class="form-control" value="<?php echo $schedule; ?>" id="datetimepicker">
+						<input autocomplete="off" type="text" name="schedule" class="form-control" value="<?php echo $schedule; ?>" id="datetimepicker">
 					</div>
 				</div>
 				<hr />
