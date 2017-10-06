@@ -960,8 +960,8 @@ function price_format($price) {
 
 function __send_email($to,$subject,$data,$tpl) {
 	global $smtp;
-	include('Mail.php');
-	$wew = new Mail(array('smtp_hostname' => $smtp['host'], 'smtp_username' => $smtp['username'], 'smtp_password' => $smtp['password'], 'smtp_port' => $smtp['port'], 'protocol' => 'smtp'));
+	include_once('inc_mail.php');
+	$wew = new remoteMail(array('smtp_hostname' => $smtp['host'], 'smtp_username' => $smtp['username'], 'smtp_password' => $smtp['password'], 'smtp_port' => $smtp['port'], 'protocol' => 'smtp'));
 	$wew -> setTo($to);
 	$wew -> setFrom('noreply@rockhkmedical.com');
 	$wew -> setSender('noreply@rockhkmedical.com');
