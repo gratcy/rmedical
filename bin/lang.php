@@ -29,7 +29,7 @@ $lang['en']['銷售狀況'] = 'Report Selling Detail';
 $lang['en']['帳單統計'] = 'Report Invoice';
 $lang['en']['客戶銷售'] = 'Report Customer Sales';
 $lang['en']['已付賬目'] = 'Report Customer Payment';
-$lang['en']['未付帳目'] = 'Report Customer Aging';
+$lang['en']['未付帳目'] = 'Report Customer Unpayment';
 $lang['en']['員工概覽'] = 'Report Staff Summary';
 $lang['en']['报告销售订单'] = 'Report Sales Order';
 

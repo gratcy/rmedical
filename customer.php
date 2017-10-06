@@ -165,6 +165,7 @@ if (empty($search_word))			$filter			= 1;
 else								$filter			= "$search_field like '%$search_word%'";
 
 $filter				.= " and status !='deleted'";
+if ($_SESSION['root'] != 1) $filter				.= " and staff_id=" . $_SESSION['staff_id'];
 
 $items				= sql_getTable("select * from customer where $filter order by $orderby $ordertype limit $offset, $record_per_page");
 $customer_classes	= sql_getArray("select id, description from class_customer");

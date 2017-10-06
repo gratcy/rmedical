@@ -233,6 +233,8 @@ if ($date_start && $date_end) {
 }
 
 $filter				.= " and status !='deleted'";
+if ($_SESSION['root'] != 1)
+$filter				.= " and staff_id=" . $_SESSION['staff_id'];
 
 $items				= sql_getTable("select * from invoice where $filter order by $orderby $ordertype, id desc limit $offset, $record_per_page");
 $customer_names		= sql_getArray("select id, name from customer");

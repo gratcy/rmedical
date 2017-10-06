@@ -213,15 +213,16 @@ $date_end			= $_GET['date_end'];
 
         $date_end			= end($dates);
         $date_start			= reset($dates);
-        $filter				.= " and (`date`>= '$date_start' and `date`<= '$date_end')";
+        $filter				.= " and (a.`date`>= '$date_start' and a.`date`<= '$date_end')";
 
 }
 
 
-$filter				.= " and status !='deleted'";
+$filter				.= " and a.status !='deleted'";
+if ($_SESSION['root'] != 1) $filter				.= " and b.staff_id=" . $_SESSION['staff_id'];
 
 
-$items				= sql_getTable("select * from customer_payment where $filter order by $orderby $ordertype limit $offset, $record_per_page");
+$items				= sql_getTable("select a.* from customer_payment a LEFT JOIN customer b ON a.customer_id=b.id where $filter order by $orderby $ordertype limit $offset, $record_per_page");
 
 
 if (empty($items)) {
@@ -327,7 +328,7 @@ echo <<<EOS
 EOS;
 
 //	Paging function
-$record_sql				= "select count(*) from customer_payment where $filter";
+$record_sql				= "select count(*) from customer_payment a LEFT JOIN customer b ON a.customer_id=b.id where $filter";
 
 
 echo "<div id='paging_footer'>";
