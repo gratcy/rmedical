@@ -27,7 +27,7 @@ if (!empty($user->id)) {
 		foreach($store as $k => $v) {
 			$rs[] = $v['sid'];
 		}
-		$_SESSION['stores'] = $rs;
+		$_SESSION['stores'] = ($rs ? $rs : array(0));
 	}
 	$_SESSION['group']	= $user->group;
 	$_SESSION['root']	= __is_root($user->id);
