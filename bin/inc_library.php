@@ -1247,6 +1247,11 @@ function get_date_dropdown($date,$prefix='') {
 	return $res;
 }
 
+function __clean_string($string) {
+   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+   return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+}
+
 function __is_root($id) {
 	global $root;
 	

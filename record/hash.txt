@@ -1,83 +1,77 @@
 <style> td { font-family: "Arial", "新細明體", "細明體";	font-size : 12px;  color : #555555} </style>
-<table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:11:37</b></td><td><b>/login_login.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>4.887580</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.015381</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:21:24</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.194808</td><td>Hash - 4c675fa2f89d63d92d81993156bc20f8</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000249</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:21:25</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.389617</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000188</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:23:37</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.600120</td><td>Hash - abd517278a17b1a756f14fe6dfeb3bd6</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000199</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:23:37</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>5.698204</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000220</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:23:40</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.385543</td><td>Hash - abd517278a17b1a756f14fe6dfeb3bd6</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000150</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:23:40</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>5.602836</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000180</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:39:30</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.600120</td><td>Hash - e55e479242dfc391b4c7cc583e1dcdec</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000285</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:39:30</b></td><td><b>/transaction_add.php</b></td></tr>
+<table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 14:49:39</b></td><td><b>/login_login.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.908706</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.003123</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:21:18</b></td><td><b>/user_edit.php?id=6</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.504753</td><td>Hash - 0d01d7c8bcc6512eabc1e1ffb375e330</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000485</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:21:18</b></td><td><b>/user_edit.php?id=6</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.504753</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000358</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:41:42</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.290176</td><td>Hash - 0edd6bbd56930283b9076199b624a2bd</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000369</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:41:42</b></td><td><b>/media_add.php</b></td></tr>
 <tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.695487</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000332</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:44:47</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.385543</td><td>Hash - 64a000eb4c01a79a34d6e5ad56deba49</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000196</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:44:47</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.318092</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000192</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:45:23</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>7.009506</td><td>Hash - 929dff9c6a81be33d598cd2b49871f6d</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000408</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:45:23</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>7.104873</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000718</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:47:52</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>4.506111</td><td>Hash - f62a583d87d33a6c089c4051f9bd18bb</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000228</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:47:52</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.604194</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000193</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:48:16</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.409385</td><td>Hash - daf458054ff3ee5b0b5bf75fe6dee0f3</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000176</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:48:16</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>7.414817</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000247</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:48:21</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.985664</td><td>Hash - daf458054ff3ee5b0b5bf75fe6dee0f3</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000228</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:48:21</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>9.083747</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000275</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:49:17</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.504753</td><td>Hash - a5f81a83b76e52935b38ccebb6895886</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000137</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:49:17</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.699562</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000233</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:49:28</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.600120</td><td>Hash - a5f81a83b76e52935b38ccebb6895886</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000154</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:49:28</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>4.601478</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000175</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:49:40</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.198883</td><td>Hash - a5f81a83b76e52935b38ccebb6895886</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000221</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:49:40</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.198883</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000205</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:49:55</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.409385</td><td>Hash - a5f81a83b76e52935b38ccebb6895886</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000192</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-09-30 20:49:55</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.508827</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000188</td><td>Script ended ...</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000280</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:43:34</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.695487</td><td>Hash - 05491e5c6d540d03677fa85f865e9bf5</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000361</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:43:34</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.789497</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000272</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:43:41</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>4.005432</td><td>Hash - 05491e5c6d540d03677fa85f865e9bf5</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000495</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:43:41</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.980232</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000277</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:45:56</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.504753</td><td>Hash - 0f0bf2667f49989e436dbbaa5d179d72</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000393</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:45:56</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.789497</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000283</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:50:38</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.294250</td><td>Hash - e0d9a5cdfe506c68bcdcf1d00648f55d</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000704</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:50:38</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>5.698204</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000478</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:53:24</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.099441</td><td>Hash - f1bb4c1cfbb4c4473e5e9aca398e1e95</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000396</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:53:24</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.789497</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000264</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:53:40</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>5.006790</td><td>Hash - f1bb4c1cfbb4c4473e5e9aca398e1e95</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000618</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:53:40</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.890296</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000587</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:54:21</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.290176</td><td>Hash - 12ac8bfe436a393891a3321f06acc578</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000390</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:54:21</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.813339</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000286</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:54:35</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.314018</td><td>Hash - 12ac8bfe436a393891a3321f06acc578</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000308</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:54:35</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.789497</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000286</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:55:20</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.600120</td><td>Hash - 8cddf9a016c8d0b470d4db45b457334b</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000386</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:55:20</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.099441</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000301</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:56:04</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.194808</td><td>Hash - 3d09fb01223db6894b8f4a95a89e3e81</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000365</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2017-10-06 15:56:04</b></td><td><b>/media_add.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>4.696846</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000371</td><td>Script ended ...</td></tr>
 </table>
