@@ -12,11 +12,13 @@ $id		= sql_secure($_GET['id']);
 echo "<h3 class='pull-left'>使用者管理</h3><input class='btn btn-default pull-right' type=button value='返回 (B)' onclick='history.go(-1);'><br /><br /><br />";
 
 if ($_POST['action'] == 'edit') {
-
+	$staff_id = isset($_POST['staff_id']) ? $_POST['staff_id'] : '';
+	
 	$error						= array();
 	$fields						= sql_secure($_POST, 'name,user,staff_id,store_id');
-
-
+	
+	if (!$staff_id) 
+		$error[]				= "<li style='padding-left:10px;'><font color=red>需要工作人员</font></li>\r\n";
 
 	if (sql_check("select 1 from service_user where user='{$fields['user']}' and id!='$id'  "))
 		$error[]				= "<li style='padding-left:10px;'><font color=red>此用戶已經存在，請使用其他用戶名稱。</font></li>\r\n";

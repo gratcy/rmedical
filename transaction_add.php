@@ -227,7 +227,7 @@ $inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' =
 				<tr class="newcust">
 					<td>Birthday</td>
 					<td>
-						<?php echo get_date_dropdown('','');?>
+						<?php echo get_date_dropdown(strtotime('2000-01-01'),'');?>
 					</td>
 				</tr>
 				<tr class="newcust">

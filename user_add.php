@@ -7,9 +7,13 @@ echo "<h3 class='pull-left'>使用者管理</h3><input class='btn btn-default pu
 $user_id			= "new";
 
 if ($_POST['action'] == 'add') {
+	$staff_id = isset($_POST['staff_id']) ? (int) $_POST['staff_id'] : 0;
 
 	$error						= array();
 	$fields						= sql_secure($_POST, 'name,user,staff_id,store_id');
+
+	if (!$staff_id) 
+		$error[]				= "<li style='padding-left:10px;'><font color=red>需要工作人员</font></li>\r\n";
 
 	if (sql_check("select 1 from service_user where user='{$fields['user']}' "))
 		$error[]				= "<li style='padding-left:10px;'><font color=red>此用戶已經存在，請使用其他用戶名稱。</font></li>\r\n";
@@ -71,10 +75,10 @@ foreach ($items as $item) {
 	array2obj($item);
 	$value			= sql_getObj("select * from service_user_page where `link`='$item->link'");
 	$link			= str_replace(".php", "", $item->link);
-	$inputs->add("page__{$link}__view", "checkbox", $value->view, "", 0, 0, 0);
-	$inputs->add("page__{$link}__edit", "checkbox", $value->edit, "", 0, 0, 0);
-	$inputs->add("page__{$link}__delete", "checkbox", $value->delete, "", 0, 0, 0);
-	$inputs->add("page__{$link}__print", "checkbox", $value->print, "", 0, 0, 0);
+	$inputs->add("page__{$link}__view", "checkbox", "", "", 0, 0, 0);
+	$inputs->add("page__{$link}__edit", "checkbox", "", "", 0, 0, 0);
+	$inputs->add("page__{$link}__delete", "checkbox", "", "", 0, 0, 0);
+	$inputs->add("page__{$link}__print", "checkbox", "", "", 0, 0, 0);
 }
 
 $inputs->options['staff_id']				= sql_getArray("select name, id from staff order by name asc");
