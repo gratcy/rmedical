@@ -165,7 +165,7 @@ $inputs->add(
 $inputs->options['staff_id']				= sql_getArray("select name, id from staff WHERE class IN (2,3) order by name asc");
 $inputs->options['store_id']				= sql_getArray("select sname, sid from store_tab WHERE sstatus=1 order by sname asc");
 $inputs->options['customer_id']				= sql_getArray("select cname, cid from customer_tab order by cname asc");
-$inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' => 2);
+$inputs->options['tpayment']				= array(lang('現金') => 0,'Debit' => 1,lang('信用咭') => 2);
 ?>
 
 <link rel="STYLESHEET" type="text/css" href="js/rich_calendar/rich_calendar.css">
@@ -178,10 +178,10 @@ $inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' =
 .newcust{display:none}
 .oldcust2{display:none}
 </style>
-<h3>Sales Order Add</h3>
+<h3><?php echo lang('開單') ?></h3>
 <table width="100%" cellpadding="0" border="0" class="noprint">
 	<tbody><tr>
-		<td align="right"><input class="btn btn-default" style="width:80px;" type="button" value="Back (B)" onclick="history.go(-1);"></td>
+		<td align="right"><input class="btn btn-default" style="width:80px;" type="button" value="<?php echo lang('返回'); ?>" onclick="history.go(-1);"></td>
 	</tr>
 </tbody></table>
 <br />
@@ -212,20 +212,20 @@ $inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' =
 			}
 				?>
 				<tr>
-					<td>New Customer</td>
+					<td><?php echo lang('新客戶'); ?></td>
 					<td>
-					Yes <input type="radio" value="1" name="newcust">
-					No <input type="radio" value="0" name="newcust" checked>
+					<?php echo lang('是'); ?> <input type="radio" value="1" name="newcust">
+					<?php echo lang('不是'); ?> <input type="radio" value="0" name="newcust" checked>
 					</td>
 				</tr>
 				<tr class="newcust">
-					<td>Name</td>
+					<td><?php echo lang('姓名'); ?></td>
 					<td>
 						<input class='form-control' type="text" name="name" value="">
 					</td>
 				</tr>
 				<tr class="newcust">
-					<td>Birthday</td>
+					<td><?php echo lang('出生日期'); ?></td>
 					<td>
 						<?php echo get_date_dropdown(strtotime('2000-01-01'),'');?>
 					</td>
@@ -237,31 +237,31 @@ $inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' =
 					</td>
 				</tr>
 				<tr class="newcust">
-					<td>Phone I</td>
+					<td><?php echo lang('手機號碼'); ?> I</td>
 					<td>
 						<input class='form-control' type="text" name="phone[0]" value="">
 					</td>
 				</tr>
 				<tr class="newcust">
-					<td>Phone II</td>
+					<td><?php echo lang('手機號碼'); ?> II</td>
 					<td>
 						<input class='form-control' type="text" name="phone[1]" value="">
 					</td>
 				</tr>
 				<tr class="oldcust">
-					<td>Customer</td>
+					<td><?php echo lang('顾客'); ?></td>
 					<td><span id="manager">
 					<?php echo $inputs->customer_id; ?>
 					</span></td>
 				</tr>
 				<tr class="oldcust2">
-					<td>Name</td>
+					<td><?php echo lang('出生日期'); ?></td>
 					<td>
 						<input class='form-control' type="text" name="oname" value="">
 					</td>
 				</tr>
 				<tr class="oldcust2">
-					<td>Birthday</td>
+					<td><?php echo lang('出生日期'); ?></td>
 					<td>
 						<?php echo get_date_dropdown('','o');?>
 					</td>
@@ -273,13 +273,13 @@ $inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' =
 					</td>
 				</tr>
 				<tr class="oldcust2">
-					<td>Phone I</td>
+					<td><?php echo lang('手機號碼'); ?> I</td>
 					<td>
 						<input class="form-control" type="text" name="ophone[0]" value="">
 					</td>
 				</tr>
 				<tr class="oldcust2">
-					<td>Phone II</td>
+					<td><?php echo lang('手機號碼'); ?> II</td>
 					<td>
 						<input class="form-control" type="text" name="ophone[1]" value="">
 					</td>
@@ -289,18 +289,18 @@ $inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' =
 					<br />
 					<table border="0" width="100%">
 						<tr>
-						<td width="10%">Products : </td>
+						<td width="10%"><?php echo lang('產品'); ?> : </td>
 						<td width="80%"><select name="items" class="form-control"><?php echo select_product(0); ?></select></td>
-						<td width="10%"><input class="btn btn-default" type="button" name="addItem" value="Add Product"></td>
+						<td width="10%"><input class="btn btn-default" type="button" name="addItem" value="<?php echo lang('加入'); ?> <?php echo lang('產品'); ?>"></td>
 						</tr>
 					</table>
 					<br />
 <table id="ListItem" width="100%" class="table" cellspacing="0" cellpadding="3" border="0" style="border:solid 1px #cccccc">
 				<thead>
 	<tr height="30" style="font-weight:bold" bgcolor="#dddddd">
-					<td>Product</td>
-					<td>Price</td>
-					<td>QTY</td>
+					<td><?php echo lang('產品'); ?></td>
+					<td><?php echo lang('價錢'); ?></td>
+					<td><?php echo lang('數量'); ?></td>
 					<td style="display:none;">Total</td>
 					<td></td>
 				</tr>
@@ -314,7 +314,7 @@ $inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' =
 				<td colspan="2" style="width:100%"><hr></td>
 				</tr>
 				<tr>
-					<td colspan="2">QTY &nbsp; <?php echo $inputs->tqty; ?></td>
+					<td colspan="2"><?php echo lang('數量'); ?> &nbsp; <?php echo $inputs->tqty; ?></td>
 				</tr>
 				<tr>
 					<td colspan="2" align="right">Ammount &nbsp; <span id="tammount"><?php echo $inputs->tammount; ?></span></td>
@@ -327,7 +327,7 @@ $inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' =
 				</tr>
 				<tr><td colspan="2"><hr width="100%" size="1" align="left"></td></tr>
 				<tr>
-					<td style="width:40%">Payment Type</td>
+					<td style="width:40%"><?php echo lang('付款方式'); ?></td>
 					<td><span id="tpayment">
 					<?php echo $inputs->tpayment; ?>
 					</span></td>
@@ -342,7 +342,7 @@ $inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' =
 				</tr>
 				<tr><td colspan="2"><hr width="100%" size="1" align="left"></td></tr>
 				<tr>
-					<td colspan="2" style="text-align:center" align="center"><span id="input_submit_button"><input name="submit" type="submit" value="Submit (S)" class="btn btn-default"> </span></td>
+					<td colspan="2" style="text-align:center" align="center"><span id="input_submit_button"><input name="submit" type="submit" value="<?php echo lang('確定'); ?>" class="btn btn-default"> </span></td>
 				</tr>
 </tbody></table>
 </form>

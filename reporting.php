@@ -24,9 +24,9 @@ $tpayment = isset($_GET['tpayment']) ? (int) $_GET['tpayment'] : '';
 $tstatus = isset($_GET['tstatus']) ? (int) $_GET['tstatus'] : '';
 $daterange = isset($_GET['daterange']) ? $_GET['daterange'] : $from.' - '.$to;
 if ($reporttype == 0)
-$columns = array('tdate' => 'Date', 'tno' => 'SO No.', 'manager' => 'Manager', 'sname' => 'Store', 'name' => 'Sales', 'cname' => 'Customer', 'tqty' => 'QTY', 'tammount' => 'Ammount', 'tdiscount' => 'Discount (%)', 'ttotal' => 'Total', 'tpayment' => 'Payment', 'tstatus' => 'Status');
+$columns = array('tdate' => 'Date', 'tno' => 'SO No.', 'manager' => 'Manager', 'sname' => 'Store', 'name' => 'Sales', 'cname' => 'Customer', 'tqty' => lang('數量'), 'tammount' => 'Ammount', 'tdiscount' => 'Discount (%)', 'ttotal' => 'Total', 'tpayment' => lang('付款方式'), 'tstatus' => 'Status');
 else
-$columns = array('tdate' => 'Date', 'tno' => 'SO No.','product' => 'Products', 'sname' => 'Store', 'cname' => 'Customer', 'tqty' => 'QTY', 'tprice' => 'Price', 'tdiscount' => 'Discount (%)', 'ttotal' => 'Total', 'tpayment' => 'Payment', 'tstatus' => 'Status');
+$columns = array('tdate' => 'Date', 'tno' => 'SO No.','product' => 'Products', 'sname' => 'Store', 'cname' => 'Customer', 'tqty' => lang('數量'), 'tprice' => lang('價錢'), 'tdiscount' => 'Discount (%)', 'ttotal' => 'Total', 'tpayment' => lang('付款方式'), 'tstatus' => 'Status');
 
 include_once "bin/class_inputs.php";
 $inputs		= new Inputs();
@@ -52,7 +52,7 @@ $inputs->options['customer_id__'] = sql_getArray("select cname, cid from custome
 $inputs->options['manager_id__'] = sql_getArray("select name, id from staff WHERE `class` IN (1,8) order by name asc");
 $inputs->options['item_id__'] = sql_getArray("select name, id from item order by name asc");
 
-$inputs->options['tpayment']				= array('Cash' => 0,'Debit' => 1,'Credit Card' => 2);
+$inputs->options['tpayment']				= array(lang('現金') => 0,'Debit' => 1,lang('信用咭') => 2);
 $inputs->options['reporttype']				= array('Budle' => 0,'Package' => 1);
 $inputs->options['tstatus']				= array('Active' => 1,'Approve' => 2);
 
@@ -88,7 +88,7 @@ $inputs->value['reporttype'] = $reporttype;
                                             </div>
                                             <input type="text" id="daterange" name="daterange" style="width:30%;letter-spacing: 3px;" class="form-control" autocomplete="off" value="<?php echo $from . ' - ' . $to; ?>" />
                                         </div><!-- /.input group --></td></tr>
-<tr><td>Payment</td><td><?php echo $inputs->tpayment; ?></td></tr>
+<tr><td><?php echo lang('付款方式'); ?></td><td><?php echo $inputs->tpayment; ?></td></tr>
 <tr><td>Status</td><td><?php echo $inputs->tstatus; ?></td></tr>
 <tr><td>Customer</td><td><?php echo $inputs->customer_id__; ?></td></tr>
 <tr><td></td><td><hr /></td></tr>

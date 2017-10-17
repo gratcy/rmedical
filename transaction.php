@@ -18,15 +18,15 @@ $ordertype = isset($_GET['ordertype']) ? $_GET['ordertype'] : 'desc';
 $name = isset($_GET['name']) ? $_GET['name'] : '';
 $search_word = isset($_GET['search_word']) ? $_GET['search_word'] : '';
 $search_field = isset($_GET['search_field']) ? $_GET['search_field'] : '';
-$columns = array('tdate' => 'Date', 'tno' => 'SO No.', 'sname' => 'Store', 'name' => 'Sales', 'cname' => 'Customer', 'tqty' => 'QTY', 'tammount' => 'Ammount', 'tdiscount' => 'Discount', 'ttotal' => 'Total', 'tpayment' => 'Payment', 'tcard' => 'Card No.', 'tstatus' => 'Status');
+$columns = array('tdate' => 'Date', 'tno' => 'SO No.', 'sname' => 'Store', 'name' => 'Sales', 'cname' => 'Customer', 'tqty' => lang('數量'), 'tammount' => 'Ammount', 'tdiscount' => 'Discount', 'ttotal' => 'Total', 'tpayment' => lang('付款方式'), 'tcard' => 'Card No.', 'tstatus' => 'Status');
 $topage				= (!empty($_GET['topage'])) ? $_GET['topage'] * 1 : 1;
 $offset				= ($topage-1) * $record_per_page;
 $ccolumns = $columns;
 unset($ccolumns['tstatus'],$ccolumns['ttotal'],$ccolumns['tdiscount'],$ccolumns['tammount']);
 ?>
-<h3 class="pull-left"><?php echo $lang; ?></h3>
+<h3 class="pull-left"><?php echo lang('開單') ?></h3>
 		<div class='pull-right'>
-			<input class="btn btn-default" type="button" value="Sales Order (N)" onclick="location.href=&quot;transaction_add.php&quot;;">
+			<input class="btn btn-default" type="button" value="<?php echo lang('開單') ?> (N)" onclick="location.href=&quot;transaction_add.php&quot;;">
 			<input class="btn btn-default" type="button" value="Export (E)" onclick="exportform.submit()">
 		</div>
 		<br /><br /><br />
