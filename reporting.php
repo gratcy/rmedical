@@ -52,7 +52,7 @@ $inputs->options['customer_id__'] = sql_getArray("select cname, cid from custome
 $inputs->options['manager_id__'] = sql_getArray("select name, id from staff WHERE `class` IN (1,8) order by name asc");
 $inputs->options['item_id__'] = sql_getArray("select name, id from item order by name asc");
 
-$inputs->options['tpayment']				= array(lang('現金') => 0,'Debit' => 1,lang('信用咭') => 2);
+$inputs->options['tpayment']				= array(lang('現金') => 0,'EPS' => 1,lang('信用咭') => 2);
 $inputs->options['reporttype']				= array('Budle' => 0,'Package' => 1);
 $inputs->options['tstatus']				= array('Active' => 1,'Approve' => 2);
 

@@ -165,7 +165,7 @@ $inputs->add(
 $inputs->options['staff_id']				= sql_getArray("select name, id from staff WHERE class IN (2,3) order by name asc");
 $inputs->options['store_id']				= sql_getArray("select sname, sid from store_tab WHERE sstatus=1 order by sname asc");
 $inputs->options['customer_id']				= sql_getArray("select cname, cid from customer_tab order by cname asc");
-$inputs->options['tpayment']				= array(lang('現金') => 0,'Debit' => 1,lang('信用咭') => 2);
+$inputs->options['tpayment']				= array(lang('現金') => 0,'EPS' => 1,lang('信用咭') => 2);
 ?>
 
 <link rel="STYLESHEET" type="text/css" href="js/rich_calendar/rich_calendar.css">

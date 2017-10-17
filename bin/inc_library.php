@@ -1181,7 +1181,7 @@ function get_total_SO($sid) {
 }
 
 function get_payment_type($id) {
-	$data = array(lang('現金'), 'Debit', lang('信用咭'));
+	$data = array(lang('現金'), 'EPS', lang('信用咭'));
 	return $data[$id];
 }
 

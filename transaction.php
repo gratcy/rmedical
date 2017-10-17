@@ -95,7 +95,7 @@ if ($orderby == $k) {
 $filter = "(a.tstatus=1 OR a.tstatus=2)";
 if (!empty($search_word) && !empty($search_field)) {
 	if ($search_field == 'tpayment') {
-		if (strtolower($search_word) == 'debit') $search_word = 1;
+		if (strtolower($search_word) == 'eps') $search_word = 1;
 		elseif (strtolower($search_word) == 'credit card') $search_word = 2;
 		else $search_word = 0;
 		$filter .= " AND $search_field=$search_word";
