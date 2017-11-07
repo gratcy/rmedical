@@ -1141,7 +1141,7 @@ function select_choose($data, $id) {
 
 function select_product($id) {
 	$sql = sql_getTable("select name, id,price from item order by name asc");
-	$res = '<option value="0">--Choose Product--</option>';
+	$res = '<option value="0">--'.lang('選擇產品').'--</option>';
 	foreach($sql as $k => $v) {
 		if ($id == $v['id'])
 			$res .= '<option price="'.$v['price'].'" value="'.$v['id'].'" selected>'.$v['name'].'</option>';
@@ -1181,7 +1181,7 @@ function get_total_SO($sid) {
 }
 
 function get_payment_type($id) {
-	$data = array('Cash', 'Debit', 'Credit Card');
+	$data = array(lang('現金'), 'EPS', lang('信用咭'));
 	return $data[$id];
 }
 
@@ -1195,7 +1195,10 @@ function get_status_queue($id) {
 
 function __get_month($id) {
 	$id = (int) $id;
+	if ($_SESSION['lang'] == 'en')
 	$month = array('January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+	else
+	$month = array('一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月');
 	return $month[($id - 1)];
 }
 
