@@ -140,7 +140,7 @@ if ($submit) {
 		$Qdata['table'] = $res;
 		$Qdata['cname'] = $name;
 		
-		//~ __send_email($email, 'Rock Trading Transaction', $Qdata,dirname(__FILE__) . '/tpl/transaction.html');
+		__send_email($email, 'Rock Trading Transaction', $Qdata,dirname(__FILE__) . '/tpl/transaction.html');
 		
 		echo "<p><font color=blue>Sales Order successfully added :</font></p>";
 		echo "<p>( 3 秒內會自動反回前面，或按 <a href='transaction.php'> &lt; 這裡 &gt; </a> 返回。 )</p>";
