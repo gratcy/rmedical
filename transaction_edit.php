@@ -409,8 +409,15 @@ $.post('/transaction_items.php?act=get_detail', {id: <?php echo $id; ?>}).done(f
 
 $(document).ready(function(){
 	$('#transactionform').on('submit', function(e) {
+		<?php
+		if (isset($_SESSION['class_staff']) && $_SESSION['class_staff'] != 1) {
+		?>
+		var store_id = $('input[name="store_id"]').val()
+		var staff_id = $('input[name="staff_id"]').val()
+		<?php } else { ?>
 		var store_id = $('select[name="store_id"]').val()
 		var staff_id = $('select[name="staff_id"]').val()
+		<?php } ?>
 		var tqty = $('input[name="tqty"]').val()
 		var tammount = $('input[name="tammount"]').val()
 		var ttotal = $('input[name="ttotal"]').val()
