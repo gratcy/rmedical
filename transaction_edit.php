@@ -193,7 +193,8 @@ $inputs->options['tpayment']				= array(lang('現金') => 0,'EPS' => 1,lang('信
 	</tr>
 </tbody></table>
 <br />
-<form name="form" action="" method="post" class="form-approved">
+<div class="msg" style="text-align:center;padding:5px;font-weight:bold;color:#982029"></div>
+<form name="form" action="" method="post" class="form-approved" id="transactionform">
 <table class="table table-borderless table_form" width="100%" cellpadding="2" cellspacing="5" border="0">
 				<tr>
 					<td><?php echo lang('開單') ?> No.</td>
@@ -403,6 +404,59 @@ $('input[name="addItem"]').click(function(){
 $.post('/transaction_items.php?act=get_detail', {id: <?php echo $id; ?>}).done(function(data) {
 	$('#ListItem > tbody').append(data);
 });
+
+
+
+$(document).ready(function(){
+	$('#transactionform').on('submit', function(e) {
+		var store_id = $('select[name="store_id"]').val()
+		var staff_id = $('select[name="staff_id"]').val()
+		var tqty = $('input[name="tqty"]').val()
+		var tammount = $('input[name="tammount"]').val()
+		var ttotal = $('input[name="ttotal"]').val()
+		var customer_id = $('input[name="customer_id"]').val()
+		var newcust = $('input[name="newcust"]:checked').val()
+		var name = $('input[name="name"]').val()
+		
+		error = null
+		$('.msg').html('')
+		if (!store_id) {
+			error = 'Store must be filled !!!'
+		}
+		else if (!staff_id) {
+			error = 'Staff must be filled !!!'
+		}
+		else if (newcust == 1 && !name) {
+			error = 'Customer must be filled !!!'
+		}
+		else if (!tqty) {
+			error = 'QTY zero !!!'
+		}
+		else if (!tammount) {
+			error = 'Ammount zero, please input qty of product !!!'
+		}
+		else if (!ttotal) {
+			error = 'Total zero, please input qty of product !!!'
+		}
+		else if (!$('input[name="tpayment"]').is(':checked')) {
+			error = 'Please choose payment type !!!'
+		}
+		else {
+			
+		}
+		
+		if (error) {
+			e.preventDefault();
+			$('.msg').html(error)
+			var body = $("html, body");
+			body.stop().animate({scrollTop:0}, 500, 'swing', function() {});
+		}
+		else {
+			
+		}
+	})
+})
+
 $(document).ajaxComplete(function(){
 	var tammount = 0;
 	var tdiscount = $('input[name="tdiscount"]').val() == '' ? 0 : parseFloat($('input[name="tdiscount"]').val());
@@ -508,5 +562,6 @@ $('select[name="customer_id"]').change(function(){
 	});
 });
 $('select[name="customer_id"]').change();
+
 </script>
 <?php include_once "footer.php"; ?>

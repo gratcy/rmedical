@@ -140,7 +140,7 @@ if ($submit) {
 		$Qdata['table'] = $res;
 		$Qdata['cname'] = $name;
 		
-		__send_email($email, 'Rock Trading Transaction', $Qdata,dirname(__FILE__) . '/tpl/transaction.html');
+		//~ __send_email($email, 'Rock Trading Transaction', $Qdata,dirname(__FILE__) . '/tpl/transaction.html');
 		
 		echo "<p><font color=blue>Sales Order successfully added :</font></p>";
 		echo "<p>( 3 秒內會自動反回前面，或按 <a href='transaction.php'> &lt; 這裡 &gt; </a> 返回。 )</p>";
@@ -185,7 +185,8 @@ $inputs->options['tpayment']				= array(lang('現金') => 0,'EPS' => 1,lang('信
 	</tr>
 </tbody></table>
 <br />
-<form name="form" action="" method="post">
+<div class="msg" style="text-align:center;padding:5px;font-weight:bold;color:#982029"></div>
+<form name="form" action="/transaction_add.php" method="post" id="transactionform">
 <table class="table table-borderless table_form" width="100%" cellpadding="2" cellspacing="5" border="0" style="padding:5px">
 	<?php
 	if (isset($_SESSION['class_staff']) && $_SESSION['class_staff'] != 1) {
@@ -447,7 +448,55 @@ $('input[name="newcust"]').click(function(){
 		$('tr.oldcust2').hide();
 	}
 });
-
+$(document).ready(function(){
+	$('#transactionform').on('submit', function(e) {
+		var store_id = $('select[name="store_id"]').val()
+		var staff_id = $('select[name="staff_id"]').val()
+		var tqty = $('input[name="tqty"]').val()
+		var tammount = $('input[name="tammount"]').val()
+		var ttotal = $('input[name="ttotal"]').val()
+		var customer_id = $('input[name="customer_id"]').val()
+		var newcust = $('input[name="newcust"]:checked').val()
+		var name = $('input[name="name"]').val()
+		
+		error = null
+		$('.msg').html('')
+		if (!store_id) {
+			error = 'Store must be filled !!!'
+		}
+		else if (!staff_id) {
+			error = 'Staff must be filled !!!'
+		}
+		else if (newcust == 1 && !name) {
+			error = 'Customer must be filled !!!'
+		}
+		else if (!tqty) {
+			error = 'QTY zero !!!'
+		}
+		else if (!tammount) {
+			error = 'Ammount zero, please input qty of product !!!'
+		}
+		else if (!ttotal) {
+			error = 'Total zero, please input qty of product !!!'
+		}
+		else if (!$('input[name="tpayment"]').is(':checked')) {
+			error = 'Please choose payment type !!!'
+		}
+		else {
+			
+		}
+		
+		if (error) {
+			e.preventDefault();
+			$('.msg').html(error)
+			var body = $("html, body");
+			body.stop().animate({scrollTop:0}, 500, 'swing', function() {});
+		}
+		else {
+			
+		}
+	})
+})
 $('input[name="newcust"]').click();
 $('select[name="customer_id"]').change(function(){
 	

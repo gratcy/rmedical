@@ -19,7 +19,10 @@ if ($submit) {
 		if (!$name || !$phone || !$dd || !$mm || !$yyyy) {
 			$error = 'Data you input is incomplete !!!';
 		}
-		else if (!is_numeric($phone[0]) || isset($phone[1]) && !is_numeric($phone[1])) {
+		else if (!$phone[0]) {
+			$error = 'Phone number must be filled !!!';
+		}
+		else if (!is_numeric($phone[0])) {
 			$error = 'Invalid phone number format !!!';
 		}
 		else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {

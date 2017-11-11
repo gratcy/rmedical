@@ -1,16 +1,25 @@
 <?php
 include_once "header.php";
-$id = isset($_REQUEST['id']) ? (int) $_REQUEST['id'] : '';
+$id = isset($_REQUEST['id']) ? (int) $_REQUEST['id'] : 0;
+$bmtype = isset($_REQUEST['bmtype']) ? (int) $_REQUEST['bmtype'] : 0;
 $name = isset($_POST['name']) ? $_POST['name'] : '';
 $content = isset($_POST['content']) ? $_POST['content'] : '';
 $subject = isset($_POST['subject']) ? $_POST['subject'] : '';
 $submit = isset($_POST['submit']) ? $_POST['submit'] : '';
-
 if ($submit) {
 	$error = null;
 	if ($id) {
-		if (!$name || !$content) {
+		if (!$name && !$content) {
 			$error = 'Data you input is incomplete !!!';
+		}
+		else if (!$name) {
+			$error = 'Name must be filled !!!';
+		}
+		else if (!$content) {
+			$error = 'Content email must be filled !!!';
+		}
+		else if ($bmtype != 1 && !$subject) {
+			$error = 'Subject email must be filled !!!';
 		}
 		else {
 			$fields['bname'] = $name;
@@ -42,7 +51,7 @@ if ($submit) {
 <script src="js/tinymce/tinymce.min.js" type="text/javascript"></script>
 <h3 class='pull-left'><?php echo lang('更新'); ?> <?php echo lang('生日'); ?></h3><span class='pull-right'><i class='fa fa-arrow-left'></i>&nbsp;&nbsp; <a href='javascript:history.go(-1)'>返回 (B)</a></span><br /><br /><br />
 <form class='form-horizontal' name="form" action="" method="post">
-
+<input type="hidden" name="bmtype" value="<?php echo $detail['bmtype']; ?>">
 				<div class='form-group'>
 				<div class='form-group'>
 			    <label for='name' class='col-sm-2 control-label'>Name</label>
