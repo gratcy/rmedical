@@ -757,7 +757,8 @@ $('input[name="newcust"]').click(function(){
 	}
 });
 
-$('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change(function(){	
+$('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change(function(){
+	if ($(this).val()) {
 		$.post( "/ajax_customer.php", { cid: $(this).val(), type: 2 }).done(function( data ) {
 			$('input[name="oldname"]').val(data.name);
 			$('select[name="oldclass"]').val(data.class).change();
@@ -769,7 +770,8 @@ $('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change(function(){
 			$('input[name="oldtel"]').val(data.tel);
 			$('input[name="oldemail"]').val(data.email);
 			$('tr.oldcust2').show();
-	});
+		});
+	}
 });
 $('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change()
 </script>
