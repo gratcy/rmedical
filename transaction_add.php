@@ -256,7 +256,7 @@ $inputs->options['tpayment']				= array(lang('現金') => 0,'EPS' => 1,lang('信
 					</span></td>
 				</tr>
 				<tr class="oldcust2">
-					<td><?php echo lang('出生日期'); ?></td>
+					<td><?php echo lang('姓名'); ?></td>
 					<td>
 						<input class='form-control' type="text" name="oname" value="">
 					</td>
@@ -507,7 +507,7 @@ $(document).ready(function(){
 $('input[name="newcust"]').click();
 $('select[name="customer_id"]').change(function(){
 	
-		$.post( "/ajax_customer.php", { cid: $(this).val() }).done(function( data ) {
+		$.post( "/ajax_customer.php", { cid: $(this).val(), type: 1 }).done(function( data ) {
 			var wew = data.cphone;
 			var res = wew.split("*");
 			$('input[name="oname"]').val(data.cname);

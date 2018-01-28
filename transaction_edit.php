@@ -551,7 +551,7 @@ $('input[name="newcust"]').click(function(){
 $('input[name="newcust"]').click();
 $('select[name="customer_id"]').change(function(){
 	
-		$.post( "/ajax_customer.php", { cid: $(this).val() }).done(function( data ) {
+		$.post( "/ajax_customer.php", { cid: $(this).val(), type: 1 }).done(function( data ) {
 			var wew = data.cphone;
 			var res = wew.split("*");
 			$('input[name="oname"]').val(data.cname);

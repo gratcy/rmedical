@@ -11,8 +11,40 @@ $id					= sql_secure($_GET['id']);
 
 $from_query			= $_GET['from_query'];
 
+$newcust = (int) $_POST['newcust'];
 
+$oldclass = (int) $_POST['oldclass'];
+$oldstaff_id = (int) $_POST['oldstaff_id'];
+$oldsite_id = (int) $_POST['oldsite_id'];
+$oldname = isset($_POST['oldname']) ? $_POST['oldname'] : '';
+$oldaddress = isset($_POST['oldaddress']) ? $_POST['oldaddress'] : '';
+$olddelivery_address = isset($_POST['olddelivery_address']) ? $_POST['olddelivery_address'] : '';
+$oldtel = isset($_POST['oldtel']) ? $_POST['oldtel'] : '';
+$oldfax = isset($_POST['oldfax']) ? $_POST['oldfax'] : '';
+$oldemail = isset($_POST['oldemail']) ? $_POST['oldemail'] : '';
+
+$newclass = (int) $_POST['newclass'];
+$newstaff_id = (int) $_POST['newstaff_id'];
+$newsite_id = (int) $_POST['newsite_id'];
+$newname = isset($_POST['newname']) ? $_POST['newname'] : '';
+$newaddress = isset($_POST['newaddress']) ? $_POST['newaddress'] : '';
+$newdelivery_address = isset($_POST['newdelivery_address']) ? $_POST['newdelivery_address'] : '';
+$newtel = isset($_POST['newtel']) ? $_POST['newtel'] : '';
+$newfax = isset($_POST['newfax']) ? $_POST['newfax'] : '';
+$newemail = isset($_POST['newemail']) ? $_POST['newemail'] : '';
+
+$invid = (int) $_GET['id'];
+$oldcustid = (int) $_POST['cms::'.$invid.'::customer_id'];
 if (isset($_POST['cms_update'])) {
+	$newcustid = 0;
+	if ($newcust == 1) {
+		$insert = sql_query("INSERT INTO customer (class, staff_id, site_id, name, address, delivery_address, tel, fax, email) VALUES ('$newclass', '$newstaff_id', '$newsite_id', '$newname', '$newaddress', '$newdelivery_address', '$newtel', '$newfax', '$newemail')");
+		$newcustid = sql_insert_id();
+		$_POST['cms::'.$invid.'::customer_id'] = $newcustid;
+	}
+	else {
+		$update = sql_query("update customer SET class = '$oldclass', staff_id = '$oldstaff_id', site_id = '$oldsite_id', name = '$oldname', address = '$oldaddress', delivery_address = '$olddelivery_address', tel = '$oldtel', fax = '$oldfax', email = '$oldemail' WHERE id=" . $oldcustid);
+	}
 
 	$cms_table			= "invoice";
 	$cms_key			= "id";
@@ -24,7 +56,7 @@ if (isset($_POST['cms_update'])) {
 	$cms_prefix			= "cms_item";
 	include "cms_process.php";
 
-	sql_query("update invoice set staff_class=(select `class` from staff where staff.id=invoice.staff_id), staff_group=(select `group` from staff where staff.id=invoice.staff_id) where id='$id'");
+	sql_query("update invoice set staff_class=(select `class` from staff where staff.id=invoice.staff_id), staff_group=(select `group` from staff where staff.id=invoice.staff_id), customer_id='".($newcustid ? $newcustid : $invoice->customer_id)."' where id='$id'");
 
 	$invoice			= sql_getObj("select * from invoice where id='$id'");
 
@@ -32,7 +64,7 @@ if (isset($_POST['cms_update'])) {
 					discount = price / price_original * 100,
 					amount	= quantity * price,
 					date_order='$invoice->date_order',
-					customer_id='$invoice->customer_id',
+					customer_id='".($newcustid ? $newcustid : $invoice->customer_id)."',
 					staff_id='$invoice->staff_id',
 					staff_class='$invoice->staff_class',
 					staff_group='$invoice->staff_group',
@@ -142,6 +174,35 @@ $inputs2				= new Inputs();
 $inputs2->add('add_item_id', 'select2', "", "", sql_getArray("select concat(left(barcode, 4), ' - ', name), id from item order by name"), 80);
 $inputs2->tag['add_item_id']					= "class='form-control' style='width:50%; display:inline-block'";
 
+$inputs3				= new Inputs();
+$inputs3->add(
+			'oldname'							, 'text'			, '名稱'						, '100%',
+			'oldclass'							, 'select'	, '類別'						, '100%',
+			'oldstaff_id'						, 'select2'	, '組別'						, '100%',
+			'oldsite_id'						, 'select2'	, '銷售地點'					, '100%',
+			'oldaddress'						, 'textarea'		, '地址'						, '100%',
+			'olddelivery_address'				, 'textarea'		, '送貨地址'					, '100%',
+			'oldtel'							, 'text'			, '電話'						, '100%',
+			'oldfax'							, 'text'			, '傳真'						, '100%',
+			'oldemail'							, 'text'			, '電郵'						, '100%',
+			'newname'							, 'text'			, '名稱'						, '100%',
+			'newclass'							, 'select'	, '類別'						, '100%',
+			'newstaff_id'						, 'select2'	, '組別'						, '100%',
+			'newsite_id'						, 'select2'	, '銷售地點'					, '100%',
+			'newaddress'						, 'textarea'		, '地址'						, '100%',
+			'newdelivery_address'				, 'textarea'		, '送貨地址'					, '100%',
+			'newtel'							, 'text'			, '電話'						, '100%',
+			'newfax'							, 'text'			, '傳真'						, '100%',
+			'newemail'							, 'text'			, '電郵'						, '100%'
+				);
+
+$inputs3->options['oldclass']					= sql_getArray("select description, id from class_customer order by description asc");
+$inputs3->options['oldstaff_id']				= sql_getArray("select name, id from staff order by name asc");
+$inputs3->options['oldsite_id']					= sql_getArray("select name, id from site order by name asc");
+
+$inputs3->options['newclass']					= sql_getArray("select description, id from class_customer order by description asc");
+$inputs3->options['newstaff_id']				= sql_getArray("select name, id from staff order by name asc");
+$inputs3->options['newsite_id']					= sql_getArray("select name, id from site order by name asc");
 
 $customer_payment_reference					= "";
 $customer_payment_info						= sql_getTable("select a.id, a.payment_id, a.date, b.amount as amount from customer_payment a join customer_payment_detail b on a.id=b.customer_payment_id where b.invoice_id='$id'");
@@ -159,7 +220,9 @@ if (empty($customer_payment_reference)) {
 	$disble_print							= "return true;";
 }
 
-
+$newCust = lang('新客戶');
+$newYes = lang('是');
+$newNo = lang('不是');
 echo <<<EOS
 
 <link rel="stylesheet" type="text/css" href="js/rich_calendar/rich_calendar.css">
@@ -192,9 +255,118 @@ echo <<<EOS
 		<td style='vertical-align: middle;'><i class="fa fa-calendar-o" onclick="show_cal(this, 'cms::$id::date_order');"></i></td>
 	</tr>
 	<tr>
+		<td width=120 align=right style='vertical-align: middle'>$newCust</td>
+		<td>
+		$newYes <input type="radio" value="1" name="newcust">
+		$newNo <input type="radio" value="0" name="newcust" checked>
+		<td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	
+	<tr class="oldcust">
 		<td width=120 align=right style='vertical-align: middle'>客戶</td>
 		<td>$inputs->customer_id</td>
 		<td colspan=9 align=left valign=top style='padding-left:147px;'>客戶付款單：</td>
+	</tr>
+
+	<tr class="oldcust2">
+		<td width=120 align=right style='vertical-align: middle'>名稱</td>
+		<td>$inputs3->oldname</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+
+	<tr class="oldcust2">
+		<td width=120 align=right style='vertical-align: middle'>類別</td>
+		<td>$inputs3->oldclass</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="oldcust2">
+		<td width=120 align=right style='vertical-align: middle'>組別</td>
+		<td>$inputs3->oldstaff_id</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="oldcust2">
+		<td width=120 align=right style='vertical-align: middle'>銷售地點</td>
+		<td>$inputs3->oldsite_id</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="oldcust2">
+		<td width=120 align=right style='vertical-align: middle'>地址</td>
+		<td>$inputs3->oldaddress</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="oldcust2">
+		<td width=120 align=right style='vertical-align: middle'>送貨地址</td>
+		<td>$inputs3->olddelivery_address</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="oldcust2">
+		<td width=120 align=right style='vertical-align: middle'>電話</td>
+		<td>$inputs3->oldtel</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="oldcust2">
+		<td width=120 align=right style='vertical-align: middle'>傳真</td>
+		<td>$inputs3->oldfax</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="oldcust2">
+		<td width=120 align=right style='vertical-align: middle'>電郵</td>
+		<td>$inputs3->oldemail</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+
+
+	<tr class="newcust">
+		<td width=120 align=right style='vertical-align: middle'>名稱</td>
+		<td>$inputs3->newname</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="newcust">
+		<td width=120 align=right style='vertical-align: middle'>類別</td>
+		<td>$inputs3->newclass</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="newcust">
+		<td width=120 align=right style='vertical-align: middle'>組別</td>
+		<td>$inputs3->newstaff_id</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="newcust">
+		<td width=120 align=right style='vertical-align: middle'>銷售地點</td>
+		<td>$inputs3->newsite_id</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="newcust">
+		<td width=120 align=right style='vertical-align: middle'>地址</td>
+		<td>$inputs3->newaddress</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="newcust">
+		<td width=120 align=right style='vertical-align: middle'>送貨地址</td>
+		<td>$inputs3->newdelivery_address</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="newcust">
+		<td width=120 align=right style='vertical-align: middle'>電話</td>
+		<td>$inputs3->newtel</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="newcust">
+		<td width=120 align=right style='vertical-align: middle'>傳真</td>
+		<td>$inputs3->newfax</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+	<tr class="newcust">
+		<td width=120 align=right style='vertical-align: middle'>電郵</td>
+		<td>$inputs3->newemail</td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+	</tr>
+
+	<tr class="separatorcust" style="border-top:3px solid #ccc">
+		<td width=120 align=right style='vertical-align: middle'></td>
+		<td></td>
+		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
 	</tr>
 	<tr>
 		<td width=120 align=right style='vertical-align: middle'>銷售地點</td>
@@ -202,7 +374,7 @@ echo <<<EOS
 		<td colspan=9 rowspan=4 align=left valign=top style='padding-left:147px;'>$customer_payment_reference</td>
 	</tr>
 
-	<tr>
+	<tr >
 		<td width=120 align=right style='vertical-align: middle'>推廣員</td>
 		<td>$inputs->staff_id</td>
 	</tr>
@@ -570,3 +742,34 @@ echo "</form>";
 include_once "footer.php";
 
 ?>
+<script type="text/javascript">
+	
+$('input[name="newcust"]').click(function(){
+	$('tr.separatorcust').show();
+	if ($(this).val() == 0) {
+		$('tr.newcust').hide();
+		$('tr.oldcust').show();
+	}
+	else {
+		$('tr.newcust').show();
+		$('tr.oldcust').hide();
+		$('tr.oldcust2').hide();
+	}
+});
+
+$('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change(function(){	
+		$.post( "/ajax_customer.php", { cid: $(this).val(), type: 2 }).done(function( data ) {
+			$('input[name="oldname"]').val(data.name);
+			$('select[name="oldclass"]').val(data.class).change();
+			$('select[name="oldstaff_id"]').val(data.staff_id).change();
+			$('select[name="oldsite_id"]').val(data.site_id).change();
+			$('textarea[name="oldaddress"]').val(data.address);
+			$('textarea[name="olddelivery_address"]').val(data.delivery_address);
+			$('input[name="oldfax"]').val(data.fax);
+			$('input[name="oldtel"]').val(data.tel);
+			$('input[name="oldemail"]').val(data.email);
+			$('tr.oldcust2').show();
+	});
+});
+$('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change()
+</script>

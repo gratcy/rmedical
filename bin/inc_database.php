@@ -1,6 +1,4 @@
 <?php
-error_reporting(0);
-
 $DB_LINK = mysql_connect($DB_SERVER, $DB_USERNAME, $DB_PASSWORD);
 if ($DB_LINK) {
 	$DB_TABLE = mysql_select_db($DB_DATABASE, $DB_LINK);
@@ -132,7 +130,9 @@ function sql_getTable($sql, $mode = 'assoc') {
 }
 
 function sql_insert_id() {
-	return sql_getValue("select last_insert_id()");
+	global $DB_LINK;
+	return mysql_insert_id($DB_LINK);
+	// return sql_getValue("select last_insert_id()");
 }
 
 function sql_setParameter($sql, $command, $value) {			// Change property of sql , e.g. limit, order by
