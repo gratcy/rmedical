@@ -56,7 +56,7 @@ if (isset($_POST['cms_update'])) {
 	$cms_prefix			= "cms_item";
 	include "cms_process.php";
 
-	sql_query("update invoice set staff_class=(select `class` from staff where staff.id=invoice.staff_id), staff_group=(select `group` from staff where staff.id=invoice.staff_id), customer_id='".($newcustid ? $newcustid : $invoice->customer_id)."' where id='$id'");
+	sql_query("update invoice set staff_class=(select `class` from staff where staff.id=invoice.staff_id), staff_group=(select `group` from staff where staff.id=invoice.staff_id), customer_id='".($newcustid ? $newcustid : $oldcustid)."' where id='$id'");
 
 	$invoice			= sql_getObj("select * from invoice where id='$id'");
 
@@ -64,7 +64,7 @@ if (isset($_POST['cms_update'])) {
 					discount = price / price_original * 100,
 					amount	= quantity * price,
 					date_order='$invoice->date_order',
-					customer_id='".($newcustid ? $newcustid : $invoice->customer_id)."',
+					customer_id='".($newcustid ? $newcustid : $oldcustid)."',
 					staff_id='$invoice->staff_id',
 					staff_class='$invoice->staff_class',
 					staff_group='$invoice->staff_group',
@@ -112,7 +112,6 @@ $inputs->add(
 			'overtime'						, 'text'			, '加班時間'					, '30',
 			'deliveryterms'					, 'text'			, '送貨條款'					, '80',
 			'paymentterms'					, 'text'			, '付款條款'					, '80',
-
 			'quantity_sum'					, 'text'			, '總數量'						, '10',
 			'amount_gross'					, 'text'			, '總額'						, '10',
 			'sales_record'					, 'text'			, '銷售額'						, '10',
@@ -138,13 +137,13 @@ $inputs->options['customer_id']				= sql_getArray("select name, id from customer
 $inputs->options['site_id']					= sql_getArray("select name, id from site order by name");
 $inputs->options['staff_id']				= sql_getArray("select a.name, a.id from staff a join class_staff b on a.`class`=b.id order by a.`class`, a.name");
 
-$inputs->tag['amount_gross']				= "class=number readonly";
-$inputs->tag['discount']					= "class=number style='color:#777777'";
-$inputs->tag['amount_net']					= "class=number style='color:#777777'";
-$inputs->tag['deposit']						= "class=number";
-$inputs->tag['sales_record']				= "class=number";
-$inputs->tag['balance']						= "class=number readonly style='color:#777777'";
-$inputs->tag['unpaid']						= "class=number readonly style='color:#777777'";
+$inputs->tag['amount_gross']				= "class=form-control number readonly";
+$inputs->tag['discount']					= "class=form-control number style='color:#777777'";
+$inputs->tag['amount_net']					= "class=form-control number style='color:#777777'";
+$inputs->tag['deposit']						= "class=form-control number";
+$inputs->tag['sales_record']				= "class=form-control number";
+$inputs->tag['balance']						= "class=form-control number readonly style='color:#777777'";
+$inputs->tag['unpaid']						= "class=form-control number readonly style='color:#777777'";
 
 
 $inputs->tag['invoice_id']					= "class='form-control' style='max-width:60%;' nextinput=cms::$id::date_order";
@@ -223,6 +222,7 @@ if (empty($customer_payment_reference)) {
 $newCust = lang('新客戶');
 $newYes = lang('是');
 $newNo = lang('不是');
+
 echo <<<EOS
 
 <link rel="stylesheet" type="text/css" href="js/rich_calendar/rich_calendar.css">
@@ -499,10 +499,10 @@ foreach ($items as $item) {
 				<tr class=border_top id='item_row_$item->id'>
 					<td width=100>$item_info->item_id  <input type=hidden name=cms_item::$item->id::item_id	value='$item->item_id'></td>
 					<td width=420>$item->name</td>
-					<td width=50><input class=number type=text name=cms_item::$item->id::quantity			value='$item->quantity'				size=2 nextinput=cms_item::$item->id::price_original	onblur='calculate_item(\"$item->id\", \"\");'></td>
-					<td width=50><input class=number type=text name=cms_item::$item->id::price_original		value='$item->price_original'		size=2 nextinput=cms_item::$item->id::price></td>
-					<td width=50><input class=number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
-					<td width=50><input class=number type=text name=cms_item::$item->id::amount				value='$item->amount'				size=2 readonly style='color:#777777'></td>
+					<td width=50><input class=form-control number type=text name=cms_item::$item->id::quantity			value='$item->quantity'				size=2 nextinput=cms_item::$item->id::price_original	onblur='calculate_item(\"$item->id\", \"\");'></td>
+					<td width=50><input class=form-control number type=text name=cms_item::$item->id::price_original		value='$item->price_original'		size=2 nextinput=cms_item::$item->id::price></td>
+					<td width=50><input class=form-control number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
+					<td width=50><input class=form-control number type=text name=cms_item::$item->id::amount				value='$item->amount'				size=2 readonly style='color:#777777'></td>
 					<td width=40><input type=checkbox name='cms_item::$item->id::null'						value='delete'						onclick='if (confirm(\"確定要刪除這個項目？\")) { document.getElementById(\"item_row_$item->id\").style.display=\"none\"; calculate(); } else { this.checked=false; }'></td>
 				</tr>
 			";
@@ -512,10 +512,10 @@ foreach ($items as $item) {
 				<tr class=border_top id='item_row_$item->id'>
 					<td width=100>N/A 					<input type=hidden name=cms_item::$item->id::item_id	value='0'></td>
 					<td width=420><input type=text			   name=cms_item::$item->id::name				value='$item->name'					size=37 nextinput=cms_item::$item->id::quantity></td>
-					<td width=50><input class=number type=text name=cms_item::$item->id::quantity			value='$item->quantity'				size=2 nextinput=cms_item::$item->id::price				onblur='calculate_item(\"$item->id\", \"\");'></td>
-					<td width=50><input class=number type=text name=cms_item::$item->id::price_original		value='$item->price_original'		size=2 nextinput=cms_item::$item->id::price></td>
-					<td width=50><input class=number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
-					<td width=50><input class=number type=text name=cms_item::$item->id::amount				value='$item->amount'				size=2 readonly style='color:#777777'></td>
+					<td width=50><input class=form-control number type=text name=cms_item::$item->id::quantity			value='$item->quantity'				size=2 nextinput=cms_item::$item->id::price				onblur='calculate_item(\"$item->id\", \"\");'></td>
+					<td width=50><input class=form-control number type=text name=cms_item::$item->id::price_original		value='$item->price_original'		size=2 nextinput=cms_item::$item->id::price></td>
+					<td width=50><input class=form-control number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
+					<td width=50><input class=form-control number type=text name=cms_item::$item->id::amount				value='$item->amount'				size=2 readonly style='color:#777777'></td>
 					<td width=40><input type=checkbox name='cms_item::$item->id::null'						value='delete'						onclick='if (confirm(\"確定要刪除這個項目？\")) { document.getElementById(\"item_row_$item->id\").style.display=\"none\"; calculate(); } else { this.checked=false; }'></td>
 				</tr>
 			";
@@ -615,29 +615,6 @@ echo <<<EOS
 
 <script>
 
-
-
-var input_pulldownmenu_customer_id_value_previous	= document.getElementById('input_pulldownmenu_customer_id_value').value;
-document.getElementById('input_pulldownmenu_customer_id_value').onchange = function () {
-
-	if (input_pulldownmenu_customer_id_value_previous == document.getElementById('input_pulldownmenu_customer_id_value').value)
-		return;
-
-	CSI_submit("invoice_edit_load_customer.php?cid=" + document.getElementById("form").elements.namedItem("cms::$id::customer_id").value + "&iid=$id");
-
-	input_pulldownmenu_customer_id_value_previous = document.getElementById('input_pulldownmenu_customer_id_value').value;
-
-//	document.getElementById('input_pulldownmenu_staff_id').focus();
-//	document.getElementById('input_pulldownmenu_staff_id').select();
-
-}
-
-
-document.getElementById('input_pulldownmenu_add_item_id_value').onchange = function () {
-
-	document.getElementById('add_item_submit').focus();
-
-}
 
 
 function calculate_item(itemid, newitem) {
@@ -743,35 +720,36 @@ include_once "footer.php";
 
 ?>
 <script type="text/javascript">
-	
-$('input[name="newcust"]').click(function(){
-	$('tr.separatorcust').show();
-	if ($(this).val() == 0) {
-		$('tr.newcust').hide();
-		$('tr.oldcust').show();
-	}
-	else {
-		$('tr.newcust').show();
-		$('tr.oldcust').hide();
-		$('tr.oldcust2').hide();
-	}
-});
+$(document).ready(function(){
+	$('input[name="newcust"]').click(function(){
+		$('tr.separatorcust').show();
+		if ($(this).val() == 0) {
+			$('tr.newcust').hide();
+			$('tr.oldcust').show();
+		}
+		else {
+			$('tr.newcust').show();
+			$('tr.oldcust').hide();
+			$('tr.oldcust2').hide();
+		}
+	});
 
-$('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change(function(){
-	if ($(this).val()) {
-		$.post( "/ajax_customer.php", { cid: $(this).val(), type: 2 }).done(function( data ) {
-			$('input[name="oldname"]').val(data.name);
-			$('select[name="oldclass"]').val(data.class).change();
-			$('select[name="oldstaff_id"]').val(data.staff_id).change();
-			$('select[name="oldsite_id"]').val(data.site_id).change();
-			$('textarea[name="oldaddress"]').val(data.address);
-			$('textarea[name="olddelivery_address"]').val(data.delivery_address);
-			$('input[name="oldfax"]').val(data.fax);
-			$('input[name="oldtel"]').val(data.tel);
-			$('input[name="oldemail"]').val(data.email);
-			$('tr.oldcust2').show();
-		});
-	}
-});
-$('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change()
+	$('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change(function(){
+		if ($(this).val()) {
+			$.post( "/ajax_customer.php", { cid: $(this).val(), type: 2 }).done(function( data ) {
+				$('input[name="oldname"]').val(data.name);
+				$('select[name="oldclass"]').val(data.class).change();
+				$('select[name="oldstaff_id"]').val(data.staff_id).change();
+				$('select[name="oldsite_id"]').val(data.site_id).change();
+				$('textarea[name="oldaddress"]').val(data.address);
+				$('textarea[name="olddelivery_address"]').val(data.delivery_address);
+				$('input[name="oldfax"]').val(data.fax);
+				$('input[name="oldtel"]').val(data.tel);
+				$('input[name="oldemail"]').val(data.email);
+				$('tr.oldcust2').show();
+			});
+		}
+	});
+	$('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change()
+})
 </script>
