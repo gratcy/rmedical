@@ -147,7 +147,7 @@ $inputs->tag['unpaid']						= "class=form-control number readonly style='color:#
 
 
 $inputs->tag['invoice_id']					= "class='form-control' style='max-width:60%;' nextinput=cms::$id::date_order";
-$inputs->tag['date_order']					= "class='form-control' style='max-width:30%;display:inline-block;' nextinput=input_pulldownmenu_customer_id";
+$inputs->tag['date_order']					= "class='form-control' style='max-width:50%;display:inline-block;' nextinput=input_pulldownmenu_customer_id";
 $inputs->tag['customer_id']					= "class='form-control' style='max-width:60%;' nextinput=input_pulldownmenu_staff_id";
 $inputs->tag['site_id']						= "class='form-control' style='max-width:60%;' nextinput=input_pulldownmenu_staff_id";
 $inputs->tag['staff_id']					= "class='form-control' style='max-width:60%;' nextinput=input_pulldownmenu_add_item_id";
@@ -155,22 +155,22 @@ $inputs->tag['amount_cash']					= "class='form-control' style='max-width:60%;' n
 $inputs->tag['overtime']					= "class='form-control' style='max-width:60%;display:inline-block;' nextinput=input_pulldownmenu_add_item_id";
 
 $inputs->tag['quantity_sum']				= "class='form-control' style='max-width:20%;' nextinput=cms::$id::amount_gross";
-$inputs->tag['amount_gross']				= "class='form-control' style='max-width:50%;display:inline-block' nextinput=cms::$id::discount";
-$inputs->tag['amount_net']					= "class='form-control' style='max-width:50%;display:inline-block' nextinput=cms::$id::deposit";
-$inputs->tag['discount']					= "class='form-control' style='max-width:50%;display:inline-block' nextinput=cms::$id::amount_net";
-$inputs->tag['sales_record']					= "class='form-control' style='max-width:50%;display:inline-block'";
-$inputs->tag['deposit']					= "class='form-control' style='max-width:50%;display:inline-block'";
-$inputs->tag['balance']					= "class='form-control' style='max-width:50%;display:inline-block'";
-$inputs->tag['unpaid']					= "class='form-control' style='max-width:50%;display:inline-block'";
+$inputs->tag['amount_gross']				= "class='form-control' style='max-width:75%;display:inline-block' nextinput=cms::$id::discount";
+$inputs->tag['amount_net']					= "class='form-control' style='max-width:75%;display:inline-block' nextinput=cms::$id::deposit";
+$inputs->tag['discount']					= "class='form-control' style='max-width:75%;display:inline-block' nextinput=cms::$id::amount_net";
+$inputs->tag['sales_record']					= "class='form-control' style='max-width:75%;display:inline-block'";
+$inputs->tag['deposit']					= "class='form-control' style='max-width:75%;display:inline-block'";
+$inputs->tag['balance']					= "class='form-control' style='max-width:75%;display:inline-block'";
+$inputs->tag['unpaid']					= "class='form-control' style='max-width:75%;display:inline-block'";
 
-$inputs->tag['deliveryterms']				= "class='form-control' style='max-width:50%;display:inline-block'";
-$inputs->tag['paymentterms']				= "class='form-control' style='max-width:50%;display:inline-block'";
-$inputs->tag['remark']				= "class='form-control' style='max-width:50%;display:inline-block'";
+$inputs->tag['deliveryterms']				= "class='form-control' style='max-width:75%;display:inline-block'";
+$inputs->tag['paymentterms']				= "class='form-control' style='max-width:75%;display:inline-block'";
+$inputs->tag['remark']				= "class='form-control' style='max-width:75%;display:inline-block'";
 
 $inputs->tag['submit_button']				= "class=button";
 
 $inputs2				= new Inputs();
-$inputs2->add('add_item_id', 'select2', "", "", sql_getArray("select concat(left(barcode, 4), ' - ', name), id from item order by name"), 80);
+$inputs2->add('add_item_id', 'select2', "", "", sql_getArray("select concat(left(barcode, 4), ' - ', name), id from item WHERE status!='deleted' order by name"), 80);
 $inputs2->tag['add_item_id']					= "class='form-control' style='width:50%; display:inline-block'";
 
 $inputs3				= new Inputs();
@@ -498,11 +498,11 @@ foreach ($items as $item) {
 		echo "
 				<tr class=border_top id='item_row_$item->id'>
 					<td width=100>$item_info->item_id  <input type=hidden name=cms_item::$item->id::item_id	value='$item->item_id'></td>
-					<td width=420>$item->name</td>
-					<td width=50><input class=form-control number type=text name=cms_item::$item->id::quantity			value='$item->quantity'				size=2 nextinput=cms_item::$item->id::price_original	onblur='calculate_item(\"$item->id\", \"\");'></td>
-					<td width=50><input class=form-control number type=text name=cms_item::$item->id::price_original		value='$item->price_original'		size=2 nextinput=cms_item::$item->id::price></td>
-					<td width=50><input class=form-control number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
-					<td width=50><input class=form-control number type=text name=cms_item::$item->id::amount				value='$item->amount'				size=2 readonly style='color:#777777'></td>
+					<td width=350>$item->name</td>
+					<td width=60><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::quantity			value='$item->quantity'				size=2 nextinput=cms_item::$item->id::price_original	onblur='calculate_item(\"$item->id\", \"\");'></td>
+					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::price_original		value='$item->price_original'		size=2 nextinput=cms_item::$item->id::price></td>
+					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
+					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::amount				value='$item->amount'				size=2 readonly style='color:#777777'></td>
 					<td width=40><input type=checkbox name='cms_item::$item->id::null'						value='delete'						onclick='if (confirm(\"確定要刪除這個項目？\")) { document.getElementById(\"item_row_$item->id\").style.display=\"none\"; calculate(); } else { this.checked=false; }'></td>
 				</tr>
 			";
@@ -511,11 +511,11 @@ foreach ($items as $item) {
 		echo "
 				<tr class=border_top id='item_row_$item->id'>
 					<td width=100>N/A 					<input type=hidden name=cms_item::$item->id::item_id	value='0'></td>
-					<td width=420><input type=text			   name=cms_item::$item->id::name				value='$item->name'					size=37 nextinput=cms_item::$item->id::quantity></td>
-					<td width=50><input class=form-control number type=text name=cms_item::$item->id::quantity			value='$item->quantity'				size=2 nextinput=cms_item::$item->id::price				onblur='calculate_item(\"$item->id\", \"\");'></td>
-					<td width=50><input class=form-control number type=text name=cms_item::$item->id::price_original		value='$item->price_original'		size=2 nextinput=cms_item::$item->id::price></td>
-					<td width=50><input class=form-control number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
-					<td width=50><input class=form-control number type=text name=cms_item::$item->id::amount				value='$item->amount'				size=2 readonly style='color:#777777'></td>
+					<td width=350><input style='min-width:60px' type=text			   name=cms_item::$item->id::name				value='$item->name'					size=37 nextinput=cms_item::$item->id::quantity></td>
+					<td width=60><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::quantity			value='$item->quantity'				size=2 nextinput=cms_item::$item->id::price				onblur='calculate_item(\"$item->id\", \"\");'></td>
+					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::price_original		value='$item->price_original'		size=2 nextinput=cms_item::$item->id::price></td>
+					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
+					<td width=80><input class=form-control number type=text name=cms_item::$item->id::amount				value='$item->amount'				size=2 readonly style='color:#777777'></td>
 					<td width=40><input type=checkbox name='cms_item::$item->id::null'						value='delete'						onclick='if (confirm(\"確定要刪除這個項目？\")) { document.getElementById(\"item_row_$item->id\").style.display=\"none\"; calculate(); } else { this.checked=false; }'></td>
 				</tr>
 			";
@@ -568,22 +568,22 @@ echo <<<EOS
 	<tr>
 		<td align=right>總數量</td>
 		<td colspan="7">$inputs->quantity_sum</td>
-		<td width=160 align=right>總額		&nbsp; $inputs->amount_gross</td>
-		<td width=160 align=right>銷售額	&nbsp; $inputs->sales_record</td>
+		<td width='180'>總額		&nbsp; $inputs->amount_gross</td>
+		<td width='180' style="padding-left:20px">銷售額	&nbsp; $inputs->sales_record</td>
 		<td><!--<input type=button value='計算 (C)' onclick='calculate();'>--></td>
 	</tr>
 	<tr>
 		<td></td>
 		<td colspan="7"></td>
-		<td width=160 align=right>折扣		&nbsp; $inputs->discount</td>
-		<td width=160 align=right>訂金		&nbsp; $inputs->deposit</td>
+		<td width='180' align=right>折扣		&nbsp; $inputs->discount</td>
+		<td width='180' align=right>訂金		&nbsp; $inputs->deposit</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td></td>
 		<td colspan="7"></td>
-		<td width=160 align=right>折後數	&nbsp; $inputs->amount_net</td>
-		<td width=160 align=right>結算		&nbsp; $inputs->balance</td>
+		<td width='180' align=right>折後數	&nbsp; $inputs->amount_net</td>
+		<td width='180' align=right>結算		&nbsp; $inputs->balance</td>
 		<td></td>
 	</tr>
 	<tr>

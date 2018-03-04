@@ -10,7 +10,7 @@ echo "<h3>編輯佣金記錄</h3><br>";
 
 $id					= sql_secure($_GET['id']);
 
-$from_query			= $_GET['from_query'];
+$from_query			= isset($_GET['from_query']) ? $_GET['from_query'] : '';
 
 if ($_POST['action'] == 'edit') {
 
@@ -156,7 +156,7 @@ echo <<<EOS
 			 $inputs->date_end
 			<div class='input-group-addon' onclick="show_cal(this, 'cms::$id::date_end');"><i class='fa fa-calendar-o'></i></div>
 			</div>
-			<input type=button value='計算佣金' class="btn btn-default onclick='CSI_load(itemlist, "salary_edit_item_add.php?sid=$id&staff_id=" + document.getElementById("form").elements.namedItem("input_pulldownmenu_staff_id_value").value + "&date_begin=" + document.getElementById("form").elements.namedItem("cms::$id::date_begin").value + "&date_end=" + document.getElementById("form").elements.namedItem("cms::$id::date_end").value, "", "append");'>
+			<input type="button" value="計算佣金" class="btn btn-default" onclick="loadCSI()">
 		</td>
 	</tr>
 	<tr>
@@ -306,9 +306,9 @@ echo <<<EOS
 <script>
 
 
-var input_pulldownmenu_staff_id_value_previous	= document.getElementById('input_pulldownmenu_staff_id_value').value;
-document.getElementById('input_pulldownmenu_staff_id_value').onchange = function () {
-	if (input_pulldownmenu_staff_id_value_previous == document.getElementById('input_pulldownmenu_staff_id_value').value)
+var input_pulldownmenu_staff_id_value_previous	= $('select[name="cms::$id::staff_id"]:selected').val();
+$('select[name="cms::$id::staff_id"]').onchange = function () {
+	if (input_pulldownmenu_staff_id_value_previous == $('select[name="cms::$id::staff_id"]:selected').val())
 		return;
 
 	CSI_submit("salary_edit_load_staff.php?cid=" + document.getElementById("form").elements.namedItem("cms::$id::staff_id").value);
@@ -316,7 +316,7 @@ document.getElementById('input_pulldownmenu_staff_id_value').onchange = function
 	document.getElementById("form").elements.namedItem("add_invoice_id").value = "";
 	document.getElementById("form").elements.namedItem("input_pulldownmenu_add_invoice_id").value = "";
 
-	input_pulldownmenu_staff_id_value_previous = document.getElementById('input_pulldownmenu_staff_id_value').value;
+	input_pulldownmenu_staff_id_value_previous = $('select[name="cms::$id::staff_id"]:selected').val();
 }
 
 
@@ -417,7 +417,9 @@ shortcut.add("Ctrl+B", function () {history.go(-1); });
 shortcut.add("Ctrl+C", function () {calculate(); });
 shortcut.add("Ctrl+P", function () {getFormItem("form", "saveprint").value="true"; document.getElementById("form").submit(); });
 
-
+function loadCSI() {
+	return CSI_load(itemlist, "salary_edit_item_add.php?sid=$id&staff_id=" + $('select[name="cms::$id::staff_id"]:selected').val() + "&date_begin=" + $('input[name="cms::$id::date_begin"]').val() + "&date_end=" + $('input[name="cms::$id::date_end"]').val(), "", "append");
+}
 
 </script>
 
