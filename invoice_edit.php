@@ -154,14 +154,14 @@ $inputs->tag['staff_id']					= "class='form-control' style='max-width:60%;' next
 $inputs->tag['amount_cash']					= "class='form-control' style='max-width:60%;' nextinput=cms::$id::overtime";
 $inputs->tag['overtime']					= "class='form-control' style='max-width:60%;display:inline-block;' nextinput=input_pulldownmenu_add_item_id";
 
-$inputs->tag['quantity_sum']				= "class='form-control' style='max-width:20%;' nextinput=cms::$id::amount_gross";
-$inputs->tag['amount_gross']				= "class='form-control' style='max-width:75%;display:inline-block' nextinput=cms::$id::discount";
-$inputs->tag['amount_net']					= "class='form-control' style='max-width:75%;display:inline-block' nextinput=cms::$id::deposit";
-$inputs->tag['discount']					= "class='form-control' style='max-width:75%;display:inline-block' nextinput=cms::$id::amount_net";
-$inputs->tag['sales_record']					= "class='form-control' style='max-width:75%;display:inline-block'";
-$inputs->tag['deposit']					= "class='form-control' style='max-width:75%;display:inline-block'";
-$inputs->tag['balance']					= "class='form-control' style='max-width:75%;display:inline-block'";
-$inputs->tag['unpaid']					= "class='form-control' style='max-width:75%;display:inline-block'";
+$inputs->tag['quantity_sum']				= "class='form-control' style='max-width:75%;' nextinput=cms::$id::amount_gross";
+$inputs->tag['amount_gross']				= "class='form-control' style='max-width:70%;display:inline-block' nextinput=cms::$id::discount";
+$inputs->tag['amount_net']					= "class='form-control' style='max-width:70%;display:inline-block' nextinput=cms::$id::deposit";
+$inputs->tag['discount']					= "class='form-control' style='max-width:70%;display:inline-block' nextinput=cms::$id::amount_net";
+$inputs->tag['sales_record']					= "class='form-control' style='max-width:70%;display:inline-block'";
+$inputs->tag['deposit']					= "class='form-control' style='max-width:70%;display:inline-block'";
+$inputs->tag['balance']					= "class='form-control' style='max-width:70%;display:inline-block'";
+$inputs->tag['unpaid']					= "class='form-control' style='max-width:70%;display:inline-block'";
 
 $inputs->tag['deliveryterms']				= "class='form-control' style='max-width:75%;display:inline-block'";
 $inputs->tag['paymentterms']				= "class='form-control' style='max-width:75%;display:inline-block'";
@@ -170,7 +170,7 @@ $inputs->tag['remark']				= "class='form-control' style='max-width:75%;display:i
 $inputs->tag['submit_button']				= "class=button";
 
 $inputs2				= new Inputs();
-$inputs2->add('add_item_id', 'select2', "", "", sql_getArray("select concat(left(barcode, 4), ' - ', name), id from item WHERE status!='deleted' order by name"), 80);
+$inputs2->add('add_item_id', 'select2', "", "", sql_getArray("select concat(left(barcode, 4), ' - ', name), id from item WHERE status!='deleted' AND (barcode is not null OR barcode!='') order by name ASC"), 80);
 $inputs2->tag['add_item_id']					= "class='form-control' style='width:50%; display:inline-block'";
 
 $inputs3				= new Inputs();
@@ -231,7 +231,18 @@ echo <<<EOS
 <script language="JavaScript" type="text/javascript" src="js/rich_calendar/rc_lang_ru.js"></script>
 <script language="javascript" src="js/domready.js"></script>
 <script language="javascript" src="js/show_cal.js"></script>
-
+<style>
+@media screen and (max-width: 767px) {
+	.resp-mobile-total {
+		display: contents
+		float: right;
+	}
+	.resp-mobile-total > input {
+		margin-bottom: 10px;
+		width: 68px;
+	}
+}
+</style>
 <form id=form name=form action='' method=post onsubmit='nextTab(); return false;'>
 
 <table class='table table-borderless table_form'>
@@ -251,7 +262,7 @@ echo <<<EOS
 	<tr>
 		<td width=120 align=right style='vertical-align: middle'>出單編號</td>
 		<td>$inputs->invoice_id</td>
-		<td colspan=8 align=right style='vertical-align: middle'>出單日期	&nbsp; $inputs->date_order</td>
+		<td colspan=9 align=right style='vertical-align: middle'>出單日期	&nbsp; $inputs->date_order</td>
 		<td style='vertical-align: middle;'><i class="fa fa-calendar-o" onclick="show_cal(this, 'cms::$id::date_order');"></i></td>
 	</tr>
 	<tr>
@@ -260,118 +271,118 @@ echo <<<EOS
 		$newYes <input type="radio" value="1" name="newcust">
 		$newNo <input type="radio" value="0" name="newcust" checked>
 		<td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=9 align=left valign=top></td>
 	</tr>
 	
 	<tr class="oldcust">
 		<td width=120 align=right style='vertical-align: middle'>客戶</td>
 		<td>$inputs->customer_id</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'>客戶付款單：</td>
+		<td colspan=10 align=left valign=top>客戶付款單：</td>
 	</tr>
 
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>名稱</td>
 		<td>$inputs3->oldname</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>類別</td>
 		<td>$inputs3->oldclass</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>組別</td>
 		<td>$inputs3->oldstaff_id</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>銷售地點</td>
 		<td>$inputs3->oldsite_id</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>地址</td>
 		<td>$inputs3->oldaddress</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>送貨地址</td>
 		<td>$inputs3->olddelivery_address</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>電話</td>
 		<td>$inputs3->oldtel</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>傳真</td>
 		<td>$inputs3->oldfax</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>電郵</td>
 		<td>$inputs3->oldemail</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 
 
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>名稱</td>
 		<td>$inputs3->newname</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>類別</td>
 		<td>$inputs3->newclass</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>組別</td>
 		<td>$inputs3->newstaff_id</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>銷售地點</td>
 		<td>$inputs3->newsite_id</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>地址</td>
 		<td>$inputs3->newaddress</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>送貨地址</td>
 		<td>$inputs3->newdelivery_address</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>電話</td>
 		<td>$inputs3->newtel</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>傳真</td>
 		<td>$inputs3->newfax</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>電郵</td>
 		<td>$inputs3->newemail</td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 
 	<tr class="separatorcust" style="border-top:3px solid #ccc">
 		<td width=120 align=right style='vertical-align: middle'></td>
 		<td></td>
-		<td colspan=9 align=left valign=top style='padding-left:147px;'></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr>
 		<td width=120 align=right style='vertical-align: middle'>銷售地點</td>
 		<td>$inputs->site_id</td>
-		<td colspan=9 rowspan=4 align=left valign=top style='padding-left:147px;'>$customer_payment_reference</td>
+		<td colspan=10 rowspan=4 align=left valign=top>$customer_payment_reference</td>
 	</tr>
 
 	<tr >
@@ -389,7 +400,7 @@ echo <<<EOS
 
 
 	<tr>
-		<td height=350 colspan=11 valign=top>
+		<td height=350 colspan=12 valign=top>
 
 
 <script>
@@ -561,45 +572,42 @@ echo <<<EOS
 		</td>
 	</tr>
 
-	<tr><td colspan=11 height=10 style='padding:0px;'></td></tr>
-	<tr><td colspan=11 height=1  style='padding:0px;' bgcolor=#cccccc></td></tr>
-	<tr><td colspan=11 height=10 style='padding:0px;'></td></tr>
+	<tr><td colspan=12 height=10 style='padding:0px;'></td></tr>
+	<tr><td colspan=12 height=1  style='padding:0px;' bgcolor=#cccccc></td></tr>
+	<tr><td colspan=12 height=10 style='padding:0px;'></td></tr>
 
 	<tr>
-		<td align=right>總數量</td>
+		<td style="text-align:right;">總數量</td>
 		<td colspan="7">$inputs->quantity_sum</td>
-		<td width='180'>總額		&nbsp; $inputs->amount_gross</td>
-		<td width='180' style="padding-left:20px">銷售額	&nbsp; $inputs->sales_record</td>
-		<td><!--<input type=button value='計算 (C)' onclick='calculate();'>--></td>
+		<td></td>
+		<td style="text-align:right;" class="resp-mobile-total">總額		&nbsp; $inputs->amount_gross</td>
+		<td colspan="2" style="text-align:right;" class="resp-mobile-total">銷售額	&nbsp; $inputs->sales_record</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td colspan="7"></td>
-		<td width='180' align=right>折扣		&nbsp; $inputs->discount</td>
-		<td width='180' align=right>訂金		&nbsp; $inputs->deposit</td>
-		<td></td>
+		<td colspan="8"></td>
+		<td style="text-align:right;" class="resp-mobile-total">折扣		&nbsp; $inputs->discount</td>
+		<td colspan="2" align=right class="resp-mobile-total">訂金		&nbsp; $inputs->deposit</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td colspan="7"></td>
-		<td width='180' align=right>折後數	&nbsp; $inputs->amount_net</td>
-		<td width='180' align=right>結算		&nbsp; $inputs->balance</td>
-		<td></td>
+		<td colspan="8"></td>
+		<td style="text-align:right;" class="resp-mobile-total">折後數	&nbsp; $inputs->amount_net</td>
+		<td colspan="2" align=right class="resp-mobile-total">結算		&nbsp; $inputs->balance</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td colspan="7"></td>
-		<td></td>
-		<td align=right>未付	&nbsp; $inputs->unpaid</td>
-		<td></td>
+		<td colspan="8"></td>
+		<td class="resp-mobile-total">&nbsp</td>
+		<td colspan="2"  align=right class="resp-mobile-total">未付	&nbsp; $inputs->unpaid</td>
 	</tr>
 
-	<tr><td colspan=11 height=10 style='padding:0px;'></td></tr>
-	<tr><td colspan=11 height=1  style='padding:0px;' bgcolor=#cccccc></td></tr>
-	<tr><td colspan=11 height=10 style='padding:0px;'></td></tr>
+	<tr><td colspan=12 height=10 style='padding:0px;'></td></tr>
+	<tr><td colspan=12 height=1  style='padding:0px;' bgcolor=#cccccc></td></tr>
+	<tr><td colspan=12 height=10 style='padding:0px;'></td></tr>
 
 	<tr $save_button_display>
-		<td colspan=11 align=center>
+		<td colspan=12 align=center>
 			<input type=button class='btn btn-default' value='確定 (S)' onclick='document.getElementById("form").submit();' class=noprint>
 			<input type=button class='btn btn-default' value='儲存及預覽 (P)' onclick='getFormItem("form", "saveprint").value="true"; document.getElementById("form").submit();'  class=noprint>
 		</td>

@@ -165,7 +165,7 @@ class Inputs {
 			foreach ($options as $key => $option_value) {
 				$option_value	= trim($option_value);
 				$selected		= ($value ? ($value == $option_value) ? 'selected' : '' : '');
-				$key			= array_shift(explode("#", trim($key)));
+				// $key			= array_shift(explode("#", trim($key)));
 
 				if (isset($conditional_input[$option_value]))
 					$action	= "onselectstart=''";
@@ -187,7 +187,7 @@ class Inputs {
 			foreach ($options as $key => $option_value) {
 				$option_value	= trim($option_value);
 				$selected		= ($value ? ($value == $option_value) ? 'selected' : '' : '');
-				$key			= array_shift(explode("#", trim($key)));
+				// $key			= array_shift(explode("#", trim($key)));
 
 				if (isset($conditional_input[$option_value]))
 					$action	= "onselectstart=''";
