@@ -247,14 +247,15 @@ function sql_secure($content, $fields = '') {
 		for ($i=0; $i < count($word); $i++) {
 			if (stristr("$message", $word[$i])) {
 				$replace = '- ' . chunk_split(strtoupper($word[$i]), 1, ' ') . '-';
-				$message = eregi_replace($word[$i], $replace[$i], $message);
+				$message = preg_replace($word[$i], $replace[$i], $message);
 			}
 		}
-		
+
 		if (get_magic_quotes_gpc() == 0)	return $message;
 		else								return stripslashes($message);
-	
-		//return str_ireplace($words, $replace, trim($message));
+	}
+	else if (is_int($content)) {
+		return $content;
 	} else if (is_array($content)) {
 		$result	= array();
 		if (empty($fields))		$fields	= array_keys($content);
