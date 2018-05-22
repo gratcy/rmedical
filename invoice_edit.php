@@ -12,8 +12,9 @@ $id					= sql_secure($_GET['id']);
 $from_query			= $_GET['from_query'];
 
 $newcust = (int) $_POST['newcust'];
+
 $oldclass = (int) $_POST['oldclass'];
-$oldstaff_id = $_POST['oldstaff_id'];
+$oldstaff_id = (int) $_POST['oldstaff_id'];
 $oldsite_id = (int) $_POST['oldsite_id'];
 $oldname = isset($_POST['oldname']) ? $_POST['oldname'] : '';
 $oldaddress = isset($_POST['oldaddress']) ? $_POST['oldaddress'] : '';
@@ -33,16 +34,9 @@ $newfax = isset($_POST['newfax']) ? $_POST['newfax'] : '';
 $newemail = isset($_POST['newemail']) ? $_POST['newemail'] : '';
 
 $invid = (int) $_GET['id'];
-if ($newcust == 1) {
-	$_POST['cms::'.$invid.'::staff_id'] = $newstaff_id;
-	$_POST['cms::'.$invid.'::class'] = $newclass;
-}
-else {
-	$_POST['cms::'.$invid.'::staff_id'] = $oldstaff_id;
-	$_POST['cms::'.$invid.'::class'] = $oldclass;
-}
-
 $oldcustid = (int) $_POST['cms::'.$invid.'::customer_id'];
+$newsite_id = (int) $_POST['cms::'.$invid.'::site_id'];
+$newstaff_id = (int) $_POST['cms::'.$invid.'::staff_id'];
 if (isset($_POST['cms_update'])) {
 	$newcustid = 0;
 	if ($newcust == 1) {
@@ -104,6 +98,8 @@ if (isset($_POST['cms_update'])) {
 
 }
 
+
+
 include_once "bin/class_inputs.php";
 $inputs				= new Inputs();
 $inputs->prefix		= "cms::$id::";
@@ -152,8 +148,8 @@ $inputs->tag['balance']						= "class=form-control number readonly style='color:
 $inputs->tag['unpaid']						= "class=form-control number readonly style='color:#777777'";
 
 
-$inputs->tag['invoice_id']					= "class='form-control' style='max-width:100%;' nextinput=cms::$id::date_order";
-$inputs->tag['date_order']					= "class='form-control' style='max-width:100%;display:inline-block;' nextinput=input_pulldownmenu_customer_id";
+$inputs->tag['invoice_id']					= "class='form-control' style='max-width:34.5%;' nextinput=cms::$id::date_order";
+$inputs->tag['date_order']					= "class='form-control' style='max-width:34.5%;display:inline-block;' nextinput=input_pulldownmenu_customer_id";
 $inputs->tag['customer_id']					= "class='form-control' style='max-width:60%;' nextinput=input_pulldownmenu_staff_id";
 $inputs->tag['site_id']						= "class='form-control' style='max-width:60%;' nextinput=input_pulldownmenu_staff_id";
 $inputs->tag['staff_id']					= "class='form-control' style='max-width:60%;' nextinput=input_pulldownmenu_add_item_id";
@@ -267,124 +263,120 @@ echo <<<EOS
 
 	<tr>
 		<td width=120 align=right style='vertical-align: middle'>出單編號</td>
-		<td>$inputs->invoice_id</td>
-		<td colspan=9 align=right style='vertical-align: middle'>出單日期	&nbsp; $inputs->date_order</td>
-		<td style='vertical-align: middle;'><i class="fa fa-calendar-o" onclick="show_cal(this, 'cms::$id::date_order');"></i></td>
+		<td colspan=11>$inputs->invoice_id</td>
+	</tr>
+	<tr>
+		<td width=120 align=right style='vertical-align: middle'>出單日期</td>
+		<td colspan=11>$inputs->date_order <i class="fa fa-calendar-o" onclick="show_cal(this, 'cms::$id::date_order');"></i></td>
 	</tr>
 	<tr>
 		<td width=120 align=right style='vertical-align: middle'>$newCust</td>
 		<td>
 		$newYes <input type="radio" value="1" name="newcust">
 		$newNo <input type="radio" value="0" name="newcust" checked>
-		</td>
-		<td colspan=9 align=right style='vertical-align: middle'>&nbsp;</td>
-		<td style='vertical-align: middle;'>&nbsp;</td>
+		<td>
+		<td colspan=9 align=left valign=top></td>
 	</tr>
 	
 	<tr class="oldcust">
 		<td width=120 align=right style='vertical-align: middle'>客戶</td>
 		<td>$inputs->customer_id</td>
-		<td colspan=10 align=left>客戶付款單：</td>
+		<td colspan=10 align=left valign=top>客戶付款單：</td>
 	</tr>
 
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>名稱</td>
 		<td>$inputs3->oldname</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>類別</td>
 		<td>$inputs3->oldclass</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>組別</td>
 		<td>$inputs3->oldstaff_id</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>銷售地點</td>
 		<td>$inputs3->oldsite_id</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>地址</td>
 		<td>$inputs3->oldaddress</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>送貨地址</td>
 		<td>$inputs3->olddelivery_address</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>電話</td>
 		<td>$inputs3->oldtel</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>傳真</td>
 		<td>$inputs3->oldfax</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="oldcust2">
 		<td width=120 align=right style='vertical-align: middle'>電郵</td>
 		<td>$inputs3->oldemail</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 
 
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>名稱</td>
 		<td>$inputs3->newname</td>
-		<td colspan=10 align=left></td>
-	</tr>
-	<tr class="newcust">
-		<td width=120 align=right style='vertical-align: middle'>類別</td>
-		<td>$inputs3->newclass</td>
-		<td colspan=10 align=left></td>
-	</tr>
-	<tr class="newcust newstaff_id">
-		<td width=120 align=right style='vertical-align: middle'>組別</td>
-		<td>$inputs3->newstaff_id</td>
-		<td colspan=10 align=left></td>
-	</tr>
-	<tr class="newcust">
-		<td width=120 align=right style='vertical-align: middle'>銷售地點</td>
-		<td>$inputs3->newsite_id</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>地址</td>
 		<td>$inputs3->newaddress</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>送貨地址</td>
 		<td>$inputs3->newdelivery_address</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>電話</td>
 		<td>$inputs3->newtel</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>傳真</td>
 		<td>$inputs3->newfax</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 	<tr class="newcust">
 		<td width=120 align=right style='vertical-align: middle'>電郵</td>
 		<td>$inputs3->newemail</td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
 	</tr>
 
 	<tr class="separatorcust" style="border-top:3px solid #ccc">
 		<td width=120 align=right style='vertical-align: middle'></td>
 		<td></td>
-		<td colspan=10 align=left></td>
+		<td colspan=10 align=left valign=top></td>
+	</tr>
+	<tr>
+		<td width=120 align=right style='vertical-align: middle'>銷售地點</td>
+		<td>$inputs->site_id</td>
+		<td colspan=10 rowspan=4 align=left valign=top>$customer_payment_reference</td>
+	</tr>
+
+	<tr >
+		<td width=120 align=right style='vertical-align: middle'>推廣員</td>
+		<td>$inputs->staff_id</td>
 	</tr>
 	<tr>
 		<td width=120 align=right style='vertical-align: middle'>現金銷售</td>
@@ -397,7 +389,7 @@ echo <<<EOS
 
 
 	<tr>
-		<td height=350 colspan=12>
+		<td height=350 colspan=12 valign=top>
 
 
 <script>
@@ -440,7 +432,7 @@ function tab_toggle(tab, content) {
 
 <table class='table table-borderless tab_switch_content' id='tab_content_detail'>
 	<tr>
-		<td>
+		<td valign=top>
 
 <table class='table table-borderless' $add_product_display>
 	<tr>
@@ -754,8 +746,7 @@ $(document).ready(function(){
 				$('tr.oldcust2').show();
 			});
 		}
-	})
-
+	});
 	$('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change()
 })
 </script>
