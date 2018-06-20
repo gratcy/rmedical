@@ -32,7 +32,7 @@ if (!empty($id)) {
 				<input type=hidden name='cms_item::$rand_id::item_brand::new'	value='$item_info->brand'>
 				<input type=hidden name='cms_item::$rand_id::rec_id::new'		value='$rec_id'>
 				<td width='100'>$item_info->item_id</td>
-				<td width='430'>$item_info->name</td>
+				<td width='425'>$item_info->name</td>
 				<td width='80'><input style='min-width: 60px' class=form-control number type=text name='cms_item::$rand_id::quantity::new'			value='1'							size=2 nextinput=cms_item::$rand_id::price::new		onblur='calculate_item(\"$rand_id\", \"::new\");'></td>
 				<td width='80'><input style='min-width: 60px' class=form-control number type=text name='cms_item::$rand_id::price_original::new'		value='$item_info->price'			size=2 nextinput=cms_item::$rand_id::price::new></td>
 				<td width='80'><input style='min-width: 60px' class=form-control number type=text name='cms_item::$rand_id::price::new'				value='$item_info->price'			size=2 nextinput=input_pulldownmenu_add_item_id		onblur='calculate_item(\"$rand_id\", \"::new\");'></td>

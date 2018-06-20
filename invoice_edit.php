@@ -533,7 +533,7 @@ foreach ($items as $item) {
 echo <<<EOS
 
 </table>
-<div id=itemlist></div>
+<div id='itemlist' style="margin-top: -20px"></div>
 
 		</td>
 	</tr>
