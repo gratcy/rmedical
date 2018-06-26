@@ -81,4 +81,6 @@ $lang['en']['信用咭'] = 'Credit Card';
 $lang['en']['確定'] = 'Submit';
 $lang['en']['批准'] = 'Approve';
 $lang['en']['選擇產品'] = 'Choose Products';
+$lang['en']['報告銷售訂單'] = 'Reporting';
+$lang['en']['銷售訂單'] = 'Transaction';
 

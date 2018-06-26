@@ -65,7 +65,7 @@ $inputs->value['tpayment'] = $tpayment;
 $inputs->value['reporttype'] = $reporttype;
 
 ?>
-<h3>Reporting</h3>
+<h3><?php echo lang('報告銷售訂單')?></h3>
 <br />
 <form id="search_box" action="" method="GET">
 <table border="0" class="table_filter">

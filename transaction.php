@@ -4,7 +4,7 @@ $privilege			= sql_getObj("select * from service_user_privilege where user_id='$
 
 if (empty($privilege->view))	{	gotoURL("index.php"); exit; }
 
-$lang = lang('销售订单');
+$lang = lang('銷售訂單');
 if (isset($_GET['delete']) && $privilege->delete == 'on') {
 	$id		= sql_secure($_GET['delete']);
 	$fields['tstatus'] = 0;
@@ -24,7 +24,7 @@ $offset				= ($topage-1) * $record_per_page;
 $ccolumns = $columns;
 unset($ccolumns['tstatus'],$ccolumns['ttotal'],$ccolumns['tdiscount'],$ccolumns['tammount']);
 ?>
-<h3 class="pull-left"><?php echo lang('開單') ?></h3>
+<h3 class="pull-left"><?php echo lang('銷售訂單') ?></h3>
 		<div class='pull-right'>
 			<input class="btn btn-default" type="button" value="<?php echo lang('開單') ?> (N)" onclick="location.href=&quot;transaction_add.php&quot;;">
 			<input class="btn btn-default" type="button" value="Export (E)" onclick="exportform.submit()">
