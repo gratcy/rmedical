@@ -25,11 +25,11 @@ Highcharts.chart('containerChart', {
         type: 'column'
     },
     title: {
-        text: 'Report Customer Payment Top 10 (Ammount)'
+        text: 'Report Customer Payment Top 10 (Amount)'
     },
     xAxis: {
         categories: [
-            'Selling Ammount',
+            'Selling Amount',
         ],
         crosshair: true
     },

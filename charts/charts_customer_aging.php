@@ -29,7 +29,7 @@ Highcharts.chart('containerChart', {
     },
     xAxis: {
         categories: [
-            'Selling Ammount',
+            'Selling Amount',
         ],
         crosshair: true
     },

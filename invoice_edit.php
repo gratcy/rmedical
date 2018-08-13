@@ -441,12 +441,8 @@ function tab_toggle(tab, content) {
 			<td><input id='add_item_submit' class='btn btn-default' type='button' value='確定' style='width:70px;' onclick='
 				CSI_load(itemlist, "invoice_edit_item_add.php?invoice_id=$id&id=" + document.getElementById("form").elements.namedItem("add_item_id").value, "", "append");
 				document.getElementById("form").elements.namedItem("add_item_id").value = "";
-				document.getElementById("form").elements.namedItem("input_pulldownmenu_add_item_id").value = "";
-				return true;
-				document.getElementById("form").elements.namedItem("input_pulldownmenu_add_item_id").focus();'>
-			<input class='btn btn-default' type=button value='新增自訂產品' onclick='
-				CSI_load(itemlist, "invoice_edit_item_add.php?invoice_id=$id&custom=1", "", "append");
-				'>
+				return true;'>
+			<input class='btn btn-default' type=button value='新增自訂產品' onclick='CSI_load(itemlist, "invoice_edit_item_add.php?invoice_id=$id&custom=1", "", "append");'>
 		</td>
 	</tr>
 
@@ -615,11 +611,12 @@ echo <<<EOS
 
 
 function calculate_item(itemid, newitem) {
+	var ck = $('#form [name="cms_item::' + itemid + '::amount' + newitem + '"]').val()
+	if (ck) {
+	 	getFormItem('form', 'cms_item::' + itemid + '::amount' + newitem).value	= roundNum(parseFloat(getFormItem('form', 'cms_item::' + itemid + '::quantity' + newitem).value) * parseFloat(getFormItem('form', 'cms_item::' + itemid + '::price' + newitem).value));
 
-	getFormItem('form', 'cms_item::' + itemid + '::amount' + newitem).value	= roundNum(parseFloat(getFormItem('form', 'cms_item::' + itemid + '::quantity' + newitem).value) * parseFloat(getFormItem('form', 'cms_item::' + itemid + '::price' + newitem).value));
-
-	calculate();
-
+		calculate();
+	}
 }
 
 
@@ -659,7 +656,6 @@ function calculate() {
 		if (getFormItem('form', 'cms_item::' + itemid + '::null' + newitem).checked)			continue;
 
 		quantity_sum	+= parseFloat(getFormItem('form', 'cms_item::' + itemid + '::quantity' + newitem).value);
-	console.log('cms_item::' + itemid + '::quantity' + newitem);
 		amount_gross	+= parseFloat(getFormItem('form', 'cms_item::' + itemid + '::amount' + newitem).value);
 
 	}

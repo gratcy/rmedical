@@ -60,11 +60,11 @@ Highcharts.chart('containerChart2', {
         type: 'column'
     },
     title: {
-        text: 'Report Selling Periode <?php echo $date_start; ?> to <?php echo $date_end; ?> (Ammount)'
+        text: 'Report Selling Periode <?php echo $date_start; ?> to <?php echo $date_end; ?> (Amount)'
     },
     xAxis: {
         categories: [
-            'Selling Ammount',
+            'Selling Amount',
         ],
         crosshair: true
     },

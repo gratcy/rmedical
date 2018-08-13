@@ -140,7 +140,7 @@ echo <<<EOS
 
 
 
-<div class="logo"><img src="/images/print_header_logo.jpg"></div>
+<div class="logo"><img src="/images/print_header.jpg"></div>
 <div class=height20></div>
 <div class=height20></div>
 

@@ -34,6 +34,9 @@ body {
 	bottom				: 0px;
 }
 
+.footer {
+    width: unset;
+}
 
 #login_menu {
 	display				: none;

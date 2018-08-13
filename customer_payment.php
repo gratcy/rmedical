@@ -48,7 +48,8 @@ echo "
 			<input class='btn btn-default' type=button value='".lang('導出表格')." (E)' onclick='exportform.submit()' />
 			<input class='btn btn-default' type=button value='檢查付款' onclick='location.href=\"customer_payment_check.php\";'>
 		</div>
-		<br /><br /><br />
+		<div style='clear:both'></div>
+		<br />
 ";
 $columns		= array(
 			"payment_id"		=> "編號",

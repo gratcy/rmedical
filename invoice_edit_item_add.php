@@ -73,8 +73,8 @@ if (isset($_GET['custom'])) {
 			</tr>
 		</table>
 		<script>
+			getFormItem('form', 'cms_item::$rand_id::name::new').focus();
 			calculate();
-				getFormItem('form', 'cms_item::$rand_id::name::new').focus();
 		</script>
 		";
 

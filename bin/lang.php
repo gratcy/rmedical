@@ -84,3 +84,4 @@ $lang['en']['選擇產品'] = 'Choose Products';
 $lang['en']['報告銷售訂單'] = 'Reporting';
 $lang['en']['銷售訂單'] = 'Transaction';
 
+$lang['en']['新增'] = 'New';

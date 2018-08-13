@@ -117,9 +117,9 @@ echo <<<EOS
 <script language="javascript" src="js/show_cal.js"></script>
 
 <div class='table-responsive'>
+<form name=form id=form action='' method=post>
 <table class='table table-borderless table_form'>
 
-<form name=form id=form action='' method=post>
 <input type=hidden name=action value=edit>
 $inputs->status
 
@@ -223,14 +223,14 @@ foreach ($items as $item) {
 
 	echo "
 			<tr class=border_top id='item_row_$item->id' clearrecord='cms_item::$item->id::null'>
-				<td>$invoice_info->invoice_id</td>
-				<td>$invoice_info->date_order</td>
-				<td><input class=number type=text name=r$item->id::amount_net	value='$invoice_info->amount_net' size=5 readonly style='color:#777777'></td>
-				<td><input class=number type=text name=r$item->id::deposit		value='$invoice_info->deposit' size=5 readonly style='color:#777777'></td>
-				<td><input class=number type=text name=r$item->id::balance		value='$invoice_info->balance' size=5 readonly style='color:#777777'></td>
-				<td><input class=number type=text name=r$item->id::unpaid		value='$invoice_info->unpaid' size=5 readonly style='color:#777777'></td>
-				<td><input class=number type=text name=cms_item::$item->id::amount value='$item->amount' size=5></td>
-				<td><input type=checkbox name='cms_item::$item->id::null'		value='delete'		onclick='if (confirm(\"確定要刪除這個項目？\")) { document.getElementById(\"item_row_$item->id\").style.display=\"none\"; calculate(); } else { this.checked=false; }'>
+				<td width=100>$invoice_info->invoice_id</td>
+				<td width=100>$invoice_info->date_order</td>
+				<td width=80><input class=number type=text name=r$item->id::amount_net	value='$invoice_info->amount_net' size=5 readonly style='color:#777777'></td>
+				<td width=80><input class=number type=text name=r$item->id::deposit		value='$invoice_info->deposit' size=5 readonly style='color:#777777'></td>
+				<td width=80><input class=number type=text name=r$item->id::balance		value='$invoice_info->balance' size=5 readonly style='color:#777777'></td>
+				<td width=80><input class=number type=text name=r$item->id::unpaid		value='$invoice_info->unpaid' size=5 readonly style='color:#777777'></td>
+				<td width=80><input class=number type=text name=cms_item::$item->id::amount value='$item->amount' size=5></td>
+				<td width=40><input type=checkbox name='cms_item::$item->id::null'		value='delete'		onclick='if (confirm(\"確定要刪除這個項目？\")) { document.getElementById(\"item_row_$item->id\").style.display=\"none\"; calculate(); } else { this.checked=false; }'>
 			</tr>
 		";
 
@@ -278,9 +278,9 @@ echo <<<EOS
 
 
 
-</form>
 </table>
 </div>
+</form>
 
 
 <script>

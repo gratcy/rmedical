@@ -5,6 +5,9 @@ $privilege			= sql_getObj("select * from service_user_privilege where user_id='$
 if (empty($privilege->view))	{	gotoURL("index.php"); exit; }
 
 $lang = lang('商店');
+$new = lang('新增');
+$export = lang('導出表格');
+
 if (isset($_GET['delete']) && $privilege->delete == 'on') {
 	$id		= sql_secure($_GET['delete']);
 	$fields['sstatus'] = 0;
@@ -13,6 +16,7 @@ if (isset($_GET['delete']) && $privilege->delete == 'on') {
 	gotoURL(-1);
 	exit;
 }
+
 $ordertype = isset($_GET['ordertype']) ? $_GET['ordertype'] : 'desc';
 $name = isset($_GET['name']) ? $_GET['name'] : '';
 $search_word = isset($_GET['search_word']) ? $_GET['search_word'] : '';
@@ -26,9 +30,9 @@ unset($rcolumns['salestotal']);
 <h3 class="pull-left"><?php echo $lang; ?></h3>
 		<div class='pull-right'>
 			<?php if (!empty($privilege->edit))	{ ?>
-			<input class="btn btn-default" type="button" value="New Store (N)" onclick="location.href=&quot;store_add.php&quot;;">
+			<input class="btn btn-default" type="button" value="<?php echo $new . ' ' . $lang; ?> (N)" onclick="location.href=&quot;store_add.php&quot;;">
 			<?php } ?>
-			<input class="btn btn-default" type="button" value="Export (E)" onclick="exportform.submit()">
+			<input class="btn btn-default" type="button" value="<?php echo $export; ?> (E)" onclick="exportform.submit()">
 		</div>
 		<br /><br /><br />
 

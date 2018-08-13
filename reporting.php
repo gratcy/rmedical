@@ -24,7 +24,7 @@ $tpayment = isset($_GET['tpayment']) ? (int) $_GET['tpayment'] : '';
 $tstatus = isset($_GET['tstatus']) ? (int) $_GET['tstatus'] : '';
 $daterange = isset($_GET['daterange']) ? $_GET['daterange'] : $from.' - '.$to;
 if ($reporttype == 0)
-$columns = array('tdate' => 'Date', 'tno' => 'SO No.', 'manager' => 'Manager', 'sname' => 'Store', 'name' => 'Sales', 'cname' => 'Customer', 'tqty' => lang('數量'), 'tammount' => 'Ammount', 'tdiscount' => 'Discount (%)', 'ttotal' => 'Total', 'tpayment' => lang('付款方式'), 'tstatus' => 'Status');
+$columns = array('tdate' => 'Date', 'tno' => 'SO No.', 'manager' => 'Manager', 'sname' => 'Store', 'name' => 'Sales', 'cname' => 'Customer', 'tqty' => lang('數量'), 'tammount' => 'Amount', 'tdiscount' => 'Discount (%)', 'ttotal' => 'Total', 'tpayment' => lang('付款方式'), 'tstatus' => 'Status');
 else
 $columns = array('tdate' => 'Date', 'tno' => 'SO No.','product' => 'Products', 'sname' => 'Store', 'cname' => 'Customer', 'tqty' => lang('數量'), 'tprice' => lang('價錢'), 'tdiscount' => 'Discount (%)', 'ttotal' => 'Total', 'tpayment' => lang('付款方式'), 'tstatus' => 'Status');
 

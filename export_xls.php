@@ -101,7 +101,7 @@ if ($_POST['page'] == "reporting") {
 	$sql = array();
 	if ($reporttype == 0) {
 		$rsql = sql_getTable("select a.tdate,a.tno,e.name as manager,b.sname,c.name,d.cname,a.tqty,a.tammount,a.tdiscount,a.ttotal,a.tpayment,a.tstatus FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid JOIN staff e ON b.smanager=e.id where ".$filter." ORDER BY a.tid DESC");
-		$titles = array('Date', 'SO No.', 'Manager', 'Store', 'Sales', 'Customer', 'QTY', 'Ammount', 'Discount (%)', 'Total', 'Payment', 'Status');
+		$titles = array('Date', 'SO No.', 'Manager', 'Store', 'Sales', 'Customer', 'QTY', 'Amount', 'Discount (%)', 'Total', 'Payment', 'Status');
 	}
 	else {
 		$rsql = sql_getTable("select a.tdate,a.tno,g.name,b.sname,d.cname,f.tqty,f.tprice,a.tdiscount,'' as ttotal,a.tpayment,a.tstatus FROM transaction_tab a JOIN store_tab b ON a.tstore=b.sid JOIN staff c ON c.id=a.tsid JOIN customer_tab d ON a.tcid=d.cid JOIN staff e ON b.smanager=e.id JOIN transaction_detail_tab f ON a.tid=f.ttid JOIN item g ON f.tpid=g.id where ".$filter." ORDER BY a.tid DESC");
@@ -139,7 +139,7 @@ if ($_POST['page'] == "transaction") {
 		$sql[$k] = $v;
 		++$i;
 	}
-	$titles = array('Date','SO No.', 'Store', 'Sales', 'Customer', 'QTY', 'Ammount', 'Discount (%)', 'Total', 'Payment', 'Card No.', 'Status');
+	$titles = array('Date','SO No.', 'Store', 'Sales', 'Customer', 'QTY', 'Amount', 'Discount (%)', 'Total', 'Payment', 'Card No.', 'Status');
 }
 
 if ($_POST['page'] == "sales") {

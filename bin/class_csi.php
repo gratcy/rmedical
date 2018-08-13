@@ -165,7 +165,6 @@ function AJAX_initialization() {
 
 function AJAX_run(Command) {
 	if (!AJAX_initialized)	AJAX_initialization();
-	
 	AJAX_busy				= true;
 	AJAX_redo_command		= Command;
 	
@@ -265,10 +264,12 @@ function CSI_load_instant(objectID, URL, parameters) {
 
 function CSI_load_complete(objectID, result, writeMethod) {
 	if (objectID != null) {
-		if (writeMethod == 'append')
+		if (writeMethod == 'append') {
 			appendObject(objectID, result);
-		else
+		}
+		else {
 			writeObject(objectID, result);
+		}
 		objectID.style.display = 'block';
 		if (document.getElementById(objectID.id + "_loading") != null)
 			eval(objectID.id + "_loading.style.display = 'none';");
@@ -313,7 +314,12 @@ function writeObject(ObjectID, HTML_Code) {
 }
 
 function appendObject(ObjectID, HTML_Code) {
-	ObjectID.innerHTML += unescape(HTML_Code);
+	var oid = $(ObjectID).attr('id')
+	if (oid) {
+		$('#' + oid).append(unescape(HTML_Code))
+	} else {
+		ObjectID.innerHTML += unescape(HTML_Code);
+	}
 }
 
 

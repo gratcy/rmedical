@@ -158,7 +158,7 @@ include_once "bin/class_inputs.php";
 $inputs		= new Inputs();
 $inputs->add(
 			'tno'				, 'text_readonly2'	, 'tno'		, '30%',
-			'tammount'				, 'text_readonly2'	, 'Ammount'		, '30%',
+			'tammount'				, 'text_readonly2'	, 'Amount'		, '30%',
 			'tdiscount'				, 'text'	, 'Discount (%)'	, '30%',
 			'tcardno'				, 'text'	, 'Card No.'	, '100%',
 			'tqty'					, 'text_readonly2'	, 'QTY'			, '20%',
@@ -336,7 +336,7 @@ $inputs->options['tpayment']				= array(lang('現金') => 0,'EPS' => 1,lang('信
 					<td colspan="2"><?php echo lang('數量'); ?> &nbsp;  <span id="tqty"><?php echo $inputs->tqty; ?></span></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="right">Ammount &nbsp; <span id="tammount"><?php echo $inputs->tammount; ?></span></td>
+					<td colspan="2" align="right">Amount &nbsp; <span id="tammount"><?php echo $inputs->tammount; ?></span></td>
 				</tr>
 				<tr>
 					<td colspan="2" align="right">Discount &nbsp; <span id="tdiscount"><?php echo $inputs->tdiscount; ?></span></td>

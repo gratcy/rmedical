@@ -5,6 +5,8 @@ $privilege			= sql_getObj("select * from service_user_privilege where user_id='$
 if (empty($privilege->view))	{	gotoURL("index.php"); exit; }
 
 $lang = lang('终端客户');
+$export = lang('導出表格');
+$new = lang('新增');
 if (isset($_GET['delete']) && $privilege->delete == 'on') {
 	$id		= sql_secure($_GET['delete']);
 	$fields['cstatus'] = 0;
@@ -24,9 +26,9 @@ $offset				= ($topage-1) * $record_per_page;
 <h3 class="pull-left"><?php echo $lang; ?></h3>
 		<div class='pull-right'>
 			<?php if (!empty($privilege->edit))	{ ?>
-			<input class="btn btn-default" type="button" value="New Customer (N)" onclick="location.href=&quot;customers_add.php&quot;;">
+			<input class="btn btn-default" type="button" value="<?php echo $new . ' ' . $lang; ?> (N)" onclick="location.href=&quot;customers_add.php&quot;;">
 			<?php } ?>
-			<input class="btn btn-default" type="button" value="Export (E)" onclick="exportform.submit()">
+			<input class="btn btn-default" type="button" value="<?php echo $export; ?> (E)" onclick="exportform.submit()">
 		</div>
 		<br /><br /><br />
 
