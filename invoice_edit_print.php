@@ -259,7 +259,7 @@ echo <<<EOS
 
 	<tr height=2 style='padding:0px;'>
 		<td rowspan=5>Remark : </td>
-		<td rowspan=5>$inputs->remark</td>
+		<td rowspan=5 class='hide-textarea'>$inputs->remark</td>
 		<td colspan=2 bgcolor=#000000></td>
 	</tr>
 	<tr>
