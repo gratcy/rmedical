@@ -198,13 +198,13 @@ $inputs->options['tpayment']				= array(lang('現金') => 0,'EPS' => 1,lang('信
 	else {
 	?>
 				<tr>
-					<td>Store</td>
+					<td><?php echo lang('商店'); ?></td>
 					<td><span id="manager">
 					<?php echo $inputs->store_id; ?>
 					</span></td>
 				</tr>
 				<tr>
-					<td>Sales</td>
+					<td><?php echo lang('销售'); ?></td>
 					<td><span id="manager">
 					<?php echo $inputs->staff_id; ?>
 					</span></td>
@@ -292,7 +292,7 @@ $inputs->options['tpayment']				= array(lang('現金') => 0,'EPS' => 1,lang('信
 						<tr>
 						<td width="10%"><?php echo lang('產品'); ?> : </td>
 						<td width="80%"><select name="items" class="form-control"><?php echo select_product(0); ?></select></td>
-						<td width="10%"><input class="btn btn-default" type="button" name="addItem" value="<?php echo lang('加入'); ?> <?php echo lang('產品'); ?>"></td>
+						<td width="10%"><input class="btn btn-default" type="button" id="addItem" name="addItem" value="<?php echo lang('加入'); ?> <?php echo lang('產品'); ?>"></td>
 						</tr>
 					</table>
 					<br />
@@ -302,7 +302,7 @@ $inputs->options['tpayment']				= array(lang('現金') => 0,'EPS' => 1,lang('信
 					<td><?php echo lang('產品'); ?></td>
 					<td><?php echo lang('價錢'); ?></td>
 					<td><?php echo lang('數量'); ?></td>
-					<td style="display:none;">Total</td>
+					<td style="display:none;"><?php echo lang('共'); ?></td>
 					<td></td>
 				</tr>
 				</thead>
@@ -318,13 +318,13 @@ $inputs->options['tpayment']				= array(lang('現金') => 0,'EPS' => 1,lang('信
 					<td colspan="2"><?php echo lang('數量'); ?> &nbsp; <?php echo $inputs->tqty; ?></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="right">Amount &nbsp; <span id="tammount"><?php echo $inputs->tammount; ?></span></td>
+					<td colspan="2" align="right"><?php echo lang('量'); ?>  &nbsp; <span id="tammount"><?php echo $inputs->tammount; ?></span></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="right">Discount &nbsp; <span id="tdiscount"><?php echo $inputs->tdiscount; ?></span></td>
+					<td colspan="2" align="right"><?php echo lang('贴现'); ?>  &nbsp; <span id="tdiscount"><?php echo $inputs->tdiscount; ?></span></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="right">Total &nbsp; <span id="phone2"><?php echo $inputs->ttotal; ?></span></td>
+					<td colspan="2" align="right"><?php echo lang('共'); ?> &nbsp; <span id="phone2"><?php echo $inputs->ttotal; ?></span></td>
 				</tr>
 				<tr><td colspan="2"><hr width="100%" size="1" align="left"></td></tr>
 				<tr>
@@ -370,7 +370,7 @@ $('input[name="addItem"]').click(function(){
 		res += '<input type="hidden" value="'+productName+'" name="pname['+productId+']">';
 		res += '<td>'+productName+'</td>';
 		res += '<td><input type="hidden" value="'+productPrice+'" name="price['+productId+']">$'+productPrice+'</td>';
-		res += '<td><input type="number" style="width:50px" idnya="'+productId+'" value="1" name="qty['+productId+']"></td>';
+		res += '<td><input type="number" style="width:50px" nextinput="items" idnya="'+productId+'" value="1" name="qty['+productId+']"></td>';
 		res += '<td style="display:none;"><input type="text" style="width:100px" readonly name="totalprice['+productId+']" value="'+productPrice+'"></td>';
 		res += '<td><a class="delete_items" idnya="'+productId+'" href="javascript:void(0);"><i class="fa fa-times"></i></a></td>';
 		res += '</tr>';
@@ -522,5 +522,21 @@ $('select[name="customer_id"]').change(function(){
 			$('tr.oldcust2').show();
 	});
 });
+$('select[name="items"]').on('change', function() {
+	var val = $(this).val()
+	document.addEventListener("keydown", function(event) {
+		if (event.which === 13) {
+			$('#addItem').click()
+			$('input[idnya="'+val+'"]').focus()
+			$('input[idnya="'+val+'"]').on('change keyup keydown', function() {
+				document.addEventListener("keydown", function(event) {
+					if (event.which === 13) {
+						$('select[name="items"]').focus()
+					}
+				})
+			})
+		}
+	})
+})
 </script>
 <?php include_once "footer.php"; ?>

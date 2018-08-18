@@ -35,7 +35,7 @@ if (!empty($id)) {
 				<td width='425'>$item_info->name</td>
 				<td width='80'><input style='min-width: 60px' class=form-control number type=text name='cms_item::$rand_id::quantity::new'			value='1'							size=2 nextinput=cms_item::$rand_id::price::new		onblur='calculate_item(\"$rand_id\", \"::new\");'></td>
 				<td width='80'><input style='min-width: 60px' class=form-control number type=text name='cms_item::$rand_id::price_original::new'		value='$item_info->price'			size=2 nextinput=cms_item::$rand_id::price::new></td>
-				<td width='80'><input style='min-width: 60px' class=form-control number type=text name='cms_item::$rand_id::price::new'				value='$item_info->price'			size=2 nextinput=input_pulldownmenu_add_item_id		onblur='calculate_item(\"$rand_id\", \"::new\");'></td>
+				<td width='80'><input style='min-width: 60px' class=form-control number type=text name='cms_item::$rand_id::price::new'				value='$item_info->price'			size=2 nextinput=add_item_id		onblur='calculate_item(\"$rand_id\", \"::new\");'></td>
 				<td width='80'><input style='min-width: 60px' class=form-control number type=text name='cms_item::$rand_id::amount::new'				value='$item_info->price'			size=2 readonly style='color:#777777'></td>
 				<td width='40px'><input type=checkbox name='cms_item::$rand_id::null::new'						value='delete'	onclick='if (confirm(\"確定要刪除這個項目？\")) { document.getElementById(\"item_row_$rand_id\").style.display=\"none\"; calculate(); } else { this.checked=false; }'></td>
 			</tr>
@@ -65,9 +65,9 @@ if (isset($_GET['custom'])) {
 				<input type=hidden name=cms_item::$rand_id::rec_id::new		value='$rec_id'>
 				<td width=100>N/A</td>
 				<td width=420><input type=text name='cms_item::$rand_id::name::new'							value=''		size=37 nextinput=cms_item::$rand_id::quantity::new></td>
-				<td width=50><input class=number type=text name='cms_item::$rand_id::quantity::new'			value='1'		size=2 nextinput=cms_item::$rand_id::price::new			onblur='calculate_item(\"$rand_id\", \"::new\");'></td>
-				<td width=50><input class=number type=text name=cms_item::$rand_id::price_original::new		value='0'		size=2 nextinput=input_pulldownmenu_add_item_id></td>
-				<td width=50><input class=number type=text name=cms_item::$rand_id::price::new				value='0'		size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$rand_id\", \"::new\");'></td>
+				<td width=50><input class=number type=text name='cms_item::$rand_id::quantity::new'			value='1'		size=2 nextinput=cms_item::$rand_id::price_original::new			onblur='calculate_item(\"$rand_id\", \"::new\");'></td>
+				<td width=50><input class=number type=text name=cms_item::$rand_id::price_original::new		value='0'		size=2 nextinput=cms_item::$rand_id::price::new></td>
+				<td width=50><input class=number type=text name=cms_item::$rand_id::price::new				value='0'		size=2 nextinput=add_item_id			onblur='calculate_item(\"$rand_id\", \"::new\");'></td>
 				<td width=50><input class=number type=text name=cms_item::$rand_id::amount::new	value='0'	size=2 readonly style='color:#777777'></td>
 				<td width=40><input type=checkbox name='cms_item::$rand_id::null::new'						value='delete'	onclick='if (confirm(\"確定要刪除這個項目？\")) { document.getElementById(\"item_row_$rand_id\").style.display=\"none\"; calculate(); } else { this.checked=false; }'></td>
 			</tr>

@@ -19,7 +19,7 @@ $ordertype = isset($_GET['ordertype']) ? $_GET['ordertype'] : 'desc';
 $name = isset($_GET['name']) ? $_GET['name'] : '';
 $search_word = isset($_GET['search_word']) ? $_GET['search_word'] : '';
 $search_field = isset($_GET['search_field']) ? $_GET['search_field'] : '';
-$columns = array('tdate' => 'Date', 'tno' => 'SO No.', 'sname' => 'Store', 'name' => 'Sales', 'cname' => 'Customer', 'tqty' => lang('數量'), 'tammount' => 'Amount', 'tdiscount' => 'Discount', 'ttotal' => 'Total', 'tpayment' => lang('付款方式'), 'tcard' => 'Card No.', 'tstatus' => 'Status');
+$columns = array('tdate' => lang('日期'), 'tno' => 'SO No.', 'sname' => lang('商店'), 'name' => lang('销售'), 'cname' => lang('顾客'), 'tqty' => lang('數量'), 'tammount' => lang('量'), 'tdiscount' => lang('贴现'), 'ttotal' => lang('共'), 'tpayment' => lang('付款方式'), 'tcard' => 'Card No.', 'tstatus' => lang('状态'));
 $topage				= (!empty($_GET['topage'])) ? $_GET['topage'] * 1 : 1;
 $offset				= ($topage-1) * $record_per_page;
 $ccolumns = $columns;
@@ -81,13 +81,13 @@ if ($orderby == $k) {
 <th <?php echo ($k == 'tid' ? 'class="ids"' : ''); ?>><a href="<?php echo getURL('file'); ?>?ordertype=<?php echo $order; ?>&name=<?php echo $k; ?>"><?php echo $v?></a> <?php echo $arrow; ?></th>
 <?php } ?>
 <?php if (!empty($privilege->print)) : ?>
-<th>Print</th>
+<th><?php echo lang('打印'); ?></th>
 <?php endif; ?>
 <?php if (!empty($privilege->edit)) : ?>
-<th>Edit</th>
+<th><?php echo lang('編輯'); ?></th>
 <?php endif; ?>
 <?php if (!empty($privilege->delete)) : ?>
-<th>Delete</th>
+<th><?php echo lang('刪除'); ?></th>
 <?php endif; ?>
 </tr>
 </thead>
@@ -160,13 +160,13 @@ if ($orderby == $k) {
 <th <?php echo ($k == 'tid' ? 'class="ids"' : ''); ?>><a href="<?php echo getURL('file'); ?>?ordertype=<?php echo $order; ?>&name=<?php echo $k; ?>"><?php echo $v?></a> <?php echo $arrow; ?></th>
 <?php } ?>
 <?php if (!empty($privilege->print)) : ?>
-<th>Print</th>
+<th><?php echo lang('打印'); ?></th>
 <?php endif; ?>
 <?php if (!empty($privilege->edit)) : ?>
-<th>Edit</th>
+<th><?php echo lang('編輯'); ?></th>
 <?php endif; ?>
 <?php if (!empty($privilege->delete)) : ?>
-<th>Delete</th>
+<th><?php echo lang('刪除'); ?></th>
 <?php endif; ?>
 </tr>
 </tfoot>

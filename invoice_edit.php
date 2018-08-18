@@ -497,7 +497,7 @@ foreach ($items as $item) {
 					<td width=350>$item->name</td>
 					<td width=60><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::quantity			value='$item->quantity'				size=2 nextinput=cms_item::$item->id::price_original	onblur='calculate_item(\"$item->id\", \"\");'></td>
 					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::price_original		value='$item->price_original'		size=2 nextinput=cms_item::$item->id::price></td>
-					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
+					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
 					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::amount				value='$item->amount'				size=2 readonly style='color:#777777'></td>
 					<td width=40><input type=checkbox name='cms_item::$item->id::null'						value='delete'						onclick='if (confirm(\"確定要刪除這個項目？\")) { document.getElementById(\"item_row_$item->id\").style.display=\"none\"; calculate(); } else { this.checked=false; }'></td>
 				</tr>
@@ -510,7 +510,7 @@ foreach ($items as $item) {
 					<td width=350><input style='min-width:60px' type=text			   name=cms_item::$item->id::name				value='$item->name'					size=37 nextinput=cms_item::$item->id::quantity></td>
 					<td width=60><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::quantity			value='$item->quantity'				size=2 nextinput=cms_item::$item->id::price				onblur='calculate_item(\"$item->id\", \"\");'></td>
 					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::price_original		value='$item->price_original'		size=2 nextinput=cms_item::$item->id::price></td>
-					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=input_pulldownmenu_add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
+					<td width=80><input style='min-width:60px' class=form-control number type=text name=cms_item::$item->id::price				value='$item->price'				size=2 nextinput=add_item_id			onblur='calculate_item(\"$item->id\", \"\");'></td>
 					<td width=80><input class=form-control number type=text name=cms_item::$item->id::amount				value='$item->amount'				size=2 readonly style='color:#777777'></td>
 					<td width=40><input type=checkbox name='cms_item::$item->id::null'						value='delete'						onclick='if (confirm(\"確定要刪除這個項目？\")) { document.getElementById(\"item_row_$item->id\").style.display=\"none\"; calculate(); } else { this.checked=false; }'></td>
 				</tr>
@@ -743,6 +743,14 @@ $(document).ready(function(){
 			});
 		}
 	});
+
+	$('select[name="add_item_id"]').on('change', function() {
+		document.addEventListener("keydown", function(event) {
+			if (event.which === 13) {
+				$('#add_item_submit').click()
+			}
+		})
+	})
 	$('select[name="<?php echo $inputs->prefix; ?>customer_id"]').change()
 })
 </script>

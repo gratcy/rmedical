@@ -38,6 +38,10 @@ $lang['en']['請輸入管理員密碼'] = 'Administrator password';
 $lang['en']['使用者管理'] = 'User Management';
 
 $lang['en']['頁'] = 'Page';
+$lang['en']['日期'] = 'Date';
+$lang['en']['状态'] = 'Status';
+$lang['en']['贴现'] = 'Discount';
+$lang['en']['量'] = 'Amount';
 $lang['en']['共'] = 'Total';
 $lang['en']['總共'] = 'Total';
 $lang['en']['記錄'] = 'Records';

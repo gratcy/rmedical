@@ -135,8 +135,12 @@ echo <<<EOS
 
       if (!nextinput)
         return false;
+
       document.getElementById("form").elements.namedItem(nextinput).focus();
-      document.getElementById("form").elements.namedItem(nextinput).select();
+      if ($('select[name="'+nextinput+'"]').is("select")) {
+        $('form select[name="'+nextinput+'"]').select()
+        // document.getElementById("form").elements.namedItem(nextinput).select();
+      }
     }
 
     function roundNum (strFloat,v){
