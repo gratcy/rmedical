@@ -1,29 +1,35 @@
 <style> td { font-family: "Arial", "新細明體", "細明體";	font-size : 12px;  color : #555555} </style>
-<table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-18 14:21:47</b></td><td><b>/login_login.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.002716</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.215516</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-18 15:13:58</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>1.001358</td><td>Hash - e952593b6e1fa15fffaf3e51bf34836d</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.910064</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-18 15:13:58</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>8.106231</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.503395</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-18 15:13:59</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>8.392333</td><td>Hash - e952593b6e1fa15fffaf3e51bf34836d</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000355</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-18 15:13:59</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.480911</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000146</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-18 15:14:00</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.600120</td><td>Hash - 6c143596c2a069c0e5be7d7376dcdc75</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000130</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-18 15:14:00</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.099441</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000104</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-18 15:14:09</b></td><td><b>/transaction_add.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>1.192092</td><td>Hash - cc831b3ef3a8df30f65b7b7bbf5cb383</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>4.506111</td><td>Script ended ...</td></tr>
-</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-18 15:14:09</b></td><td><b>/transaction_add.php</b></td></tr>
+<table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:17:56</b></td><td><b>/ajax_customer.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.198883</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000375</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:25:46</b></td><td><b>/invoice_edit.php?id=122498&from_query=</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.002716</td><td>Hash - 0a226fd22111f1450fd21ed95cad83b2</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>5.698204</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:25:46</b></td><td><b>/invoice_edit.php?id=122498&from_query=</b></td></tr>
 <tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.914138</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.408027</td><td>Script ended ...</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.384185</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:25:58</b></td><td><b>/invoice_edit.php?id=122498&from_query=</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.504753</td><td>Hash - 0a226fd22111f1450fd21ed95cad83b2</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000107</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:25:58</b></td><td><b>/invoice_edit.php?id=122498&from_query=</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>1.502037</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>4.982948</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:27:09</b></td><td><b>/invoice_edit.php?id=122498&from_query=</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>7.700920</td><td>Hash - accd9cce55b433c34b14732d080433d0</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000245</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:27:09</b></td><td><b>/invoice_edit.php?id=122498&from_query=</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.504753</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000128</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:30:15</b></td><td><b>/invoice_edit.php?id=122498&from_query=</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>1.287460</td><td>Hash - 3b668fed4d62c56c51f4ab2adca4c71d</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>4.196166</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:30:15</b></td><td><b>/invoice_edit.php?id=122498&from_query=</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>5.960464</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>2.217292</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:33:27</b></td><td><b>/invoice_edit.php?id=122498&from_query=</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>1.311302</td><td>Hash - b1b2e2dc89dac5efeed62c6e59e319c5</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>3.719329</td><td>Script ended ...</td></tr>
+</table><table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-08-24 02:33:27</b></td><td><b>/invoice_edit.php?id=122498&from_query=</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>4.053115</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>1.502037</td><td>Script ended ...</td></tr>
 </table>

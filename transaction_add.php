@@ -37,11 +37,14 @@ $submit = isset($_POST['submit']) ? $_POST['submit'] : '';
 
 if ($submit) {
 	$error = null;
-	if (!$tammount || !$ttotal || !$tqty || !$store_id || !$staff_id) {
+	if (!$tammount || !$ttotal || !$tqty || !$staff_id) {
 		$error = 'Data you input is incomplete !!!';
 	}
 	else if ($tammount <= 1 || $ttotal <= 1) {
 		$error = 'Total zero !!!';
+	}
+	else if (!$store_id) {
+		$error = 'Unknown Store !!!';
 	}
 	else if ($tpayment > 1 && !$tcardno) {
 		$error = 'Card number must be filled !!!';

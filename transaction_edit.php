@@ -38,8 +38,11 @@ $submit = isset($_POST['submit']) ? $_POST['submit'] : '';
 
 if ($submit) {
 	$error = null;
-	if (!$tammount || !$ttotal || !$tqty || !$store_id || !$customer_id || !$staff_id) {
+	if (!$tammount || !$ttotal || !$tqty || !$customer_id || !$staff_id) {
 		$error = 'Data you input is incomplete !!!';
+	}
+	else if (!$store_id) {
+		$error = 'Unknown Store !!!';
 	}
 	else if ($tammount <= 1 || $ttotal <= 1) {
 		$error = 'Total zero !!!';

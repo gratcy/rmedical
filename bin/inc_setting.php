@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 $DB_SERVER		= "localhost";
-$DB_DATABASE	= "rockmedi_db"; /*rock_medical_com_2*/
+$DB_DATABASE	= "rockmedi2_db"; /*rock_medical_com_2*/
 $DB_USERNAME	= "dev"; /*rock-medical.com*/
 $DB_PASSWORD	= "palma";
 

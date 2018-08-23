@@ -193,16 +193,16 @@ echo <<<EOS
 		<col width=10% valign=top />
 		<col width=50% valign=top />
 		<col width=10% valign=top align=right />
-		<col width=10% valign=top align=right />
-		<col width=10% valign=top align=right />
+		<col width=15% valign=top align=right />
+		<col width=15% valign=top align=right />
 	</colgroup>
 
 	<tr height=30 style='font-weight:bold;'>
-		<td>Product No.</td>
-		<td>Description</td>
-		<td style='padding-right:6px;'>PCS.</td>
-		<td style='padding-right:6px;'>Unit Price (\$)<br>(HKD)</td>
-		<td style='padding-right:6px;'>Amount (\$)<br>(HKD)</td>
+		<td width=10%>Product No.</td>
+		<td width=50%>Description</td>
+		<td style='padding-right:6px;text-align: center' width=10%>PCS.</td>
+		<td style='padding-right:6px;' width=15%>Unit Price (\$)<br>(HKD)</td>
+		<td style='padding-right:6px;' width=15%>Amount (\$)<br>(HKD)</td>
 	</tr>
 
 EOS;
@@ -232,11 +232,11 @@ foreach ($items as $item) {
 	echo "
 			<tr height=1 bgcolor=#cccccc><td style='padding:0px' colspan=20></td></tr>
 			<tr bgcolor=#ffffff>
-				<td>$item_info->item_id</td>
-				<td>$item->name</td>
-				<td><input class=number type=text name=cms_item::$item->id::amount_sales	value='$item->quantity'	style='width:70px;' ></td>
-				<td><input class=number type=text name=cms_item::$item->id::commission		value='$item->price'	style='width:70px;' ></td>
-				<td><input class=number type=text name=cms_item::$item->id::invoice			value='$item->amount'	style='width:70px;' ></td>
+				<td width=10%>$item_info->item_id</td>
+				<td width=50%>$item->name</td>
+				<td width=10% style='text-align: center'><input class=number type=text name=cms_item::$item->id::amount_sales	value='$item->quantity'	style='width:70px;text-align: center' ></td>
+				<td width=15%><input class=number type=text name=cms_item::$item->id::commission		value='$item->price'	style='width:80px;' ></td>
+				<td width=15%><input class=number type=text name=cms_item::$item->id::invoice			value='$item->amount'	style='width:70px;' ></td>
 			</tr>
 		";
 	

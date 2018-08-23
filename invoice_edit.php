@@ -37,15 +37,23 @@ $invid = (int) $_GET['id'];
 $oldcustid = (int) $_POST['cms::'.$invid.'::customer_id'];
 $newsite_id = (int) $_POST['cms::'.$invid.'::site_id'];
 $newstaff_id = (int) $_POST['cms::'.$invid.'::staff_id'];
+$sendemail = (int) $_POST['sendemail'];
+$custname = '';
+$custemail = '';
+
 if (isset($_POST['cms_update'])) {
 	$newcustid = 0;
 	if ($newcust == 1) {
 		$insert = sql_query("INSERT INTO customer (class, staff_id, site_id, name, address, delivery_address, tel, fax, email) VALUES ('$newclass', '$newstaff_id', '$newsite_id', '$newname', '$newaddress', '$newdelivery_address', '$newtel', '$newfax', '$newemail')");
 		$newcustid = sql_insert_id();
 		$_POST['cms::'.$invid.'::customer_id'] = $newcustid;
+		$custname = $newname;
+		$custemail = $newemail;
 	}
 	else {
 		$update = sql_query("update customer SET class = '$oldclass', staff_id = '$oldstaff_id', site_id = '$oldsite_id', name = '$oldname', address = '$oldaddress', delivery_address = '$olddelivery_address', tel = '$oldtel', fax = '$oldfax', email = '$oldemail' WHERE id=" . $oldcustid);
+		$custname = $oldname;
+		$custemail = $oldemail;
 	}
 
 	$cms_table			= "invoice";
@@ -84,6 +92,31 @@ if (isset($_POST['cms_update'])) {
 	include_once "inventory_invoice_sold.php";
 	include_once "site_invoice_sold.php";
 
+	if ($sendemail === 1 && $invoice->staff_id && !empty($custemail)) {
+		$res = '';
+		$qty = 0;
+		$wew = sql_getTable("select name FROM staff WHERE id=" . $invoice->staff_id);
+		$items = sql_getTable("select * FROM invoice_detail WHERE invoice_id=" . $invid);
+		foreach($items as $k => $v) {
+			$warranty = sql_getTable("select warranty FROM item WHERE id=" . $v['item_id']);
+			$res .= '<tr>';
+			$res .= '<td>'.$v['name'].'</td>';
+			$res .= '<td>'.$v['quantity'].'</td>';
+			$res .= '<td>'.($warranty[0]['warranty'] == 1 ? date('Y-m-d',strtotime("+1 year")) : 'No Warranty').'</td>';
+			$res .= '<td>'.$v['price'].'</td>';
+			$res .= '</tr>';
+			$qty += (int) $v['quantity'];
+		}
+		$res .= '<tr><td><b>Total</b></td><td>'.array_sum($qty).'</td><td></td><td>'.array_sum($price).'</td></tr>';
+
+		$Qdata['dateorder'] = date('Y-m-d H:i:s');
+		$Qdata['sales'] = $wew[0]['name'];
+		$Qdata['sono'] = $_POST['cms::'.$invid.'::invoice_id'];
+		$Qdata['table'] = $res;
+		$Qdata['cname'] = $custname;
+
+		__send_email($custemail, 'Rock Trading Transaction', $Qdata,dirname(__FILE__) . '/tpl/transaction.html');
+	}
 
 	if ($_POST['saveprint'] == 'true') {
 		gotoURL("invoice_edit_print.php?id=$id");
@@ -593,6 +626,7 @@ echo <<<EOS
 
 	<tr $save_button_display>
 		<td colspan=12 align=center>
+			<input type=button id="SaveAndSendEmail" class='btn btn-default' value='確定担发送邮件 (S & E)' class=noprint>
 			<input type=button class='btn btn-default' value='確定 (S)' onclick='document.getElementById("form").submit();' class=noprint>
 			<input type=button class='btn btn-default' value='儲存及預覽 (P)' onclick='getFormItem("form", "saveprint").value="true"; document.getElementById("form").submit();'  class=noprint>
 		</td>
@@ -606,10 +640,7 @@ echo <<<EOS
 </table>
 
 
-<script>
-
-
-
+<script type="text/javascript">
 function calculate_item(itemid, newitem) {
 	var ck = $('#form [name="cms_item::' + itemid + '::amount' + newitem + '"]').val()
 	if (ck) {
@@ -714,6 +745,12 @@ include_once "footer.php";
 ?>
 <script type="text/javascript">
 $(document).ready(function(){
+	$('#SaveAndSendEmail').click(function() {
+		$('#form').append('<input type="hidden" value="1" name="sendemail">');
+		$('#form').submit()
+		document.getElementById("form").submit();
+	})
+
 	$('input[name="newcust"]').click(function(){
 		$('tr.separatorcust').show();
 		if ($(this).val() == 0) {
