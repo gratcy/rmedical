@@ -5,7 +5,7 @@ include_once "header.php";
 $privilege			= sql_getObj("select * from service_user_privilege where user_id='$user->id' and `link`='invoice.php'");
 if (empty($privilege->edit))	{	gotoURL("invoice.php"); exit; }
 
-echo "<h3 class='pull-left'>編輯出單</h3><span class='pull-right'><i class='fa fa-arrow-left'></i>&nbsp;&nbsp; <a onclick='history.go(-1);''>返回 (B)</a></span><br /><br /><br />";
+echo "<h3 class='pull-left'>".lang('編輯出單')."</h3><span class='pull-right'><i class='fa fa-arrow-left'></i>&nbsp;&nbsp; <a onclick='history.go(-1);''>".lang('返回')." (B)</a></span><br /><br /><br />";
 
 $id					= sql_secure($_GET['id']);
 
@@ -257,7 +257,14 @@ if (empty($customer_payment_reference)) {
 $newCust = lang('新客戶');
 $newYes = lang('是');
 $newNo = lang('不是');
-
+$addProduct = lang('新增產品');
+$totalAmount = lang('總數量');
+$AddItem = lang('確定');
+$AddCustomItem = lang('新增自訂產品');
+$submitAndSendEmail = lang('確定担发送邮件');
+$completeOrder = lang('詳細資料');
+$simpleOrder = lang('備註');
+$saveAndPreview = lang('儲存及預覽');
 echo <<<EOS
 
 <link rel="stylesheet" type="text/css" href="js/rich_calendar/rich_calendar.css">
@@ -456,8 +463,8 @@ function tab_toggle(tab, content) {
 <table class='table table-borderless' style='margin-bottom: -8px' $tag_display>
 	<tr>
     	<td>
-            <div class='tab_switch' id=tab_detail	align=center	onclick='tab_toggle(this, "tab_content_detail")'	>詳細資料</div>
-            <div class='tab_switch' id=tab_remark	align=center	onclick='tab_toggle(this, "tab_content_remark")'	style='background-image:URL(images/list_tab_button_off.jpg);'>備註</div>
+            <div class='tab_switch' id=tab_detail	align=center	onclick='tab_toggle(this, "tab_content_detail")'	>$completeOrder</div>
+            <div class='tab_switch' id=tab_remark	align=center	onclick='tab_toggle(this, "tab_content_remark")'	style='background-image:URL(images/list_tab_button_off.jpg);'>$simpleOrder</div>
         </td>
    	</tr>
 </table>
@@ -469,13 +476,13 @@ function tab_toggle(tab, content) {
 
 <table class='table table-borderless' $add_product_display>
 	<tr>
-		<td>新增產品 ：</td>
+		<td>$addProduct ：</td>
 			<td style="width:75%">$inputs2->add_item_id</td>
-			<td><input id='add_item_submit' class='btn btn-default' type='button' value='確定' style='width:70px;' onclick='
+			<td><input id='add_item_submit' class='btn btn-default' type='button' value='$AddItem' style='width:70px;' onclick='
 				CSI_load(itemlist, "invoice_edit_item_add.php?invoice_id=$id&id=" + document.getElementById("form").elements.namedItem("add_item_id").value, "", "append");
 				document.getElementById("form").elements.namedItem("add_item_id").value = "";
 				return true;'>
-			<input class='btn btn-default' type=button value='新增自訂產品' onclick='CSI_load(itemlist, "invoice_edit_item_add.php?invoice_id=$id&custom=1", "", "append");'>
+			<input class='btn btn-default' type=button value='$AddCustomItem' onclick='CSI_load(itemlist, "invoice_edit_item_add.php?invoice_id=$id&custom=1", "", "append");'>
 		</td>
 	</tr>
 
@@ -595,7 +602,7 @@ echo <<<EOS
 	<tr><td colspan=12 height=10 style='padding:0px;'></td></tr>
 
 	<tr>
-		<td style="text-align:right;">總數量</td>
+		<td style="text-align:right;">$totalAmount</td>
 		<td colspan="7">$inputs->quantity_sum</td>
 		<td></td>
 		<td style="text-align:right;" class="resp-mobile-total">總額		&nbsp; $inputs->amount_gross</td>
@@ -626,9 +633,9 @@ echo <<<EOS
 
 	<tr $save_button_display>
 		<td colspan=12 align=center>
-			<input type=button id="SaveAndSendEmail" class='btn btn-default' value='確定担发送邮件 (S & E)' class=noprint>
-			<input type=button class='btn btn-default' value='確定 (S)' onclick='document.getElementById("form").submit();' class=noprint>
-			<input type=button class='btn btn-default' value='儲存及預覽 (P)' onclick='getFormItem("form", "saveprint").value="true"; document.getElementById("form").submit();'  class=noprint>
+			<input type=button id="SaveAndSendEmail" class='btn btn-default' value='$submitAndSendEmail (S & E)' class=noprint>
+			<input type=button class='btn btn-default' value='$AddItem (S)' onclick='document.getElementById("form").submit();' class=noprint>
+			<input type=button class='btn btn-default' value='$saveAndPreview (P)' onclick='getFormItem("form", "saveprint").value="true"; document.getElementById("form").submit();'  class=noprint>
 		</td>
 	</tr>
 

@@ -1,5 +1,5 @@
 <style> td { font-family: "Arial", "新細明體", "細明體";	font-size : 12px;  color : #555555} </style>
-<table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-09-11 17:56:10</b></td><td><b>/ajax_customer.php</b></td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>6.914138</td><td>Passed doubled process checking</td></tr>
-<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.001601</td><td>Script ended ...</td></tr>
+<table width=800 cellpadding=2 cellspacing=1 border=0 bgcolor=cccccc><tr bgcolor=eeeeee><td width=150><b>2018-09-15 18:06:04</b></td><td><b>/ajax_customer.php</b></td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>7.867813</td><td>Passed doubled process checking</td></tr>
+<tr bgcolor=ffffff><td align=right style='padding-right:15px;'>0.000472</td><td>Script ended ...</td></tr>
 </table>

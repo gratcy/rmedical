@@ -6,6 +6,7 @@ $lang['en']['產品資料'] = 'Product Information';
 $lang['en']['供應商'] = 'Supplier';
 $lang['en']['採購訂單'] = 'Purchase Order';
 $lang['en']['出單'] = 'Invoice';
+$lang['en']['編輯出單'] = 'Edit Invoice';
 $lang['en']['客戶資料'] = 'Customer';
 $lang['en']['顾客'] = 'Customer';
 $lang['en']['客戶付款'] = 'Customer Payment';
@@ -14,6 +15,7 @@ $lang['en']['终端客户'] = 'End Customer';
 $lang['en']['商店'] = 'Store';
 $lang['en']['销售订单'] = 'Sales Order';
 
+$lang['en']['新增產品'] = 'Add Product';
 $lang['en']['倉存貨品'] = 'Inventory';
 $lang['en']['管理記錄'] = 'Inventory Transaction';
 
@@ -42,6 +44,7 @@ $lang['en']['日期'] = 'Date';
 $lang['en']['状态'] = 'Status';
 $lang['en']['贴现'] = 'Discount';
 $lang['en']['量'] = 'Amount';
+$lang['en']['總數量'] = 'Total Amount';
 $lang['en']['共'] = 'Total';
 $lang['en']['總共'] = 'Total';
 $lang['en']['記錄'] = 'Records';
@@ -67,7 +70,7 @@ $lang['en']['刪除'] = 'Delete';
 $lang['en']['打印'] = 'Print';
 
 $lang['en']['開單'] = 'Sales Order';
-$lang['en']['返回'] = 'Back (B)';
+$lang['en']['返回'] = 'Back';
 $lang['en']['新客戶'] = 'New Customer';
 $lang['en']['姓名'] = 'Name';
 $lang['en']['出生日期'] = 'Birthday';
@@ -89,3 +92,8 @@ $lang['en']['報告銷售訂單'] = 'Reporting';
 $lang['en']['銷售訂單'] = 'Transaction';
 
 $lang['en']['新增'] = 'New';
+$lang['en']['新增自訂產品'] = 'Add Custom Item';
+$lang['en']['確定担发送邮件'] = 'Submit and Send Email';
+$lang['en']['儲存及預覽'] = 'Save and Preview';
+$lang['en']['詳細資料'] = 'Complete Order';
+$lang['en']['備註'] = 'Simple Order';
